@@ -6,6 +6,7 @@
     "node": ">=22.13.0"
   },
   "scripts": {
+    "setup": "node scripts/setup-and-run.mjs",
     "dev": "vinext dev",
     "backend": "node scripts/run-python.mjs -m uvicorn backend.app:app --host 127.0.0.1 --port 8000 --reload",
     "generate-data": "node scripts/run-python.mjs -m scripts.generate_dcs --seed 101 && node scripts/run-python.mjs -m scripts.export_demo_payload",

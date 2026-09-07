@@ -41,32 +41,26 @@ Depending on the question, the evidence can include current values, trends, even
 
 The default demo does not need an API key. It uses repeatable local analysis so the same evidence appears reliably during a presentation. A Google ADK agent is included for future Gemini-powered conversation, but that optional path requires a Google API key and should still be treated as experimental.
 
-## Easiest setup on Windows
+## Start the demo with one command
 
-You need Python 3.14 and Node.js 22.13 or newer.
+The same command works in Windows PowerShell, Windows Command Prompt, macOS Terminal, and Linux terminals.
 
-1. Download or clone this repository.
-2. Open the `test-agent` folder.
-3. Double-click **`setup-and-run-windows.bat`**.
+Before the first run, install:
 
-The launcher checks the installed software, creates the Python environment, installs every dependency, tests the setup, starts both parts of FieldGuide, and opens [http://localhost:3000](http://localhost:3000). Keep its command window open while using the demo and press `Ctrl+C` to stop it.
+- Python 3.11, 3.12, 3.13, or 3.14.
+- Node.js 22.13 or newer.
 
-No PowerShell activation or manual Python commands are required.
-
-## Manual setup on macOS or Linux
-
-You need Python 3.11 through 3.14 and Node.js 22.13 or newer.
+Download or clone the repository, open a terminal inside the `test-agent` folder, and run:
 
 ```bash
-git clone https://github.com/zaparsenal/test-agent.git
-cd test-agent
-python3.12 -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
-npm install
-npm run demo
+npm run setup
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+That one command finds the installed Python version, creates the correct `.venv`, installs the Python and web packages, regenerates the sample data, starts both parts of FieldGuide, and opens [http://localhost:3000](http://localhost:3000).
+
+Use the same command on later runs. Installed packages and the existing environment are reused, so later startups are faster. Keep the terminal open while using FieldGuide and press `Ctrl+C` to stop it.
+
+Windows users may also double-click `setup-and-run-windows.bat`; it runs the same universal setup command.
 
 For a quick walkthrough:
 
