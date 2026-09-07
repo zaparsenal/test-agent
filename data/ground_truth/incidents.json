@@ -1,0 +1,62 @@
+{
+  "dataset_seed": 101,
+  "note": "Held separately from analysis inputs; used only by tests and evaluation.",
+  "incidents": [
+    {
+      "id": "restart",
+      "label": "startup",
+      "start": "2026-08-18T08:30:00",
+      "end": "2026-08-18T09:00:00",
+      "tags": [
+        "P-101_STATUS",
+        "FT-101",
+        "PT-101",
+        "FV-101_POS"
+      ]
+    },
+    {
+      "id": "restriction",
+      "label": "downstream_restriction",
+      "start": "2026-08-18T10:15:00",
+      "end": "2026-08-18T11:00:00",
+      "tags": [
+        "FT-101",
+        "PT-101",
+        "LT-101",
+        "LT-102",
+        "FV-101_POS"
+      ]
+    },
+    {
+      "id": "drift",
+      "label": "sensor_drift",
+      "start": "2026-08-18T11:00:00",
+      "end": "2026-08-18T11:45:00",
+      "tags": [
+        "LT-102"
+      ]
+    },
+    {
+      "id": "quality",
+      "label": "bad_quality",
+      "start": "2026-08-18T11:45:00",
+      "end": "2026-08-18T12:15:00",
+      "tags": [
+        "PT-101",
+        "FT-101"
+      ]
+    },
+    {
+      "id": "recovery",
+      "label": "recovery",
+      "start": "2026-08-18T12:15:00",
+      "end": "2026-08-18T13:00:00",
+      "tags": [
+        "FT-101",
+        "PT-101",
+        "LT-101",
+        "FV-101_POS"
+      ]
+    }
+  ]
+}

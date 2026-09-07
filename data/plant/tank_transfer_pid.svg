@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" role="img" aria-labelledby="title desc">
+  <title id="title">Synthetic tank transfer P&amp;ID</title>
+  <desc id="desc">Synthetic advisory demo diagram: T-101 flows through P-101, FT-101, and FV-101 to T-102.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 9 4.5 0 9z" fill="#246f91"/></marker>
+    <style>.pipe{fill:none;stroke:#246f91;stroke-width:5}.signal{fill:none;stroke:#6f8089;stroke-width:1.5;stroke-dasharray:7 5}.shape{fill:#fff;stroke:#324f5c;stroke-width:2.5}.instrument{fill:#eff6f8;stroke:#324f5c;stroke-width:2.5}.tag{font:700 16px monospace;fill:#243f4b;text-anchor:middle}.label{font:700 10px sans-serif;fill:#70818a;text-anchor:middle;letter-spacing:1px}.small{font:700 13px monospace;fill:#243f4b;text-anchor:middle}</style>
+  </defs>
+  <rect width="1000" height="360" fill="#fbfcfc"/>
+  <text x="32" y="32" font-family="sans-serif" font-size="12" font-weight="700" fill="#6c7e87" letter-spacing="1.4">SYNTHETIC WORKING P&amp;ID · NOT FOR CONSTRUCTION</text>
+  <path class="pipe" d="M190 184H828" marker-end="url(#arrow)"/>
+  <path class="signal" d="M320 184V94H410"/><path class="signal" d="M600 184V94H704"/>
+  <g id="T-101" data-tag="T-101"><path class="shape" d="M82 92h108v184q-54 36-108 0z"/><path d="M89 220h94v51q-47 29-94 0z" fill="#b7d9e7"/><text class="tag" x="136" y="72">T-101</text><text class="label" x="136" y="316">FEED TANK</text></g>
+  <g id="P-101" data-tag="P-101"><circle class="shape" cx="320" cy="184" r="44"/><path d="m300 160 45 24-45 24z" fill="#dbe8ed"/><text class="tag" x="320" y="252">P-101</text><text class="label" x="320" y="278">CENTRIFUGAL PUMP</text></g>
+  <g id="FT-101" data-tag="FT-101"><circle class="instrument" cx="472" cy="184" r="34"/><text class="small" x="472" y="181">FT</text><text class="small" x="472" y="198">101</text><text class="label" x="472" y="248">FLOW TRANSMITTER</text></g>
+  <g id="FV-101" data-tag="FV-101"><path class="shape" d="m610 158 45 26-45 26zm90 0-45 26 45 26z"/><line class="shape" x1="655" y1="184" x2="655" y2="128"/><circle class="instrument" cx="655" cy="112" r="15"/><text class="tag" x="655" y="252">FV-101</text><text class="label" x="655" y="278">FLOW CONTROL VALVE</text></g>
+  <g id="T-102" data-tag="T-102"><path class="shape" d="M828 92h108v184q-54 36-108 0z"/><path d="M835 246h94v25q-47 29-94 0z" fill="#b7d9e7"/><text class="tag" x="882" y="72">T-102</text><text class="label" x="882" y="316">DESTINATION TANK</text></g>
+  <g id="PT-101" data-tag="PT-101"><circle class="instrument" cx="410" cy="94" r="29"/><text class="small" x="410" y="91">PT</text><text class="small" x="410" y="106">101</text></g>
+  <g id="LT-101" data-tag="LT-101"><circle class="instrument" cx="136" cy="184" r="27"/><text class="small" x="136" y="181">LT</text><text class="small" x="136" y="196">101</text></g>
+  <g id="LT-102" data-tag="LT-102"><circle class="instrument" cx="882" cy="184" r="27"/><text class="small" x="882" y="181">LT</text><text class="small" x="882" y="196">102</text></g>
+  <text x="500" y="342" font-family="sans-serif" font-size="10" fill="#8a969c" text-anchor="middle">T-101 → P-101 → FT-101 → FV-101 → T-102 · Generated for the FieldGuide prototype</text>
+</svg>

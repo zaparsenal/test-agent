@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fieldguide.demo/a2ui/catalogs/industrial/v1",
+  "title": "FieldGuide Industrial Insight Catalog",
+  "description": "Restricted A2UI catalog for advisory process-insight responses.",
+  "catalogId": "https://fieldguide.demo/a2ui/catalogs/industrial/v1",
+  "components": {
+    "ResponseLayout": {
+      "type": "object",
+      "allOf": [
+        {"$ref": "https://a2ui.org/specification/v0_9/common_types.json#/$defs/ComponentCommon"},
+        {"type": "object", "properties": {"component": {"const": "ResponseLayout"}, "children": {"$ref": "https://a2ui.org/specification/v0_9/common_types.json#/$defs/ChildList"}, "intent": {"type": "string"}, "question": {"type": "string"}}, "required": ["component", "children", "intent", "question"]}
+      ],
+      "unevaluatedProperties": false
+    },
+    "OperationalSummary": {
+      "type": "object",
+      "allOf": [
+        {"$ref": "https://a2ui.org/specification/v0_9/common_types.json#/$defs/ComponentCommon"},
+        {"type": "object", "properties": {"component": {"const": "OperationalSummary"}, "title": {"type": "string"}, "explanation": {"type": "string"}, "severity": {"enum": ["normal", "warning", "alarm", "data"]}, "confidence": {"type": "number", "minimum": 0, "maximum": 1}, "window": {"type": "string"}, "tags": {"type": "array", "items": {"type": "string"}}, "qualityNote": {"type": "string"}}, "required": ["component", "title", "explanation", "severity", "confidence", "window", "tags", "qualityNote"]}
+      ],
+      "unevaluatedProperties": false
+    },
+    "KpiGrid": {
+      "type": "object",
+      "allOf": [
+        {"$ref": "https://a2ui.org/specification/v0_9/common_types.json#/$defs/ComponentCommon"},
+        {"type": "object", "properties": {"component": {"const": "KpiGrid"}, "title": {"type": "string"}, "cards": {"type": "array", "items": {"type": "object"}}}, "required": ["component", "title", "cards"]}
+      ],
+      "unevaluatedProperties": false
+    },
+    "TrendChart": {
+      "type": "object",
+      "allOf": [
+        {"$ref": "https://a2ui.org/specification/v0_9/common_types.json#/$defs/ComponentCommon"},
+        {"type": "object", "properties": {"component": {"const": "TrendChart"}, "title": {"type": "string"}, "subtitle": {"type": "string"}, "series": {"type": "array", "items": {"type": "object"}}, "incidentStart": {"type": "string"}, "incidentEnd": {"type": "string"}}, "required": ["component", "title", "subtitle", "series", "incidentStart", "incidentEnd"]}
+      ],
+      "unevaluatedProperties": false
+    },
+    "IncidentTimeline": {
+      "type": "object",
+      "allOf": [
+        {"$ref": "https://a2ui.org/specification/v0_9/common_types.json#/$defs/ComponentCommon"},
+        {"type": "object", "properties": {"component": {"const": "IncidentTimeline"}, "title": {"type": "string"}, "events": {"type": "array", "items": {"type": "object"}}}, "required": ["component", "title", "events"]}
+      ],
+      "unevaluatedProperties": false
+    },
+    "SensorQualityWarning": {
+      "type": "object",
+      "allOf": [
+        {"$ref": "https://a2ui.org/specification/v0_9/common_types.json#/$defs/ComponentCommon"},
+        {"type": "object", "properties": {"component": {"const": "SensorQualityWarning"}, "title": {"type": "string"}, "problems": {"type": "array", "items": {"type": "object"}}}, "required": ["component", "title", "problems"]}
+      ],
+      "unevaluatedProperties": false
+    },
+    "ProcessDiagram": {
+      "type": "object",
+      "allOf": [
+        {"$ref": "https://a2ui.org/specification/v0_9/common_types.json#/$defs/ComponentCommon"},
+        {"type": "object", "properties": {"component": {"const": "ProcessDiagram"}, "title": {"type": "string"}, "highlightedTags": {"type": "array", "items": {"type": "string"}}, "status": {"enum": ["normal", "warning", "alarm"]}}, "required": ["component", "title", "highlightedTags", "status"]}
+      ],
+      "unevaluatedProperties": false
+    },
+    "EquipmentTable": {
+      "type": "object",
+      "allOf": [
+        {"$ref": "https://a2ui.org/specification/v0_9/common_types.json#/$defs/ComponentCommon"},
+        {"type": "object", "properties": {"component": {"const": "EquipmentTable"}, "title": {"type": "string"}, "rows": {"type": "array", "items": {"type": "object"}}}, "required": ["component", "title", "rows"]}
+      ],
+      "unevaluatedProperties": false
+    },
+    "InspectionPanel": {
+      "type": "object",
+      "allOf": [
+        {"$ref": "https://a2ui.org/specification/v0_9/common_types.json#/$defs/ComponentCommon"},
+        {"type": "object", "properties": {"component": {"const": "InspectionPanel"}, "title": {"type": "string"}, "confidence": {"type": "number", "minimum": 0, "maximum": 1}, "items": {"type": "array", "items": {"type": "object"}}}, "required": ["component", "title", "confidence", "items"]}
+      ],
+      "unevaluatedProperties": false
+    },
+    "StatusState": {
+      "type": "object",
+      "allOf": [
+        {"$ref": "https://a2ui.org/specification/v0_9/common_types.json#/$defs/ComponentCommon"},
+        {"type": "object", "properties": {"component": {"const": "StatusState"}, "state": {"enum": ["loading", "empty", "error"]}, "title": {"type": "string"}, "message": {"type": "string"}}, "required": ["component", "state", "title", "message"]}
+      ],
+      "unevaluatedProperties": false
+    }
+  },
+  "functions": {},
+  "theme": {"type": "object", "properties": {"primaryColor": {"type": "string"}}, "additionalProperties": false},
+  "$defs": {
+    "theme": {"type": "object", "properties": {"primaryColor": {"type": "string"}}, "additionalProperties": false},
+    "anyComponent": {
+      "oneOf": [
+        {"$ref": "#/components/ResponseLayout"},
+        {"$ref": "#/components/OperationalSummary"},
+        {"$ref": "#/components/KpiGrid"},
+        {"$ref": "#/components/TrendChart"},
+        {"$ref": "#/components/IncidentTimeline"},
+        {"$ref": "#/components/SensorQualityWarning"},
+        {"$ref": "#/components/ProcessDiagram"},
+        {"$ref": "#/components/EquipmentTable"},
+        {"$ref": "#/components/InspectionPanel"},
+        {"$ref": "#/components/StatusState"}
+      ],
+      "discriminator": {"propertyName": "component"}
+    },
+    "anyFunction": {"oneOf": []}
+  }
+}

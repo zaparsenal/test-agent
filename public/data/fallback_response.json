@@ -1,0 +1,187 @@
+{
+  "question": "What is happening in the process right now?",
+  "intent": "status",
+  "surfaceId": "process-insight-demo",
+  "messages": [
+    {
+      "version": "v0.9",
+      "createSurface": {
+        "surfaceId": "process-insight-demo",
+        "catalogId": "https://fieldguide.demo/a2ui/catalogs/industrial/v1",
+        "sendDataModel": false
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "process-insight-demo",
+        "components": [
+          {
+            "id": "root",
+            "component": "ResponseLayout",
+            "children": [
+              "summary",
+              "kpis",
+              "timeline",
+              "diagram"
+            ],
+            "intent": "status",
+            "question": "What is happening in the process right now?"
+          },
+          {
+            "id": "summary",
+            "component": "OperationalSummary",
+            "title": "Transfer process has recovered to its normal envelope",
+            "explanation": "At 14:00, FT-101 is 48.1 m3/h and PT-101 is 3.24 bar, both inside their expected ranges. A restriction-like event was detected earlier from 10:15\u201311:00; no active process alarm remains.",
+            "severity": "normal",
+            "confidence": 0.93,
+            "window": "Current snapshot \u00b7 14:00",
+            "tags": [],
+            "qualityNote": ""
+          },
+          {
+            "id": "kpis",
+            "component": "KpiGrid",
+            "title": "Current readings",
+            "cards": [
+              {
+                "tag": "LT-101",
+                "value": 56.113,
+                "unit": "%",
+                "quality": "GOOD",
+                "state": "normal",
+                "normalText": "Expected 35\u201375 %",
+                "timestamp": "2026-08-18T14:00:00"
+              },
+              {
+                "tag": "PT-101",
+                "value": 3.238,
+                "unit": "bar",
+                "quality": "GOOD",
+                "state": "normal",
+                "normalText": "Expected 2.6\u20134.2 bar",
+                "timestamp": "2026-08-18T14:00:00"
+              },
+              {
+                "tag": "FT-101",
+                "value": 48.107,
+                "unit": "m3/h",
+                "quality": "GOOD",
+                "state": "normal",
+                "normalText": "Expected 42\u201354 m3/h",
+                "timestamp": "2026-08-18T14:00:00"
+              },
+              {
+                "tag": "FV-101_POS",
+                "value": 75.95,
+                "unit": "%",
+                "quality": "GOOD",
+                "state": "normal",
+                "normalText": "Expected 65\u201388 %",
+                "timestamp": "2026-08-18T14:00:00"
+              }
+            ]
+          },
+          {
+            "id": "timeline",
+            "component": "IncidentTimeline",
+            "title": "Earlier detected event",
+            "events": [
+              {
+                "timestamp": "2026-08-18T10:25:00",
+                "time": "10:25",
+                "label": "Flow fell below normal range",
+                "tag": "FT-101",
+                "value": 41.494,
+                "unit": "m3/h",
+                "severity": "warning"
+              },
+              {
+                "timestamp": "2026-08-18T10:31:00",
+                "time": "10:31",
+                "label": "Pressure left normal range",
+                "tag": "PT-101",
+                "value": 4.29,
+                "unit": "bar",
+                "severity": "warning"
+              },
+              {
+                "timestamp": "2026-08-18T10:43:00",
+                "time": "10:43",
+                "label": "Feed tank level continued rising",
+                "tag": "LT-101",
+                "value": 70.001,
+                "unit": "%",
+                "severity": "warning"
+              },
+              {
+                "timestamp": "2026-08-18T10:54:00",
+                "time": "10:54",
+                "label": "High discharge-pressure alarm",
+                "tag": "PT-101",
+                "value": 5.628,
+                "unit": "bar",
+                "severity": "alarm"
+              }
+            ]
+          },
+          {
+            "id": "diagram",
+            "component": "ProcessDiagram",
+            "title": "Transfer route",
+            "highlightedTags": [],
+            "status": "normal"
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateDataModel": {
+        "surfaceId": "process-insight-demo",
+        "path": "/",
+        "value": {
+          "question": "What is happening in the process right now?",
+          "intent": "status",
+          "generatedFrom": "deterministic-analysis-tools"
+        }
+      }
+    }
+  ],
+  "evidence": {
+    "flow": {
+      "tag": "FT-101",
+      "unit": "m3/h",
+      "count": 46,
+      "min": 28.688,
+      "max": 48.909,
+      "mean": 38.034,
+      "rate_per_hour": -24.423
+    },
+    "pressure": {
+      "tag": "PT-101",
+      "unit": "bar",
+      "count": 46,
+      "min": 3.287,
+      "max": 5.93,
+      "mean": 4.598,
+      "rate_per_hour": 3.309
+    },
+    "feedLevel": {
+      "tag": "LT-101",
+      "unit": "%",
+      "count": 46,
+      "min": 55.162,
+      "max": 78.704,
+      "mean": 66.985,
+      "rate_per_hour": 31.389
+    },
+    "flowPressureCorrelation": -0.985
+  },
+  "metadata": {
+    "protocol": "A2UI v0.9.1",
+    "catalogId": "https://fieldguide.demo/a2ui/catalogs/industrial/v1",
+    "advisoryOnly": true,
+    "dataThrough": "2026-08-18T14:00:00"
+  }
+}
