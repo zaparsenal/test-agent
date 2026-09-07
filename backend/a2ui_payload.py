@@ -6,11 +6,12 @@ import json
 import re
 import uuid
 from functools import lru_cache
-from pathlib import Path
+from pathlib import Path, PurePath
 from typing import Any
 
 from a2ui.inference_formats.direct_json.format import DirectJsonFormat
 from a2ui.schema.catalog import CatalogConfig
+from a2ui.schema.catalog_provider import FileSystemCatalogProvider
 
 from backend.analysis import ProcessAnalyzer
 
@@ -29,12 +30,20 @@ ALLOWED_COMPONENTS = {
 }
 
 
+def _catalog_config_for_path(catalog_path: PurePath) -> CatalogConfig:
+    """Load a local catalog without treating a Windows drive letter as a URL scheme."""
+    return CatalogConfig(
+        name="fieldguide-industrial",
+        provider=FileSystemCatalogProvider(str(catalog_path)),
+    )
+
+
 @lru_cache(maxsize=1)
 def _official_a2ui_format() -> DirectJsonFormat:
     catalog_path = Path(__file__).with_name("industrial_catalog.json")
     return DirectJsonFormat(
         version="0.9.1",
-        catalogs=[CatalogConfig.from_path("fieldguide-industrial", str(catalog_path))],
+        catalogs=[_catalog_config_for_path(catalog_path)],
     )
 
 

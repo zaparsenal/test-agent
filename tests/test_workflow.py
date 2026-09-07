@@ -1,6 +1,8 @@
+from pathlib import PureWindowsPath
+
 from fastapi.testclient import TestClient
 
-from backend.a2ui_payload import ALLOWED_COMPONENTS, validate_payload
+from backend.a2ui_payload import ALLOWED_COMPONENTS, _catalog_config_for_path, validate_payload
 from backend.app import app
 
 
@@ -11,6 +13,14 @@ def demo_client() -> TestClient:
     assert loaded.status_code == 200
     assert loaded.json()["analysisReady"] is True
     return client
+
+
+def test_windows_catalog_path_is_treated_as_a_file_path():
+    windows_path = PureWindowsPath(
+        r"D:\BKP\Projects\A2UI\FieldGuide\test-agent\backend\industrial_catalog.json"
+    )
+    config = _catalog_config_for_path(windows_path)
+    assert config.provider.path == str(windows_path)
 
 
 def test_agent_to_a2ui_workflow():
