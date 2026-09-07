@@ -21,7 +21,7 @@ def overlap_ratio(detected: dict, expected: dict) -> float:
 
 
 def evaluate() -> dict[str, float | int]:
-    truth = json.loads((ROOT / "data" / "ground_truth" / "incidents.json").read_text())["incidents"]
+    truth = json.loads((ROOT / "data" / "expected-results" / "incidents.json").read_text())["incidents"]
     detected = ProcessAnalyzer().detect_basic_anomalies()
     truth_by_type = {item["label"]: item for item in truth}
     detected_by_type = {item["type"]: item for item in detected}
@@ -43,4 +43,3 @@ def evaluate() -> dict[str, float | int]:
 
 if __name__ == "__main__":
     print(json.dumps(evaluate(), indent=2))
-

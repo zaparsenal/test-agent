@@ -148,6 +148,13 @@
       }
     }
   ],
+  "answer": {
+    "title": "Transfer process has recovered to its normal envelope",
+    "text": "At 14:00, FT-101 is 48.1 m3/h and PT-101 is 3.24 bar, both inside their expected ranges. A restriction-like event was detected earlier from 10:15\u201311:00; no active process alarm remains.",
+    "confidence": 0.93,
+    "severity": "normal",
+    "window": "Current snapshot \u00b7 14:00"
+  },
   "evidence": {
     "flow": {
       "tag": "FT-101",

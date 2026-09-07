@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import { A2uiMessageSchema } from '@a2ui/web_core/v0_9';
 
-const payload = JSON.parse(fs.readFileSync('data/generated/example_a2ui_response.json', 'utf8'));
+const payload = JSON.parse(fs.readFileSync('data/expected-results/example_a2ui_response.json', 'utf8'));
 for (const [index, message] of payload.messages.entries()) {
   const result = A2uiMessageSchema.safeParse(message);
   if (!result.success) {

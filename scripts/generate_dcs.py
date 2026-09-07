@@ -189,7 +189,7 @@ def write_outputs(records: list[dict[str, object]], seed: int, output_dir: Path)
             {"id": "recovery", "label": "recovery", "start": "2026-08-18T12:15:00", "end": "2026-08-18T13:00:00", "tags": ["FT-101", "PT-101", "LT-101", "FV-101_POS"]}
         ]
     }
-    ground_truth_path = ROOT / "data" / "ground_truth" / "incidents.json"
+    ground_truth_path = ROOT / "data" / "expected-results" / "incidents.json"
     ground_truth_path.parent.mkdir(parents=True, exist_ok=True)
     ground_truth_path.write_text(json.dumps(ground_truth, indent=2) + "\n")
 
@@ -197,7 +197,7 @@ def write_outputs(records: list[dict[str, object]], seed: int, output_dir: Path)
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--seed", type=int, default=101)
-    parser.add_argument("--output-dir", type=Path, default=ROOT / "data" / "generated")
+    parser.add_argument("--output-dir", type=Path, default=ROOT / "data" / "sample-inputs" / "dcs")
     args = parser.parse_args()
     records = generate(seed=args.seed)
     write_outputs(records, args.seed, args.output_dir)

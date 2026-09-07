@@ -79,9 +79,9 @@ def clear_inputs() -> dict[str, object]:
 @app.get("/api/samples/{kind}")
 def sample_file(kind: Literal["diagram", "dcs"]):
     if kind == "diagram":
-        path = ROOT / "data" / "plant" / "tank_transfer_pid.svg"
+        path = ROOT / "data" / "sample-inputs" / "process-diagram" / "tank_transfer_pid.svg"
         return FileResponse(path, filename="tank_transfer_pid.svg", media_type="image/svg+xml")
-    path = ROOT / "data" / "generated" / "dcs_readings.csv"
+    path = ROOT / "data" / "sample-inputs" / "dcs" / "dcs_readings.csv"
     return FileResponse(path, filename="dcs_readings.csv", media_type="text/csv")
 
 

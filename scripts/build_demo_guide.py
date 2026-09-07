@@ -15,7 +15,7 @@ from reportlab.platypus import Paragraph
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / "output" / "pdf" / "fieldguide-demo-guide.pdf"
+OUTPUT = ROOT / "docs" / "demo" / "fieldguide-demo-guide.pdf"
 PAGE_W, PAGE_H = landscape(letter)
 
 NAVY = colors.HexColor("#0D2736")
@@ -330,7 +330,7 @@ def workflow_architecture(c: canvas.Canvas) -> None:
     rounded(c, 404, 93, 352, 62, RED_PALE, colors.HexColor("#D7AAA5"), 9)
     label(c, "WHAT IS NOT CLAIMED", 418, 133, RED)
     para(c, "Correlation does not prove a mechanical cause. The UI says 'consistent with' and requires field confirmation.", 418, 123, 324, 9, 12, INK)
-    footer(c, 3, "Project sources: backend/input_session.py, backend/analysis.py, data/plant/topology.json")
+    footer(c, 3, "Project sources: backend/input_session.py, backend/analysis.py, data/sample-inputs/process-diagram/topology.json")
     c.showPage()
 
 

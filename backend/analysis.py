@@ -25,9 +25,13 @@ class ProcessAnalyzer:
         records: list[dict[str, Any]] | None = None,
     ):
         self.root = root
-        self.topology = topology or json.loads((root / "data" / "plant" / "topology.json").read_text())
+        self.topology = topology or json.loads(
+            (root / "data" / "sample-inputs" / "process-diagram" / "topology.json").read_text()
+        )
         if records is None:
-            payload = json.loads((root / "data" / "generated" / "dcs_readings.json").read_text())
+            payload = json.loads(
+                (root / "data" / "sample-inputs" / "dcs" / "dcs_readings.json").read_text()
+            )
             records = payload["records"]
         self.records = records
         self.by_tag: dict[str, list[dict[str, Any]]] = defaultdict(list)

@@ -44,8 +44,8 @@ class InputSession:
         return self.status()
 
     def load_demo(self) -> dict[str, Any]:
-        diagram_path = self.root / "data" / "plant" / "tank_transfer_pid.svg"
-        dcs_path = self.root / "data" / "generated" / "dcs_readings.csv"
+        diagram_path = self.root / "data" / "sample-inputs" / "process-diagram" / "tank_transfer_pid.svg"
+        dcs_path = self.root / "data" / "sample-inputs" / "dcs" / "dcs_readings.csv"
         self.inspect("diagram", diagram_path.name, diagram_path.read_text(), diagram_path.stat().st_size, "sample")
         self.inspect("dcs", dcs_path.name, dcs_path.read_text(), dcs_path.stat().st_size, "sample")
         return self.status()

@@ -37,8 +37,8 @@ def test_sample_inputs_are_parsed_and_visible():
 def test_uploaded_historian_is_used_by_analysis():
     client = TestClient(app)
     client.delete("/api/inputs")
-    diagram = ROOT / "data" / "plant" / "tank_transfer_pid.svg"
-    dcs = ROOT / "data" / "generated" / "dcs_readings.csv"
+    diagram = ROOT / "data" / "sample-inputs" / "process-diagram" / "tank_transfer_pid.svg"
+    dcs = ROOT / "data" / "sample-inputs" / "dcs" / "dcs_readings.csv"
 
     diagram_result = client.post(
         "/api/inputs/inspect",

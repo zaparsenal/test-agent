@@ -1,59 +1,86 @@
 # FieldGuide Process Insights
 
-An end-to-end, local proof of concept for an evidence-first industrial operations assistant. It joins open DEXPI PFD/P&ID references, a normalized tank-transfer topology, deterministic synthetic DCS history, a Google ADK agent definition, and a real A2UI v0.9.1 client renderer.
+FieldGuide is a proof-of-concept industrial operations assistant. It lets a user add a process diagram and DCS historian export, checks what was provided, and then turns the data into a conversational operating review with visual evidence.
 
-The demo investigates this process:
+The demonstration follows a simple tank-transfer process:
 
 `T-101 → P-101 → FT-101 → FV-101 → T-102`
 
-It can answer current-status, root-cause, trend, process-path, inspection, and sensor-quality questions. The demo starts with a real input workspace: add a PFD/P&ID and DCS historian file, inspect the parsed tags and rows, and start the analysis only after both inputs validate. Questions, narrative answers, and generated evidence then accumulate in one conversation. The evidence surface changes by intent and can include KPI cards, correlated trends, an incident timeline, a clickable P&ID, an inspection panel, or a sensor-quality warning.
+## How the project started
 
-## Run the demo
+The project began with a practical demo question: can an agent combine the process context in a PFD or P&ID with time-series DCS data, explain what may be happening, and show the evidence in a way that an operations team can understand?
 
-Prerequisites: Node.js 22.13 or newer and Python 3.12.
+We built a small, safe scenario around that question:
+
+1. Create a synthetic tank-transfer process and six hours of DCS readings.
+2. Add open DEXPI files as real-world PFD/P&ID reference material.
+3. Let the user upload and inspect both inputs before analysis begins.
+4. Present the analysis as a conversation instead of a crowded dashboard.
+5. Use A2UI to attach the most useful visual evidence to each answer.
+
+The application was created specifically for this proof of concept. It was not forked from, copied from, or bootstrapped with another GitHub project.
+
+## What inspired the design
+
+The interaction design was informed by three established product patterns:
+
+- **Power BI Copilot:** conversational answers with supporting visuals and references.
+- **Databricks Genie:** natural-language questions over trusted data.
+- **AVEVA Industrial AI Assistant:** a chat-style experience for industrial operations.
+
+The implementation also follows the official **Google Agent Development Kit** and **A2UI** documentation. The open engineering reference files come from the DEXPI Training Test Cases on GitLab. Exact links and licensing details are recorded in [`docs/sources.md`](docs/sources.md).
+
+## The final prototype
+
+The finished demo has two clear parts:
+
+- **Inputs:** upload a process diagram and DCS export, inspect the parsed equipment, tags, time range, data quality, and example readings, then approve them for analysis.
+- **Analysis:** receive an initial operating review, ask follow-up questions in a chat, and expand the evidence attached to each answer.
+
+Depending on the question, the evidence can include current values, trends, event timing, affected process paths, data-quality warnings, and suggested field checks.
+
+The default demo does not need an API key. It uses repeatable local analysis so the same evidence appears reliably during a presentation. A Google ADK agent is included for future Gemini-powered conversation, but that optional path requires a Google API key and should still be treated as experimental.
+
+## Try the demo
+
+You need Node.js 22.13 or newer and Python 3.12.
 
 ```bash
-cd "/Users/zaydpatel/Desktop/projects/test agent"
+git clone https://github.com/zaparsenal/test-agent.git
+cd test-agent
 python3.12 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 npm install
 npm run demo
 ```
 
-Open [http://localhost:3000](http://localhost:3000). No API key is required for the complete default demonstration: the local API executes deterministic analysis tools and returns conversational text plus schema-validated A2UI evidence.
+Open [http://localhost:3000](http://localhost:3000).
 
-The synthetic dataset is regenerated with the same seed every time `npm run demo` starts. To keep an existing dataset, run the two services separately:
+For a quick walkthrough:
 
-```bash
-npm run backend
-npm run dev
-```
+1. Select **Load sample inputs** on the Inputs page.
+2. Inspect the process diagram and historian data.
+3. Select **Analyze these inputs**.
+4. Ask: `Why did T-101's level increase?`
+5. Expand **Supporting evidence** to show the A2UI-generated visuals.
+6. Follow with: `Which sensor readings are unreliable?`
 
-## What is included
+The sample data contains a planned restriction-like event between 10:15 and 11:00, followed by sensor drift, bad or missing readings, recovery, and stable operation.
 
-- `backend/process_insights_agent/agent.py` — Google ADK `process_insights_agent`, with eleven evidence tools and the A2UI toolset.
-- `backend/analysis.py` — topology queries, time-window retrieval, statistics, operating-limit comparisons, data-quality checks, anomaly detection, correlations, and event sequencing.
-- `backend/input_session.py` — in-memory upload parsing, compatibility checks, input summaries, and analyzer session assembly.
-- `backend/a2ui_payload.py` — intent routing and A2UI v0.9.1 message generation, validated by the official agent SDK against a restricted component catalog.
-- `components/agent-surface.tsx` — official A2UI message processor and React surface renderer.
-- `components/industrial-catalog.tsx` — the trusted, application-owned industrial component catalog.
-- `data/generated/` — six hours of one-minute synthetic readings for six DCS tags, in JSON and CSV.
-- `data/ground_truth/` — incident labels kept separate from the readings for evaluation.
-- `data/raw/dexpi/` — unchanged open DEXPI PFD/P&ID reference artifacts and license copy.
-- `data/plant/` — the normalized working topology and synthetic P&ID used by the demo.
+## Project map
 
-## Demonstration script
+| Folder | What it contains |
+|---|---|
+| `src/` | The web interface, chat experience, and A2UI visual components |
+| `backend/` | File inspection, process analysis, response generation, and the Google ADK agent |
+| `data/` | All sample inputs, open reference files, and expected demo results |
+| `docs/` | Architecture, design rationale, sources, and the PDF demo guide |
+| `scripts/` | Utilities for regenerating data, evaluation results, and the demo guide |
+| `tests/` | Automated checks for the analysis, inputs, sources, and A2UI messages |
 
-1. On **Inputs**, choose **Load sample inputs** for the quick path—or use **Download sample** and upload the two files yourself to demonstrate the file workflow.
-2. Choose **Inspect** on either input to show parsed equipment, tags, timestamps, quality counts, and historian rows.
-3. Choose **Analyze these inputs**. The assistant opens the conversation with a general operating review.
-4. Ask “Why is T-101's level increasing?” to show the narrative diagnosis, correlated evidence, timeline, affected path, and field checks.
-5. Ask “Show me pressure and flow around the incident.” or “Are any sensors unreliable?” to demonstrate intent-specific follow-ups.
-6. Expand **Supporting evidence**, then use the diagram tags and zoom controls.
+The [`data/README.md`](data/README.md) file explains exactly which files to upload during the demo.
 
-The deliberately injected sequence is: startup, stable transfer, a downstream-restriction signature from 10:15–11:00, LT-102 drift, bad/missing historian values, recovery, and stable operation.
-
-## Verify
+## Check that everything works
 
 ```bash
 npm run test
@@ -61,23 +88,13 @@ npm run test
 npm run build
 ```
 
-The evaluation is an integrity check for this designed synthetic scenario, not a claim of performance on real plants. The expected result is five matched incident types, precision/recall/F1 of 1.0, and approximately 0.993 mean temporal overlap.
+The evaluation checks this intentionally designed synthetic scenario. It is not a performance claim for real plant data.
 
-## Optional Google ADK runtime
+## Important boundaries
 
-The browser demo intentionally has a deterministic, keyless execution path so it is repeatable in a team presentation. The same tools are registered on a real Google ADK `Agent`. To experiment with model-driven tool selection, copy `.env.example` to `.env`, add a Google API key, stop the demo API on port 8000, and run:
+- The working process diagram and all DCS readings are synthetic. No live plant or customer data is included.
+- The public DEXPI files are unchanged reference material and are clearly separated from the working sample inputs.
+- FieldGuide is advisory only. It cannot control equipment or replace alarms, procedures, safety systems, or operator judgment.
+- Suggested causes are evidence-based hypotheses, not confirmed mechanical diagnoses.
 
-```bash
-.venv/bin/adk web backend
-```
-
-Select `process_insights_agent` in the ADK interface. Model output is constrained to the registered tools and the restricted A2UI catalog, but any LLM-generated output should still be treated as experimental.
-
-## Boundaries
-
-- Advisory and demonstrative only; it cannot command equipment or replace operating procedures, alarms, SIS, or human review.
-- The working process and DCS history are synthetic. They are not derived from a live plant.
-- The DEXPI 1.3 example is retained as an unchanged source specimen. Its adapter currently extracts an equipment/instrument inventory; complete line-connectivity mapping across vendor variants is future work.
-- Root-cause text uses “consistent with” language because correlations and topology do not prove a mechanical failure.
-
-See `docs/architecture.md` for the data flow, `docs/ui-rationale.md` for the interaction rationale, and `docs/sources.md` for provenance and licensing.
+For more detail, see [`docs/architecture.md`](docs/architecture.md), [`docs/ui-rationale.md`](docs/ui-rationale.md), and the presenter-ready [`docs/demo/fieldguide-demo-guide.pdf`](docs/demo/fieldguide-demo-guide.pdf).

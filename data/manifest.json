@@ -2,12 +2,12 @@
   "package": "FieldGuide demonstration inputs",
   "created": "2026-09-07",
   "recommendedUploadPair": {
-    "diagram": "demo-inputs/pid/tank_transfer_pid.svg",
-    "dcs": "demo-inputs/dcs/dcs_readings.csv"
+    "diagram": "sample-inputs/process-diagram/tank_transfer_pid.svg",
+    "dcs": "sample-inputs/dcs/dcs_readings.csv"
   },
   "files": [
     {
-      "path": "demo-inputs/pid/tank_transfer_pid.svg",
+      "path": "sample-inputs/process-diagram/tank_transfer_pid.svg",
       "category": "process-diagram",
       "format": "tagged SVG",
       "uploadReady": true,
@@ -15,7 +15,7 @@
       "sha256": "b186a5c28844f37c77e9acf195277c4e9a5f017774caa154293e2c62a73d9c99"
     },
     {
-      "path": "demo-inputs/pid/topology.json",
+      "path": "sample-inputs/process-diagram/topology.json",
       "category": "process-diagram",
       "format": "normalized topology JSON",
       "uploadReady": true,
@@ -23,7 +23,7 @@
       "sha256": "ad85863c7dfc19413cad94abe2f41c1bc4f30289a28b9dd75cc172b0227544ee"
     },
     {
-      "path": "demo-inputs/dcs/dcs_readings.csv",
+      "path": "sample-inputs/dcs/dcs_readings.csv",
       "category": "historian",
       "format": "CSV",
       "uploadReady": true,
@@ -32,7 +32,7 @@
       "sha256": "452bbdab9ddfe60cb31e58b37b3b96cce7777c0b34b47a3b829274af1a815c16"
     },
     {
-      "path": "demo-inputs/dcs/dcs_readings.json",
+      "path": "sample-inputs/dcs/dcs_readings.json",
       "category": "historian",
       "format": "JSON",
       "uploadReady": true,
@@ -41,28 +41,42 @@
       "sha256": "833c32efe07ae3245b55bf093c6daf5c6e940d26134c7775b27a2084eafcac25"
     },
     {
-      "path": "open-source-references/dexpi-pid/C01V04-VER.EX01.xml",
+      "path": "reference-files/dexpi-pid/C01V04-VER.EX01.xml",
       "category": "open-source-pid-reference",
       "format": "DEXPI / Proteus XML",
       "uploadReady": false,
       "license": "CC-BY-4.0",
-      "sourceManifest": "open-source-references/SOURCES.json"
+      "sourceManifest": "reference-files/SOURCES.json"
     },
     {
-      "path": "open-source-references/dexpi-pid/C01V04-VER.EX01.svg",
+      "path": "reference-files/dexpi-pid/C01V04-VER.EX01.svg",
       "category": "open-source-pid-reference",
       "format": "SVG",
       "uploadReady": false,
       "license": "CC-BY-4.0",
-      "sourceManifest": "open-source-references/SOURCES.json"
+      "sourceManifest": "reference-files/SOURCES.json"
     },
     {
-      "path": "open-source-references/dexpi-process/DEXPI-Process-1.0-Manual.pdf",
+      "path": "reference-files/dexpi-process/DEXPI-Process-1.0-Manual.pdf",
       "category": "open-source-pfd-process-reference",
       "format": "PDF",
       "uploadReady": false,
       "license": "Creative Commons; see source manifest",
-      "sourceManifest": "open-source-references/SOURCES.json"
+      "sourceManifest": "reference-files/SOURCES.json"
+    },
+    {
+      "path": "expected-results/incidents.json",
+      "category": "evaluation-only",
+      "format": "JSON",
+      "uploadReady": false,
+      "origin": "project-generated expected result"
+    },
+    {
+      "path": "expected-results/example_a2ui_response.json",
+      "category": "example-output",
+      "format": "A2UI JSON",
+      "uploadReady": false,
+      "origin": "project-generated validated response"
     }
   ]
 }

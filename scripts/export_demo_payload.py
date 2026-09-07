@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Export a stable validated A2UI response for frontend fallback and inspection."""
+"""Export a stable validated A2UI response for inspection and testing."""
 
 from __future__ import annotations
 
@@ -22,10 +22,10 @@ def main() -> None:
         for envelope in ("createSurface", "updateComponents", "updateDataModel", "deleteSurface"):
             if envelope in message and message[envelope].get("surfaceId") == original_id:
                 message[envelope]["surfaceId"] = stable_id
-    for path in [ROOT / "public" / "data" / "fallback_response.json", ROOT / "data" / "generated" / "example_a2ui_response.json"]:
-        path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text(json.dumps(payload, indent=2) + "\n")
-    print("Exported validated A2UI fallback response.")
+    path = ROOT / "data" / "expected-results" / "example_a2ui_response.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, indent=2) + "\n")
+    print("Exported validated example A2UI response.")
 
 
 if __name__ == "__main__":

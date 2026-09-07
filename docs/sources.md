@@ -1,8 +1,8 @@
 # Source provenance
 
-Downloaded source artifacts are retained unchanged in `data/raw/dexpi/`. The working topology and diagram in `data/plant/` are explicitly synthetic and are not claimed as transformations of the public examples.
+Downloaded source artifacts are retained unchanged in `data/reference-files/`. The working topology and diagram in `data/sample-inputs/process-diagram/` are explicitly synthetic and are not claimed as transformations of the public examples.
 
-`data/raw/dexpi/SOURCES.json` records the exact source URLs, repository revision, retrieval date, license, and SHA-256 digest for each retained artifact.
+`data/reference-files/SOURCES.json` records the exact source URLs, repository revision, retrieval date, license, and SHA-256 digest for each retained artifact.
 
 ## Open P&ID reference
 
@@ -38,10 +38,10 @@ Pinned packages in this prototype: `google-adk==2.8.0`, `a2ui-agent-sdk==0.5.0`,
 
 The following are original project-generated assets and contain no live plant data:
 
-- `data/plant/topology.json`
-- `data/plant/tank_transfer_pid.svg`
-- `data/generated/dcs_readings.json`
-- `data/generated/dcs_readings.csv`
-- `data/ground_truth/incidents.json`
+- `data/sample-inputs/process-diagram/topology.json`
+- `data/sample-inputs/process-diagram/tank_transfer_pid.svg`
+- `data/sample-inputs/dcs/dcs_readings.json`
+- `data/sample-inputs/dcs/dcs_readings.csv`
+- `data/expected-results/incidents.json`
 
 The generator seed is `101`. The readings cover 2026-08-18 08:00–14:00 at one-minute cadence for `LT-101`, `LT-102`, `FT-101`, `PT-101`, `P-101_STATUS`, and `FV-101_POS`.
