@@ -7,14 +7,15 @@
   },
   "scripts": {
     "dev": "vinext dev",
-    "backend": ".venv/bin/python -m uvicorn backend.app:app --host 127.0.0.1 --port 8000 --reload",
-    "generate-data": ".venv/bin/python -m scripts.generate_dcs --seed 101 && .venv/bin/python -m scripts.export_demo_payload",
+    "backend": "node scripts/run-python.mjs -m uvicorn backend.app:app --host 127.0.0.1 --port 8000 --reload",
+    "generate-data": "node scripts/run-python.mjs -m scripts.generate_dcs --seed 101 && node scripts/run-python.mjs -m scripts.export_demo_payload",
     "demo": "npm run generate-data && concurrently -k -n AGENT,WEB -c cyan,blue \"npm:backend\" \"npm:dev\"",
     "build": "vinext build",
     "start": "wrangler dev --config dist/server/wrangler.json",
-    "test:backend": ".venv/bin/python -m pytest",
+    "test:backend": "node scripts/run-python.mjs -m pytest",
     "test:protocol": "node scripts/validate_a2ui.mjs",
     "test": "npm run test:protocol && npm run test:backend",
+    "evaluate": "node scripts/run-python.mjs -m scripts.evaluate",
     "lint": "oxlint",
     "format": "oxfmt"
   },

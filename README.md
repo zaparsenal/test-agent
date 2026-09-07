@@ -41,9 +41,21 @@ Depending on the question, the evidence can include current values, trends, even
 
 The default demo does not need an API key. It uses repeatable local analysis so the same evidence appears reliably during a presentation. A Google ADK agent is included for future Gemini-powered conversation, but that optional path requires a Google API key and should still be treated as experimental.
 
-## Try the demo
+## Easiest setup on Windows
 
-You need Node.js 22.13 or newer and Python 3.12.
+You need Python 3.14 and Node.js 22.13 or newer.
+
+1. Download or clone this repository.
+2. Open the `test-agent` folder.
+3. Double-click **`setup-and-run-windows.bat`**.
+
+The launcher checks the installed software, creates the Python environment, installs every dependency, tests the setup, starts both parts of FieldGuide, and opens [http://localhost:3000](http://localhost:3000). Keep its command window open while using the demo and press `Ctrl+C` to stop it.
+
+No PowerShell activation or manual Python commands are required.
+
+## Manual setup on macOS or Linux
+
+You need Python 3.11 through 3.14 and Node.js 22.13 or newer.
 
 ```bash
 git clone https://github.com/zaparsenal/test-agent.git
@@ -84,7 +96,7 @@ The [`data/README.md`](data/README.md) file explains exactly which files to uplo
 
 ```bash
 npm run test
-.venv/bin/python -m scripts.evaluate
+npm run evaluate
 npm run build
 ```
 
