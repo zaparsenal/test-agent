@@ -9,7 +9,10 @@ PFD / P&ID file + DCS historian file
 In-memory inspection ── schema, tags, time range, compatibility
       │
       ▼
-Validated analysis session
+Evidence-quality scoring ── completeness, flags, stability, tag mapping
+      │
+      ▼
+Ranked findings review
       │
       ▼
 Operator question
@@ -47,7 +50,8 @@ The server sends declarative A2UI messages, never executable UI code. Both sides
 | Input session | Make demo inputs inspectable and enforce readiness | In-memory JSON, CSV, tagged SVG, and conservative DEXPI XML parsing |
 | Adapter boundary | Decouple source format from analysis | JSON, SVG, and conservative DEXPI XML adapters |
 | Normalized topology | Stable equipment/instrument graph | Nodes, process-flow edges, measurement edges, operating limits |
-| DCS history | Time-series evidence | 2,166 deterministic readings, six tags, one-minute cadence |
+| DCS history | Time-series evidence | Two 2,166-reading scenarios, six tags, one-minute cadence |
+| Data review | Establish trust and priorities before diagnosis | Quality score, transparent sub-scores, and severity-ranked findings |
 | Ground truth | Evaluation only | Five separately stored incident labels |
 | Analysis | Reproducible calculations | Windows, descriptive statistics, rates, limits, correlations, quality, event detection |
 | Presentation | Intent-specific visual explanation | Restricted A2UI industrial catalog |

@@ -14,10 +14,12 @@ Three current product patterns informed the design:
 
 1. Give **inputs** a full workspace instead of a narrow status rail. Both source types have large drop zones, sample downloads, replacement controls, and clear readiness state.
 2. Let users inspect the parsed equipment, tags, timestamps, quality counts, and historian rows before analysis. This makes the source-to-answer transition demonstrable rather than implied.
-3. Lock analysis until compatible diagram and historian inputs exist, so the product has an understandable beginning and avoids showing unrelated canned outputs.
-4. Make **discussion** the primary analysis workspace, with conventional user and assistant message alignment and a readable narrative answer for every turn.
-5. Attach **outputs** to the answer in an expandable Supporting evidence region. Charts, readings, timelines, process context, and inspection guidance remain available without overwhelming the conversation.
-6. Use a dark navy product frame, a cool-gray canvas, high-contrast white working surfaces, and teal/amber state accents. Body text stays at 16px, with metadata no smaller than 12px.
-7. Preserve the thread so follow-up questions have an understandable sequence, and keep common follow-ups near the latest result.
+3. Add a **data review** checkpoint between upload and diagnosis. It combines an overall evidence-quality score with transparent sub-scores and severity-ranked findings, mirroring the decision hierarchy in the supplied reference without copying its visual style.
+4. Let any ranked finding open a focused investigation, so the transition from overview to diagnosis feels purposeful during a live demonstration.
+5. Lock review and analysis until compatible diagram and historian inputs exist, so the product has an understandable beginning and avoids showing unrelated canned outputs.
+6. Make **discussion** the primary analysis workspace, with conventional user and assistant message alignment and a readable narrative answer for every turn.
+7. Attach **outputs** to the answer in an expandable Supporting evidence region. Charts, readings, timelines, process context, and inspection guidance remain available without overwhelming the conversation.
+8. Use a dark navy product frame, a cool-gray canvas, high-contrast white working surfaces, and teal/amber state accents. Body text stays at 16px, with metadata no smaller than 12px.
+9. Preserve the thread so follow-up questions have an understandable sequence, and keep common follow-ups near the latest result.
 
-The result intentionally borrows the strong information hierarchy of analyst copilots while retaining industrial cues, evidence language, signal quality, and the advisory-only boundary. The separation is now explicit: **Inputs** is where evidence enters and can be inspected; **Analysis** is where discussion and generated outputs accumulate.
+The result intentionally borrows the strong information hierarchy of analyst copilots while retaining industrial cues, evidence language, signal quality, and the advisory-only boundary. The separation is now explicit: **Inputs** is where evidence enters, **Data review** establishes its trustworthiness and priorities, and **Analysis** is where discussion and A2UI-generated outputs accumulate.

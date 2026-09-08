@@ -12,3 +12,7 @@ def test_generator_covers_six_hours_and_all_signals():
     assert records[-1]["timestamp"] == "2026-08-18T14:00:00"
     assert {record["tag"] for record in records} == {"LT-101", "LT-102", "PT-101", "FT-101", "P-101_STATUS", "FV-101_POS"}
 
+
+def test_clean_comparison_scenario_keeps_all_source_quality_flags_good():
+    records = generate(seed=202, quality_mode="clean")
+    assert all(record["quality"] == "GOOD" and record["value"] is not None for record in records)

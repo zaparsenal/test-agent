@@ -140,7 +140,13 @@ def values_for(minute: int, rng: random.Random) -> dict[str, float]:
     }
 
 
-def generate(seed: int = 101, start: datetime = DEFAULT_START) -> list[dict[str, object]]:
+def generate(
+    seed: int = 101,
+    start: datetime = DEFAULT_START,
+    quality_mode: str = "standard",
+) -> list[dict[str, object]]:
+    if quality_mode not in {"standard", "clean"}:
+        raise ValueError("quality_mode must be 'standard' or 'clean'")
     rng = random.Random(seed)
     records: list[dict[str, object]] = []
     for minute in range(361):
@@ -150,9 +156,9 @@ def generate(seed: int = 101, start: datetime = DEFAULT_START) -> list[dict[str,
         for tag, raw_value in values.items():
             quality = "GOOD"
             value: float | None = round(raw_value, 3)
-            if period == "bad_quality" and tag == "PT-101" and minute % 3 != 0:
+            if quality_mode == "standard" and period == "bad_quality" and tag == "PT-101" and minute % 3 != 0:
                 quality = "BAD"
-            if period == "bad_quality" and tag == "FT-101" and minute % 5 == 0:
+            if quality_mode == "standard" and period == "bad_quality" and tag == "FT-101" and minute % 5 == 0:
                 quality = "MISSING"
                 value = None
             records.append(
@@ -168,15 +174,27 @@ def generate(seed: int = 101, start: datetime = DEFAULT_START) -> list[dict[str,
     return records
 
 
-def write_outputs(records: list[dict[str, object]], seed: int, output_dir: Path) -> None:
+def write_dataset(
+    records: list[dict[str, object]],
+    seed: int,
+    output_dir: Path,
+    stem: str,
+    quality_mode: str,
+) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
-    json_path = output_dir / "dcs_readings.json"
-    csv_path = output_dir / "dcs_readings.csv"
-    json_path.write_text(json.dumps({"seed": seed, "records": records}, indent=2) + "\n")
+    json_path = output_dir / f"{stem}.json"
+    csv_path = output_dir / f"{stem}.csv"
+    json_path.write_text(
+        json.dumps({"seed": seed, "qualityMode": quality_mode, "records": records}, indent=2) + "\n"
+    )
     with csv_path.open("w", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=["timestamp", "tag", "value", "unit", "quality", "alarm_state"])
         writer.writeheader()
         writer.writerows(records)
+
+
+def write_outputs(records: list[dict[str, object]], seed: int, output_dir: Path) -> None:
+    write_dataset(records, seed, output_dir, "dcs_readings", "standard")
 
     ground_truth = {
         "dataset_seed": seed,
@@ -201,7 +219,12 @@ def main() -> None:
     args = parser.parse_args()
     records = generate(seed=args.seed)
     write_outputs(records, args.seed, args.output_dir)
-    print(f"Generated {len(records):,} readings from 08:00 through 14:00 with seed {args.seed}.")
+    clean_records = generate(seed=202, quality_mode="clean")
+    write_dataset(clean_records, 202, args.output_dir, "dcs_readings_clean", "clean")
+    print(
+        f"Generated standard and clean six-hour scenarios "
+        f"({len(records):,} readings each; seeds {args.seed} and 202)."
+    )
 
 
 if __name__ == "__main__":

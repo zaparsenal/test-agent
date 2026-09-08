@@ -32,6 +32,28 @@ def test_sample_inputs_are_parsed_and_visible():
         "end": "2026-08-18T14:00:00",
     }
     assert payload["dcs"]["sampleRows"]
+    assert payload["qualityReview"]["score"] == 94
+    assert [item["id"] for item in payload["qualityReview"]["issues"]] == [
+        "restriction-pattern",
+        "historian-quality",
+        "sensor-drift",
+    ]
+
+
+def test_clean_sample_is_available_as_a_second_demo_option():
+    client = TestClient(app)
+    client.delete("/api/inputs")
+    payload = client.post("/api/inputs/demo?scenario=clean").json()
+
+    assert payload["analysisReady"] is True
+    assert payload["dcs"]["name"] == "dcs_readings_clean.csv"
+    assert payload["qualityReview"]["score"] == 97
+    assert payload["qualityReview"]["weakSampleCount"] == 0
+    assert "historian-quality" not in {item["id"] for item in payload["qualityReview"]["issues"]}
+
+    response = client.post("/api/query", json={"question": "Which sensor readings are unreliable?"})
+    assert response.status_code == 200
+    assert response.json()["answer"]["severity"] == "normal"
 
 
 def test_uploaded_historian_is_used_by_analysis():

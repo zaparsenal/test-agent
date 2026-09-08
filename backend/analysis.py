@@ -143,6 +143,150 @@ class ProcessAnalyzer:
                 )
         return problems
 
+    def window_quality(self, tags: list[str], start: str, end: str) -> int:
+        """Return the percentage of usable readings for a tag group and time window."""
+        records = self.query_time_range(tags, start, end)
+        if not records:
+            return 0
+        usable = sum(record["quality"] == "GOOD" and record["value"] is not None for record in records)
+        return round(100 * usable / len(records))
+
+    def data_review(self) -> dict[str, Any]:
+        """Score input trustworthiness and rank the findings worth investigating."""
+        total = len(self.records)
+        complete = sum(record["value"] is not None for record in self.records)
+        good = sum(record["quality"] == "GOOD" and record["value"] is not None for record in self.records)
+        missing = total - complete
+        weak = total - good
+        source_tags = sorted(self.by_tag)
+        mapped = sum(tag in self.nodes for tag in source_tags)
+        anomalies = {item["type"]: item for item in self.detect_basic_anomalies()}
+
+        completeness = round(100 * complete / max(1, total), 1)
+        validity = round(100 * good / max(1, total), 1)
+        tag_coverage = round(100 * mapped / max(1, len(source_tags)), 1)
+        drift_penalty = 3.0 if "sensor_drift" in anomalies else 0.0
+        score = round(max(0.0, 100 - (100 - validity) * 2 - (100 - completeness) * 3 - drift_penalty))
+
+        if score >= 97:
+            label = "Excellent"
+        elif score >= 92:
+            label = "Good with caveats"
+        elif score >= 80:
+            label = "Needs review"
+        else:
+            label = "Limited"
+
+        issues: list[dict[str, Any]] = []
+        restriction = anomalies.get("downstream_restriction")
+        if restriction:
+            flow = restriction["evidence"]["flow"]
+            pressure = restriction["evidence"]["pressure"]
+            level = restriction["evidence"]["feed_level"]
+            issues.append(
+                {
+                    "id": "restriction-pattern",
+                    "severity": "high",
+                    "category": "Process behavior",
+                    "title": "Transfer flow fell while pump discharge pressure rose",
+                    "summary": (
+                        f"FT-101 fell to {flow['min']:.1f} m3/h while PT-101 reached "
+                        f"{pressure['max']:.2f} bar and LT-101 rose {level['rate_per_hour']:.1f}%/h. "
+                        "The combined pattern is consistent with a downstream restriction."
+                    ),
+                    "tags": ["T-101", "P-101", "PT-101", "FT-101", "FV-101"],
+                    "confidence": restriction["confidence"],
+                    "dataQuality": self.window_quality(
+                        ["LT-101", "PT-101", "FT-101", "FV-101_POS"],
+                        restriction["start"],
+                        restriction["end"],
+                    ),
+                    "firstSeen": restriction["start"],
+                    "lastSeen": restriction["end"],
+                    "question": "Why did T-101's level increase?",
+                }
+            )
+
+        drift = anomalies.get("sensor_drift")
+        if drift:
+            drift_quality = round(max(0.0, 100 - min(40.0, drift["evidence"]["mean_step"] * 12)))
+            issues.append(
+                {
+                    "id": "sensor-drift",
+                    "severity": "medium",
+                    "category": "Signal reliability",
+                    "title": "LT-102 became unstable during an otherwise smooth transfer",
+                    "summary": (
+                        f"The average minute-to-minute change reached {drift['evidence']['mean_step']:.2f} percentage points. "
+                        "The values are marked GOOD, but the behavior still warrants an instrument check."
+                    ),
+                    "tags": drift["tags"],
+                    "confidence": drift["confidence"],
+                    "dataQuality": drift_quality,
+                    "firstSeen": drift["start"],
+                    "lastSeen": drift["end"],
+                    "question": "Which sensor readings are unreliable?",
+                }
+            )
+
+        quality = anomalies.get("bad_quality")
+        if quality:
+            problems = quality["evidence"]["problems"]
+            affected = sum(problem["count"] for problem in problems)
+            issues.append(
+                {
+                    "id": "historian-quality",
+                    "severity": "medium",
+                    "category": "Historian coverage",
+                    "title": "PT-101 and FT-101 have a short unreliable-data window",
+                    "summary": (
+                        f"{affected} samples are marked BAD or MISSING. Calculations exclude those values, "
+                        "so conclusions in this window carry less evidence."
+                    ),
+                    "tags": [problem["tag"] for problem in problems],
+                    "confidence": quality["confidence"],
+                    "dataQuality": self.window_quality(
+                        [problem["tag"] for problem in problems],
+                        quality["start"],
+                        quality["end"],
+                    ),
+                    "firstSeen": quality["start"],
+                    "lastSeen": quality["end"],
+                    "question": "Which sensor readings are unreliable?",
+                }
+            )
+
+        severity_order = {"critical": 0, "high": 1, "medium": 2, "low": 3}
+        issues.sort(key=lambda issue: (severity_order[issue["severity"]], -issue["confidence"]))
+        for rank, issue in enumerate(issues, start=1):
+            issue["rank"] = rank
+
+        counts = {severity: 0 for severity in severity_order}
+        for issue in issues:
+            counts[issue["severity"]] += 1
+
+        return {
+            "score": score,
+            "label": label,
+            "summary": (
+                f"The evidence is suitable for advisory analysis with {len(issues)} ranked "
+                f"{'finding' if len(issues) == 1 else 'findings'} to review."
+            ),
+            "metrics": [
+                {"label": "Complete values", "value": completeness, "detail": f"{complete:,} of {total:,} readings"},
+                {"label": "Usable quality", "value": validity, "detail": f"{good:,} GOOD readings"},
+                {"label": "Tag mapping", "value": tag_coverage, "detail": f"{mapped} of {len(source_tags)} tags mapped"},
+                {"label": "Time coverage", "value": 100.0, "detail": "Full six-hour window"},
+            ],
+            "issueCounts": counts,
+            "issues": issues,
+            "method": "Coverage, completeness, historian quality flags, signal stability, and P&ID tag mapping",
+            "recordCount": total,
+            "tagCount": len(source_tags),
+            "weakSampleCount": weak,
+            "missingSampleCount": missing,
+        }
+
     def correlation(self, tag_a: str, tag_b: str, start: str, end: str) -> float | None:
         """Calculate Pearson correlation for aligned, good-quality readings."""
         series: dict[str, dict[str, float]] = {}

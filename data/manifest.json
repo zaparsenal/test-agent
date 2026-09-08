@@ -1,9 +1,13 @@
 {
   "package": "FieldGuide demonstration inputs",
-  "created": "2026-09-07",
+  "created": "2026-09-08",
   "recommendedUploadPair": {
     "diagram": "sample-inputs/process-diagram/tank_transfer_pid.svg",
     "dcs": "sample-inputs/dcs/dcs_readings.csv"
+  },
+  "alternateUploadPair": {
+    "diagram": "sample-inputs/process-diagram/tank_transfer_pid.svg",
+    "dcs": "sample-inputs/dcs/dcs_readings_clean.csv"
   },
   "files": [
     {
@@ -38,7 +42,25 @@
       "uploadReady": true,
       "origin": "deterministic synthetic data, seed 101",
       "recordCount": 2166,
-      "sha256": "833c32efe07ae3245b55bf093c6daf5c6e940d26134c7775b27a2084eafcac25"
+      "sha256": "a8473ba8e380fbefebec809fcca9c0a606368099bee7e2fea732b70ea4597d1b"
+    },
+    {
+      "path": "sample-inputs/dcs/dcs_readings_clean.csv",
+      "category": "historian",
+      "format": "CSV",
+      "uploadReady": true,
+      "origin": "deterministic clean-quality comparison data, seed 202",
+      "recordCount": 2166,
+      "sha256": "1433271a47870b3e0a0f8d5eceb369099129a6df5b691c4a64ae7fc9a0a0c643"
+    },
+    {
+      "path": "sample-inputs/dcs/dcs_readings_clean.json",
+      "category": "historian",
+      "format": "JSON",
+      "uploadReady": true,
+      "origin": "deterministic clean-quality comparison data, seed 202",
+      "recordCount": 2166,
+      "sha256": "d53b2e4e86e1f5725e565b57ca9948fab230ac381d6f2688b4dd3787affb0878"
     },
     {
       "path": "reference-files/dexpi-pid/C01V04-VER.EX01.xml",

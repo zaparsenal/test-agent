@@ -3,16 +3,18 @@
 import {
   Activity,
   ArrowLeft,
+  ArrowRight,
   BarChart3,
   Check,
   ChevronDown,
   CircleAlert,
+  ClipboardCheck,
   Database,
   Download,
   FileCode2,
   FileSearch,
+  Gauge,
   LoaderCircle,
-  MessageSquareText,
   RotateCcw,
   Send,
   ShieldCheck,
@@ -47,7 +49,43 @@ type InputStatus = {
   diagram: InputMetadata | null;
   dcs: InputMetadata | null;
   analysisReady: boolean;
+  qualityReview: QualityReview | null;
   message: string;
+};
+
+type QualityMetric = {
+  label: string;
+  value: number;
+  detail: string;
+};
+
+type RankedIssue = {
+  id: string;
+  rank: number;
+  severity: 'critical' | 'high' | 'medium' | 'low';
+  category: string;
+  title: string;
+  summary: string;
+  tags: string[];
+  confidence: number;
+  dataQuality: number;
+  firstSeen: string;
+  lastSeen: string;
+  question: string;
+};
+
+type QualityReview = {
+  score: number;
+  label: string;
+  summary: string;
+  metrics: QualityMetric[];
+  issueCounts: Record<'critical' | 'high' | 'medium' | 'low', number>;
+  issues: RankedIssue[];
+  method: string;
+  recordCount: number;
+  tagCount: number;
+  weakSampleCount: number;
+  missingSampleCount: number;
 };
 
 type AgentResponse = {
@@ -69,7 +107,7 @@ type ConversationTurn = {
 };
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:8000';
-const EMPTY_INPUTS: InputStatus = { diagram: null, dcs: null, analysisReady: false, message: 'Add both inputs to continue.' };
+const EMPTY_INPUTS: InputStatus = { diagram: null, dcs: null, analysisReady: false, qualityReview: null, message: 'Add both inputs to continue.' };
 const INITIAL_QUESTION = 'What is happening in the process right now?';
 const SUGGESTIONS = [
   "Why did T-101's level increase?",
@@ -205,8 +243,110 @@ function InputPreview({ metadata, onClose }: { metadata: InputMetadata; onClose:
   );
 }
 
+function DataReview({
+  inputs,
+  review,
+  onBack,
+  onInvestigate,
+  onStart,
+}: {
+  inputs: InputStatus;
+  review: QualityReview;
+  onBack: () => void;
+  onInvestigate: (question: string) => void;
+  onStart: () => void;
+}) {
+  const severityLabels: Array<keyof QualityReview['issueCounts']> = ['critical', 'high', 'medium', 'low'];
+
+  return (
+    <div className="review-page">
+      <section className="review-heading">
+        <div>
+          <span className="section-label">DATA REVIEW</span>
+          <h1>Check the evidence before asking for a diagnosis</h1>
+          <p>The assistant scored the input quality and ranked the patterns that deserve attention first.</p>
+        </div>
+        <button className="secondary-button" onClick={onBack}><ArrowLeft /> Back to inputs</button>
+      </section>
+
+      <section className="quality-overview" aria-label="Overall data quality">
+        <div className="quality-score-block">
+          <div
+            className="quality-gauge"
+            style={{ background: `conic-gradient(#2b8b72 0 ${review.score}%, #d8e2e6 ${review.score}% 100%)` }}
+            aria-label={`${review.score} percent data quality`}
+          >
+            <div><strong>{review.score}%</strong><span>data quality</span></div>
+          </div>
+        </div>
+
+        <div className="quality-overview-copy">
+          <div className="quality-status-line"><span>{review.label}</span><small>{review.issues.length} ranked findings</small></div>
+          <h2>{review.summary}</h2>
+          <p>The score combines completeness, source quality flags, signal stability, time coverage, and P&amp;ID tag mapping.</p>
+          <div className="quality-inputs">
+            <span><FileCode2 /> {inputs.diagram?.name}</span>
+            <span><Database /> {inputs.dcs?.name}</span>
+          </div>
+        </div>
+
+        <div className="quality-overview-action">
+          <span>READY FOR DIAGNOSIS</span>
+          <strong>{review.recordCount.toLocaleString()} readings</strong>
+          <small>{review.tagCount} operating tags · full input set</small>
+          <button onClick={onStart}>Start general analysis <ArrowRight /></button>
+        </div>
+      </section>
+
+      <section className="quality-metrics" aria-label="Data quality checks">
+        {review.metrics.map((metric) => (
+          <article key={metric.label}>
+            <div><Check /></div>
+            <span>{metric.label}</span>
+            <strong>{metric.value.toFixed(metric.value % 1 === 0 ? 0 : 1)}%</strong>
+            <small>{metric.detail}</small>
+          </article>
+        ))}
+      </section>
+
+      <section className="findings-heading">
+        <div><span className="section-label">RANKED FINDINGS</span><h2>What deserves attention first</h2></div>
+        <div className="severity-counts" aria-label="Finding counts by severity">
+          <span className="all">All {review.issues.length}</span>
+          {severityLabels.map((severity) => <span className={severity} key={severity}>{severity} {review.issueCounts[severity]}</span>)}
+        </div>
+      </section>
+
+      <section className="ranked-findings" aria-label="Ranked findings">
+        {review.issues.map((issue) => (
+          <article className={`ranked-finding ${issue.severity}`} key={issue.id}>
+            <div className="finding-rank"><span>{String(issue.rank).padStart(2, '0')}</span></div>
+            <div className="finding-main">
+              <span className="finding-category">{issue.category}</span>
+              <h3>{issue.title}</h3>
+              <p>{issue.summary}</p>
+              <div className="finding-tags">{issue.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
+            </div>
+            <aside className="finding-evidence">
+              <span className={`severity-label ${issue.severity}`}>{issue.severity}</span>
+              <dl>
+                <div><dt>Evidence confidence</dt><dd>{Math.round(issue.confidence * 100)}%</dd></div>
+                <div><dt>Local data quality</dt><dd>{issue.dataQuality}%</dd></div>
+                <div><dt>Observed</dt><dd>{issue.firstSeen.slice(11, 16)}–{issue.lastSeen.slice(11, 16)}</dd></div>
+              </dl>
+              <button onClick={() => onInvestigate(issue.question)}>Investigate <ArrowRight /></button>
+            </aside>
+          </article>
+        ))}
+      </section>
+
+      <section className="review-method"><Gauge /><div><strong>How this score was produced</strong><p>{review.method}. The score describes evidence quality, not plant safety or equipment condition.</p></div></section>
+    </div>
+  );
+}
+
 export default function Home() {
-  const [view, setView] = useState<'inputs' | 'analysis'>('inputs');
+  const [view, setView] = useState<'inputs' | 'review' | 'analysis'>('inputs');
   const [inputs, setInputs] = useState<InputStatus>(EMPTY_INPUTS);
   const [previewKind, setPreviewKind] = useState<InputKind | null>(null);
   const [uploading, setUploading] = useState<InputKind | null>(null);
@@ -240,6 +380,7 @@ export default function Home() {
       if (!response.ok) throw new Error('detail' in payload ? payload.detail : 'The file could not be parsed');
       setInputs(payload as InputStatus);
       setPreviewKind(kind);
+      setTurns([]);
       setBackendStatus('connected');
     } catch (error) {
       setInputError(error instanceof Error ? error.message : 'The file could not be parsed');
@@ -248,14 +389,15 @@ export default function Home() {
     }
   };
 
-  const loadSampleInputs = async () => {
+  const loadSampleInputs = async (scenario: 'standard' | 'clean') => {
     setUploading('diagram');
     setInputError('');
     try {
-      const response = await fetch(`${API_URL}/api/inputs/demo`, { method: 'POST' });
+      const response = await fetch(`${API_URL}/api/inputs/demo?scenario=${scenario}`, { method: 'POST' });
       if (!response.ok) throw new Error('The sample inputs could not be loaded');
       setInputs(await response.json() as InputStatus);
       setPreviewKind(null);
+      setTurns([]);
       setBackendStatus('connected');
     } catch (error) {
       setInputError(error instanceof Error ? error.message : 'The sample inputs could not be loaded');
@@ -294,11 +436,11 @@ export default function Home() {
     }
   }, []);
 
-  const startAnalysis = () => {
+  const startAnalysis = (initialQuestion = INITIAL_QUESTION) => {
     if (!inputs.analysisReady) return;
     setTurns([]);
     setView('analysis');
-    void ask(INITIAL_QUESTION, true);
+    void ask(initialQuestion, true);
   };
 
   const loading = turns.some((turn) => turn.status === 'loading');
@@ -324,8 +466,9 @@ export default function Home() {
       <header className="topbar">
         <div className="product-brand"><span className="brand-mark"><Activity /></span><div><strong>FieldGuide</strong><small>Process Insights</small></div></div>
         <nav aria-label="Workspace sections">
-          <button className={view === 'inputs' ? 'active' : ''} onClick={() => setView('inputs')}><FileCode2 /> Inputs</button>
-          <button className={view === 'analysis' ? 'active' : ''} onClick={() => inputs.analysisReady && setView('analysis')} disabled={!inputs.analysisReady}><MessageSquareText /> Analysis</button>
+          <button className={view === 'inputs' ? 'active' : ''} onClick={() => setView('inputs')}><span>1</span> Inputs</button>
+          <button className={view === 'review' ? 'active' : ''} onClick={() => inputs.analysisReady && setView('review')} disabled={!inputs.analysisReady}><span>2</span> Data review</button>
+          <button className={view === 'analysis' ? 'active' : ''} onClick={() => inputs.analysisReady && setView('analysis')} disabled={!inputs.analysisReady}><span>3</span> Analysis</button>
         </nav>
         <div className="connection-status"><span className={`status-dot ${backendStatus}`} /><div><strong>{backendStatus === 'connected' ? 'Local agent ready' : backendStatus === 'offline' ? 'Agent offline' : 'Connecting'}</strong><small>Advisory only</small></div></div>
       </header>
@@ -333,8 +476,12 @@ export default function Home() {
       {view === 'inputs' ? (
         <div className="inputs-page">
           <section className="inputs-heading">
-            <div><span className="section-label">NEW ANALYSIS</span><h1>Choose what the agent should investigate</h1><p>Load the process diagram and historian export, inspect what was parsed, then start the analysis.</p></div>
-            <div className="sample-actions"><button className="secondary-button" onClick={() => void clearInputs()} disabled={!inputs.diagram && !inputs.dcs}><RotateCcw /> Clear</button><button className="sample-button" onClick={() => void loadSampleInputs()} disabled={Boolean(uploading)}><Sparkles /> Load sample inputs</button></div>
+            <div><span className="section-label">STEP 1 · INPUTS</span><h1>Choose what the agent should investigate</h1><p>Load the process diagram and historian export, inspect what was parsed, then review the evidence quality.</p></div>
+            <div className="sample-actions">
+              <button className="secondary-button" onClick={() => void clearInputs()} disabled={!inputs.diagram && !inputs.dcs}><RotateCcw /> Clear</button>
+              <button className="sample-button" onClick={() => void loadSampleInputs('standard')} disabled={Boolean(uploading)}><Sparkles /> Sample A · quality gaps</button>
+              <button className="sample-button alternate" onClick={() => void loadSampleInputs('clean')} disabled={Boolean(uploading)}><ShieldCheck /> Sample B · clean data</button>
+            </div>
           </section>
 
           {inputError && <div className="input-error"><CircleAlert /><span>{inputError}</span></div>}
@@ -348,22 +495,30 @@ export default function Home() {
 
           <section className={`readiness-panel ${inputs.analysisReady ? 'ready' : ''}`}>
             <div className="readiness-icon">{inputs.analysisReady ? <Check /> : <BarChart3 />}</div>
-            <div><span>ANALYSIS READINESS</span><h2>{inputs.analysisReady ? 'Both inputs are ready' : 'Two inputs are required'}</h2><p>{inputs.analysisReady ? 'The tags, timestamps, and process equipment match the demonstration analysis model.' : 'Load a compatible process diagram and DCS export. You can use the included sample files for a quick team demo.'}</p></div>
-            <button onClick={startAnalysis} disabled={!inputs.analysisReady}><Sparkles /> Analyze these inputs</button>
+            <div><span>DATA REVIEW READINESS</span><h2>{inputs.analysisReady ? 'Both inputs are ready' : 'Two inputs are required'}</h2><p>{inputs.analysisReady ? 'The tags, timestamps, and process equipment match. Continue to see the quality score and ranked findings.' : 'Load a compatible process diagram and DCS export. You can use either included sample pair for a quick team demo.'}</p></div>
+            <button onClick={() => setView('review')} disabled={!inputs.analysisReady}><ClipboardCheck /> Review data quality</button>
           </section>
         </div>
+      ) : view === 'review' && inputs.qualityReview ? (
+        <DataReview
+          inputs={inputs}
+          review={inputs.qualityReview}
+          onBack={() => setView('inputs')}
+          onInvestigate={(initialQuestion) => startAnalysis(initialQuestion)}
+          onStart={() => startAnalysis()}
+        />
       ) : (
         <div className="analysis-page">
           <div className="analysis-context-bar">
-            <button onClick={() => setView('inputs')}><ArrowLeft /> View or replace inputs</button>
-            <div className="active-inputs"><span><FileCode2 /> {inputs.diagram?.name}</span><span><Database /> {inputs.dcs?.name}</span></div>
+            <button onClick={() => setView('review')}><ArrowLeft /> Back to data review</button>
+            <div className="active-inputs"><span><FileCode2 /> {inputs.diagram?.name}</span><span><Database /> {inputs.dcs?.name}</span>{inputs.qualityReview && <span><ShieldCheck /> {inputs.qualityReview.score}% data quality</span>}</div>
           </div>
 
           <div className="chat-scroll">
             <div className="chat-thread">
               <section className="chat-intro">
                 <div className="assistant-avatar"><Sparkles /></div>
-                <div><strong>Process Insights</strong><p>I’ve read both files and started with a general operating review. Ask me follow-up questions as you would ask an operations engineer.</p></div>
+                <div><strong>Process Insights</strong><p>I’ve reviewed the inputs and their evidence quality. Ask me follow-up questions as you would ask an operations engineer.</p></div>
               </section>
 
               {turns.map((turn) => {

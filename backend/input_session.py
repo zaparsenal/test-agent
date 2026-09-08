@@ -43,9 +43,10 @@ class InputSession:
         self.analyzer = self.default_analyzer
         return self.status()
 
-    def load_demo(self) -> dict[str, Any]:
+    def load_demo(self, scenario: Literal["standard", "clean"] = "standard") -> dict[str, Any]:
         diagram_path = self.root / "data" / "sample-inputs" / "process-diagram" / "tank_transfer_pid.svg"
-        dcs_path = self.root / "data" / "sample-inputs" / "dcs" / "dcs_readings.csv"
+        dcs_name = "dcs_readings_clean.csv" if scenario == "clean" else "dcs_readings.csv"
+        dcs_path = self.root / "data" / "sample-inputs" / "dcs" / dcs_name
         self.inspect("diagram", diagram_path.name, diagram_path.read_text(), diagram_path.stat().st_size, "sample")
         self.inspect("dcs", dcs_path.name, dcs_path.read_text(), dcs_path.stat().st_size, "sample")
         return self.status()
@@ -214,6 +215,7 @@ class InputSession:
             "diagram": self.diagram,
             "dcs": self.dcs,
             "analysisReady": ready,
+            "qualityReview": self.analyzer.data_review() if ready else None,
             "message": (
                 "Both inputs are parsed and ready for analysis."
                 if ready

@@ -15,8 +15,9 @@ We built a small, safe scenario around that question:
 1. Create a synthetic tank-transfer process and six hours of DCS readings.
 2. Add open DEXPI files as real-world PFD/P&ID reference material.
 3. Let the user upload and inspect both inputs before analysis begins.
-4. Present the analysis as a conversation instead of a crowded dashboard.
-5. Use A2UI to attach the most useful visual evidence to each answer.
+4. Score the evidence quality and rank the findings worth investigating.
+5. Present the deeper analysis as a conversation instead of a crowded dashboard.
+6. Use A2UI to attach the most useful visual evidence to each answer.
 
 The application was created specifically for this proof of concept. It was not forked from, copied from, or bootstrapped with another GitHub project.
 
@@ -32,9 +33,10 @@ The implementation also follows the official **Google Agent Development Kit** an
 
 ## The final prototype
 
-The finished demo has two clear parts:
+The finished demo has three clear parts:
 
 - **Inputs:** upload a process diagram and DCS export, inspect the parsed equipment, tags, time range, data quality, and example readings, then approve them for analysis.
+- **Data review:** see a calculated evidence-quality score, the checks behind it, and severity-ranked process and signal findings. Each finding can open a focused investigation.
 - **Analysis:** receive an initial operating review, ask follow-up questions in a chat, and expand the evidence attached to each answer.
 
 Depending on the question, the evidence can include current values, trends, event timing, affected process paths, data-quality warnings, and suggested field checks.
@@ -64,14 +66,14 @@ Windows users may also double-click `setup-and-run-windows.bat`; it runs the sam
 
 For a quick walkthrough:
 
-1. Select **Load sample inputs** on the Inputs page.
+1. Select **Sample A · quality gaps** on the Inputs page. You can use **Sample B · clean data** later to show how the score changes.
 2. Inspect the process diagram and historian data.
-3. Select **Analyze these inputs**.
-4. Ask: `Why did T-101's level increase?`
+3. Select **Review data quality** to see the calculated score and ranked findings.
+4. Choose **Investigate** on the first finding, or start a general analysis.
 5. Expand **Supporting evidence** to show the A2UI-generated visuals.
 6. Follow with: `Which sensor readings are unreliable?`
 
-The sample data contains a planned restriction-like event between 10:15 and 11:00, followed by sensor drift, bad or missing readings, recovery, and stable operation.
+Both sample datasets contain the same planned restriction-like event between 10:15 and 11:00, followed by sensor drift and recovery. Sample A also contains bad or missing historian readings; Sample B keeps the source quality flags clean so the review score and ranked findings visibly change.
 
 ## Project map
 

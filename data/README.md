@@ -21,6 +21,8 @@ Upload one of these files in the **DCS historian export** input card:
 
 - `sample-inputs/dcs/dcs_readings.csv` - recommended because it resembles a typical historian export.
 - `sample-inputs/dcs/dcs_readings.json` - the same readings in JSON format.
+- `sample-inputs/dcs/dcs_readings_clean.csv` - alternate scenario with the same process event but no BAD or MISSING source flags.
+- `sample-inputs/dcs/dcs_readings_clean.json` - the alternate scenario in JSON format.
 
 The historian dataset contains:
 
@@ -30,15 +32,18 @@ The historian dataset contains:
 - 2,140 GOOD, 20 BAD, and 6 MISSING samples.
 - A designed restriction-like event from 10:15 through 11:00, followed by recovery.
 
+The primary files include 20 BAD and 6 MISSING samples. The alternate clean files keep all 2,166 readings marked GOOD. This lets a presenter show how the intermediate data-quality score and ranked findings change while the underlying process event remains comparable.
+
 ## Fast demonstration sequence
 
 1. Open the prototype's **Inputs** section.
 2. Upload `tank_transfer_pid.svg` into the process-diagram card.
 3. Upload `dcs_readings.csv` into the historian card.
 4. Choose **Inspect** on each file to show the parsed tags, time coverage, quality counts, and sample rows.
-5. Choose **Analyze these inputs**.
-6. Ask: `Why did T-101's level increase?`
+5. Choose **Review data quality**.
+6. Review the 94% score and ranked findings, then choose **Investigate** on the first finding.
 7. Expand **Supporting evidence** to show the A2UI-generated KPIs, trends, event timeline, process path, and inspection suggestions.
+8. Return to Inputs and load **Sample B · clean data** to demonstrate the alternate 97% score.
 
 ## Open-source references
 

@@ -135,23 +135,34 @@ def build_response(question: str, analyzer: ProcessAnalyzer) -> dict[str, Any]:
         )
     elif intent == "sensor_quality":
         problems = analyzer.quality_problems()
-        title = "Two historian signals were unreliable for a limited window"
-        explanation = (
-            "PT-101 contains bad-quality values and FT-101 contains missing samples between 11:45–12:15. "
-            "Those values are excluded from calculations; conclusions in that window should be treated with lower confidence."
-        )
-        confidence, severity, window = 0.99, "data", "11:45–12:15"
-        affected_path = [problem["tag"] for problem in problems]
-        root_children += ["quality", "equipment"]
-        components.extend(
-            [
-                _component("quality", "SensorQualityWarning", title="Data quality limitations", problems=problems),
-                _component("equipment", "EquipmentTable", title="Signals requiring review", rows=[
-                    {"tag": problem["tag"], "type": analyzer.nodes[problem["tag"]]["label"], "status": ", ".join(problem["qualities"]), "detail": f"{problem['count']} affected samples"}
-                    for problem in problems
-                ]),
-            ]
-        )
+        if problems:
+            title = "Two historian signals were unreliable for a limited window"
+            explanation = (
+                "PT-101 contains bad-quality values and FT-101 contains missing samples between 11:45–12:15. "
+                "Those values are excluded from calculations; conclusions in that window should be treated with lower confidence."
+            )
+            confidence, severity, window = 0.99, "data", "11:45–12:15"
+            affected_path = [problem["tag"] for problem in problems]
+            root_children += ["quality", "equipment"]
+            components.extend(
+                [
+                    _component("quality", "SensorQualityWarning", title="Data quality limitations", problems=problems),
+                    _component("equipment", "EquipmentTable", title="Signals requiring review", rows=[
+                        {"tag": problem["tag"], "type": analyzer.nodes[problem["tag"]]["label"], "status": ", ".join(problem["qualities"]), "detail": f"{problem['count']} affected samples"}
+                        for problem in problems
+                    ]),
+                ]
+            )
+        else:
+            title = "The historian export contains no bad or missing samples"
+            explanation = (
+                "All six signals are complete and marked GOOD across the full six-hour window. "
+                "LT-102 still shows an unstable pattern that should be reviewed even though its source quality flag remains GOOD."
+            )
+            confidence, severity, window = 0.97, "normal", "Full window · 08:00–14:00"
+            affected_path = ["LT-102"]
+            root_children += ["kpis"]
+            components.append(_component("kpis", "KpiGrid", title="Latest readings and source quality", cards=_latest_kpis(analyzer)))
     elif intent == "trend":
         title = "Pressure rose as transfer flow fell between 10:15 and 11:00"
         explanation = (
@@ -209,12 +220,23 @@ def build_response(question: str, analyzer: ProcessAnalyzer) -> dict[str, Any]:
                 ])
             )
 
+    incident_quality = analyzer.window_quality(
+        ["LT-101", "PT-101", "FT-101", "FV-101_POS"],
+        "2026-08-18T10:15:00",
+        "2026-08-18T11:00:00",
+    )
     components.insert(
         0,
         _component(
             "summary", "OperationalSummary", title=title, explanation=explanation, severity=severity,
             confidence=confidence, window=window, tags=affected_path,
-            qualityNote="No bad-quality samples overlap the 10:15–11:00 incident window." if intent not in {"status", "sensor_quality"} else "",
+            qualityNote=(
+                "No bad-quality samples overlap the 10:15–11:00 incident window."
+                if intent not in {"status", "sensor_quality"} and incident_quality == 100
+                else f"Incident-window evidence quality is {incident_quality}%."
+                if intent not in {"status", "sensor_quality"}
+                else ""
+            ),
         ),
     )
     components.insert(0, _component("root", "ResponseLayout", children=root_children, intent=intent, question=question))
