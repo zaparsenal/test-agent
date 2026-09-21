@@ -70,10 +70,20 @@ def alarm_for(tag: str, value: float | None, quality: str) -> str:
     return "NORMAL"
 
 
-def values_for(minute: int, rng: random.Random) -> dict[str, float]:
+def values_for(minute: int, rng: random.Random, scenario: str = "critical") -> dict[str, float]:
     period = period_for(minute)
     wave = math.sin(minute / 9.0)
     noise = lambda scale: rng.gauss(0.0, scale)
+
+    if scenario == "healthy":
+        return {
+            "LT-101": 56.0 + wave * 0.22 + noise(0.10),
+            "LT-102": 48.0 - wave * 0.18 + noise(0.10),
+            "PT-101": 3.18 + wave * 0.04 + noise(0.025),
+            "FT-101": 48.2 + wave * 0.48 + noise(0.28),
+            "P-101_STATUS": 1.0,
+            "FV-101_POS": 75.0 + wave * 0.35 + noise(0.22),
+        }
 
     if period == "startup":
         p = (minute - 30) / 30
@@ -86,19 +96,19 @@ def values_for(minute: int, rng: random.Random) -> dict[str, float]:
     elif period == "downstream_restriction":
         p = (minute - 135) / 45
         status = 1.0
-        valve = lerp(76, 83, p) + noise(0.4)
-        flow = lerp(48, 28.2, p) + noise(0.65)
-        pressure = lerp(3.25, 5.95, p) + noise(0.06)
-        lt101 = lerp(55, 79.0, p) + noise(0.16)
-        lt102 = lerp(42, 47.5, p) + noise(0.14)
+        valve = lerp(76, 91, p) + noise(0.4)
+        flow = lerp(48, 18.5, p) + noise(0.7)
+        pressure = lerp(3.25, 6.65, p) + noise(0.07)
+        lt101 = lerp(55, 87.0, p) + noise(0.18)
+        lt102 = lerp(42, 45.5, p) + noise(0.14)
     elif period == "sensor_drift":
         p = (minute - 180) / 45
         status = 1.0
-        valve = 82 + noise(0.4)
-        flow = lerp(29.0, 39.0, p) + noise(1.5)
-        pressure = lerp(5.8, 4.2, p) + noise(0.08)
-        lt101 = lerp(79, 71, p) + noise(0.18)
-        lt102 = lerp(47.5, 56, p) + noise(1.15) + 1.5 * math.sin(minute * 1.8)
+        valve = lerp(90, 84, p) + noise(0.45)
+        flow = lerp(19.0, 37.0, p) + noise(1.6)
+        pressure = lerp(6.6, 4.4, p) + noise(0.09)
+        lt101 = lerp(87, 76, p) + noise(0.2)
+        lt102 = lerp(45.5, 56, p) + noise(1.3) + 1.7 * math.sin(minute * 1.8)
     elif period == "bad_quality":
         p = (minute - 225) / 30
         status = 1.0
@@ -143,22 +153,28 @@ def values_for(minute: int, rng: random.Random) -> dict[str, float]:
 def generate(
     seed: int = 101,
     start: datetime = DEFAULT_START,
-    quality_mode: str = "standard",
+    scenario: str = "critical",
 ) -> list[dict[str, object]]:
-    if quality_mode not in {"standard", "clean"}:
-        raise ValueError("quality_mode must be 'standard' or 'clean'")
+    if scenario not in {"critical", "healthy"}:
+        raise ValueError("scenario must be 'critical' or 'healthy'")
     rng = random.Random(seed)
     records: list[dict[str, object]] = []
     for minute in range(361):
         timestamp = start + timedelta(minutes=minute)
         period = period_for(minute)
-        values = values_for(minute, rng)
+        values = values_for(minute, rng, scenario)
         for tag, raw_value in values.items():
             quality = "GOOD"
             value: float | None = round(raw_value, 3)
-            if quality_mode == "standard" and period == "bad_quality" and tag == "PT-101" and minute % 3 != 0:
+            if scenario == "critical" and period == "sensor_drift" and tag == "LT-102" and minute % 2 == 0:
+                quality = "SUSPECT"
+            if scenario == "critical" and period == "sensor_drift" and tag == "PT-101" and minute % 2 == 0:
                 quality = "BAD"
-            if quality_mode == "standard" and period == "bad_quality" and tag == "FT-101" and minute % 5 == 0:
+            if scenario == "critical" and period == "bad_quality" and tag == "PT-101" and minute % 5 != 0:
+                quality = "BAD"
+            if scenario == "critical" and period == "bad_quality" and tag == "LT-102" and minute % 3 != 0:
+                quality = "SUSPECT"
+            if scenario == "critical" and period == "bad_quality" and tag == "FT-101" and minute % 2 == 0:
                 quality = "MISSING"
                 value = None
             records.append(
@@ -179,22 +195,26 @@ def write_dataset(
     seed: int,
     output_dir: Path,
     stem: str,
-    quality_mode: str,
+    scenario: str,
 ) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
     json_path = output_dir / f"{stem}.json"
     csv_path = output_dir / f"{stem}.csv"
     json_path.write_text(
-        json.dumps({"seed": seed, "qualityMode": quality_mode, "records": records}, indent=2) + "\n"
+        json.dumps({"seed": seed, "scenario": scenario, "records": records}, indent=2) + "\n"
     )
     with csv_path.open("w", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=["timestamp", "tag", "value", "unit", "quality", "alarm_state"])
+        writer = csv.DictWriter(
+            handle,
+            fieldnames=["timestamp", "tag", "value", "unit", "quality", "alarm_state"],
+            lineterminator="\n",
+        )
         writer.writeheader()
         writer.writerows(records)
 
 
 def write_outputs(records: list[dict[str, object]], seed: int, output_dir: Path) -> None:
-    write_dataset(records, seed, output_dir, "dcs_readings", "standard")
+    write_dataset(records, seed, output_dir, "dcs_readings", "critical")
 
     ground_truth = {
         "dataset_seed": seed,
@@ -219,10 +239,10 @@ def main() -> None:
     args = parser.parse_args()
     records = generate(seed=args.seed)
     write_outputs(records, args.seed, args.output_dir)
-    clean_records = generate(seed=202, quality_mode="clean")
-    write_dataset(clean_records, 202, args.output_dir, "dcs_readings_clean", "clean")
+    healthy_records = generate(seed=202, scenario="healthy")
+    write_dataset(healthy_records, 202, args.output_dir, "dcs_readings_clean", "healthy")
     print(
-        f"Generated standard and clean six-hour scenarios "
+        f"Generated critical and healthy six-hour scenarios "
         f"({len(records):,} readings each; seeds {args.seed} and 202)."
     )
 

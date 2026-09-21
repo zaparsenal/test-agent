@@ -1,6 +1,6 @@
 {
   "seed": 101,
-  "qualityMode": "standard",
+  "scenario": "critical",
   "records": [
     {
       "timestamp": "2026-08-18T08:00:00",
@@ -6485,7 +6485,7 @@
     {
       "timestamp": "2026-08-18T10:15:00",
       "tag": "LT-101",
-      "value": 55.162,
+      "value": 55.182,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6501,7 +6501,7 @@
     {
       "timestamp": "2026-08-18T10:15:00",
       "tag": "PT-101",
-      "value": 3.292,
+      "value": 3.299,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6509,7 +6509,7 @@
     {
       "timestamp": "2026-08-18T10:15:00",
       "tag": "FT-101",
-      "value": 47.3,
+      "value": 47.246,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6533,7 +6533,7 @@
     {
       "timestamp": "2026-08-18T10:16:00",
       "tag": "LT-101",
-      "value": 55.895,
+      "value": 56.118,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6541,7 +6541,7 @@
     {
       "timestamp": "2026-08-18T10:16:00",
       "tag": "LT-102",
-      "value": 42.074,
+      "value": 42.029,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6549,7 +6549,7 @@
     {
       "timestamp": "2026-08-18T10:16:00",
       "tag": "PT-101",
-      "value": 3.378,
+      "value": 3.405,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6557,7 +6557,7 @@
     {
       "timestamp": "2026-08-18T10:16:00",
       "tag": "FT-101",
-      "value": 48.909,
+      "value": 48.797,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6573,7 +6573,7 @@
     {
       "timestamp": "2026-08-18T10:16:00",
       "tag": "FV-101_POS",
-      "value": 75.621,
+      "value": 75.799,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6581,7 +6581,7 @@
     {
       "timestamp": "2026-08-18T10:17:00",
       "tag": "LT-101",
-      "value": 55.776,
+      "value": 56.095,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6589,7 +6589,7 @@
     {
       "timestamp": "2026-08-18T10:17:00",
       "tag": "LT-102",
-      "value": 42.231,
+      "value": 42.142,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6597,7 +6597,7 @@
     {
       "timestamp": "2026-08-18T10:17:00",
       "tag": "PT-101",
-      "value": 3.359,
+      "value": 3.389,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6605,7 +6605,7 @@
     {
       "timestamp": "2026-08-18T10:17:00",
       "tag": "FT-101",
-      "value": 48.418,
+      "value": 48.087,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6621,7 +6621,7 @@
     {
       "timestamp": "2026-08-18T10:17:00",
       "tag": "FV-101_POS",
-      "value": 76.045,
+      "value": 76.401,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6629,7 +6629,7 @@
     {
       "timestamp": "2026-08-18T10:18:00",
       "tag": "LT-101",
-      "value": 56.651,
+      "value": 57.191,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6637,7 +6637,7 @@
     {
       "timestamp": "2026-08-18T10:18:00",
       "tag": "LT-102",
-      "value": 42.07,
+      "value": 41.936,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6645,7 +6645,7 @@
     {
       "timestamp": "2026-08-18T10:18:00",
       "tag": "PT-101",
-      "value": 3.287,
+      "value": 3.31,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6653,7 +6653,7 @@
     {
       "timestamp": "2026-08-18T10:18:00",
       "tag": "FT-101",
-      "value": 46.97,
+      "value": 46.346,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6669,7 +6669,7 @@
     {
       "timestamp": "2026-08-18T10:18:00",
       "tag": "FV-101_POS",
-      "value": 76.733,
+      "value": 77.267,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6677,7 +6677,7 @@
     {
       "timestamp": "2026-08-18T10:19:00",
       "tag": "LT-101",
-      "value": 57.15,
+      "value": 57.863,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6685,7 +6685,7 @@
     {
       "timestamp": "2026-08-18T10:19:00",
       "tag": "LT-102",
-      "value": 42.416,
+      "value": 42.238,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6693,7 +6693,7 @@
     {
       "timestamp": "2026-08-18T10:19:00",
       "tag": "PT-101",
-      "value": 3.444,
+      "value": 3.499,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6701,7 +6701,7 @@
     {
       "timestamp": "2026-08-18T10:19:00",
       "tag": "FT-101",
-      "value": 45.333,
+      "value": 44.401,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6717,7 +6717,7 @@
     {
       "timestamp": "2026-08-18T10:19:00",
       "tag": "FV-101_POS",
-      "value": 77.532,
+      "value": 78.243,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6725,7 +6725,7 @@
     {
       "timestamp": "2026-08-18T10:20:00",
       "tag": "LT-101",
-      "value": 57.73,
+      "value": 58.627,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6733,7 +6733,7 @@
     {
       "timestamp": "2026-08-18T10:20:00",
       "tag": "LT-102",
-      "value": 42.666,
+      "value": 42.444,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6741,7 +6741,7 @@
     {
       "timestamp": "2026-08-18T10:20:00",
       "tag": "PT-101",
-      "value": 3.575,
+      "value": 3.657,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6749,7 +6749,7 @@
     {
       "timestamp": "2026-08-18T10:20:00",
       "tag": "FT-101",
-      "value": 45.374,
+      "value": 44.264,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6765,7 +6765,7 @@
     {
       "timestamp": "2026-08-18T10:20:00",
       "tag": "FV-101_POS",
-      "value": 77.246,
+      "value": 78.135,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6773,7 +6773,7 @@
     {
       "timestamp": "2026-08-18T10:21:00",
       "tag": "LT-101",
-      "value": 58.041,
+      "value": 59.088,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6781,7 +6781,7 @@
     {
       "timestamp": "2026-08-18T10:21:00",
       "tag": "LT-102",
-      "value": 42.689,
+      "value": 42.422,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6789,7 +6789,7 @@
     {
       "timestamp": "2026-08-18T10:21:00",
       "tag": "PT-101",
-      "value": 3.558,
+      "value": 3.642,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6797,7 +6797,7 @@
     {
       "timestamp": "2026-08-18T10:21:00",
       "tag": "FT-101",
-      "value": 46.518,
+      "value": 45.313,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6813,7 +6813,7 @@
     {
       "timestamp": "2026-08-18T10:21:00",
       "tag": "FV-101_POS",
-      "value": 76.444,
+      "value": 77.511,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6821,7 +6821,7 @@
     {
       "timestamp": "2026-08-18T10:22:00",
       "tag": "LT-101",
-      "value": 58.915,
+      "value": 60.182,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6829,7 +6829,7 @@
     {
       "timestamp": "2026-08-18T10:22:00",
       "tag": "LT-102",
-      "value": 42.887,
+      "value": 42.575,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6837,7 +6837,7 @@
     {
       "timestamp": "2026-08-18T10:22:00",
       "tag": "PT-101",
-      "value": 3.645,
+      "value": 3.749,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6845,10 +6845,10 @@
     {
       "timestamp": "2026-08-18T10:22:00",
       "tag": "FT-101",
-      "value": 43.131,
+      "value": 41.484,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "alarm_state": "LO"
     },
     {
       "timestamp": "2026-08-18T10:22:00",
@@ -6861,7 +6861,7 @@
     {
       "timestamp": "2026-08-18T10:22:00",
       "tag": "FV-101_POS",
-      "value": 77.172,
+      "value": 78.417,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6869,7 +6869,7 @@
     {
       "timestamp": "2026-08-18T10:23:00",
       "tag": "LT-101",
-      "value": 59.03,
+      "value": 60.423,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6877,7 +6877,7 @@
     {
       "timestamp": "2026-08-18T10:23:00",
       "tag": "LT-102",
-      "value": 42.79,
+      "value": 42.434,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6885,7 +6885,7 @@
     {
       "timestamp": "2026-08-18T10:23:00",
       "tag": "PT-101",
-      "value": 3.752,
+      "value": 3.88,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6893,7 +6893,7 @@
     {
       "timestamp": "2026-08-18T10:23:00",
       "tag": "FT-101",
-      "value": 45.064,
+      "value": 43.384,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6909,7 +6909,7 @@
     {
       "timestamp": "2026-08-18T10:23:00",
       "tag": "FV-101_POS",
-      "value": 77.326,
+      "value": 78.748,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6917,7 +6917,7 @@
     {
       "timestamp": "2026-08-18T10:24:00",
       "tag": "LT-101",
-      "value": 60.114,
+      "value": 61.753,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6925,7 +6925,7 @@
     {
       "timestamp": "2026-08-18T10:24:00",
       "tag": "LT-102",
-      "value": 43.042,
+      "value": 42.642,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6933,7 +6933,7 @@
     {
       "timestamp": "2026-08-18T10:24:00",
       "tag": "PT-101",
-      "value": 3.786,
+      "value": 3.926,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6941,10 +6941,10 @@
     {
       "timestamp": "2026-08-18T10:24:00",
       "tag": "FT-101",
-      "value": 42.365,
+      "value": 40.296,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "alarm_state": "LO"
     },
     {
       "timestamp": "2026-08-18T10:24:00",
@@ -6957,7 +6957,7 @@
     {
       "timestamp": "2026-08-18T10:24:00",
       "tag": "FV-101_POS",
-      "value": 77.401,
+      "value": 79.001,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6965,7 +6965,7 @@
     {
       "timestamp": "2026-08-18T10:25:00",
       "tag": "LT-101",
-      "value": 60.279,
+      "value": 62.05,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6973,7 +6973,7 @@
     {
       "timestamp": "2026-08-18T10:25:00",
       "tag": "LT-102",
-      "value": 43.233,
+      "value": 42.789,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6981,7 +6981,7 @@
     {
       "timestamp": "2026-08-18T10:25:00",
       "tag": "PT-101",
-      "value": 3.796,
+      "value": 3.942,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -6989,7 +6989,7 @@
     {
       "timestamp": "2026-08-18T10:25:00",
       "tag": "FT-101",
-      "value": 41.494,
+      "value": 39.176,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "LO"
@@ -7005,7 +7005,7 @@
     {
       "timestamp": "2026-08-18T10:25:00",
       "tag": "FV-101_POS",
-      "value": 77.906,
+      "value": 79.683,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7013,7 +7013,7 @@
     {
       "timestamp": "2026-08-18T10:26:00",
       "tag": "LT-101",
-      "value": 60.782,
+      "value": 62.727,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7021,7 +7021,7 @@
     {
       "timestamp": "2026-08-18T10:26:00",
       "tag": "LT-102",
-      "value": 43.326,
+      "value": 42.837,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7029,7 +7029,7 @@
     {
       "timestamp": "2026-08-18T10:26:00",
       "tag": "PT-101",
-      "value": 3.896,
+      "value": 4.065,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7037,10 +7037,10 @@
     {
       "timestamp": "2026-08-18T10:26:00",
       "tag": "FT-101",
-      "value": 43.787,
+      "value": 41.464,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "alarm_state": "LO"
     },
     {
       "timestamp": "2026-08-18T10:26:00",
@@ -7053,7 +7053,7 @@
     {
       "timestamp": "2026-08-18T10:26:00",
       "tag": "FV-101_POS",
-      "value": 77.366,
+      "value": 79.321,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7061,7 +7061,7 @@
     {
       "timestamp": "2026-08-18T10:27:00",
       "tag": "LT-101",
-      "value": 61.32,
+      "value": 63.443,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7069,7 +7069,7 @@
     {
       "timestamp": "2026-08-18T10:27:00",
       "tag": "LT-102",
-      "value": 43.618,
+      "value": 43.085,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7077,7 +7077,7 @@
     {
       "timestamp": "2026-08-18T10:27:00",
       "tag": "PT-101",
-      "value": 3.965,
+      "value": 4.151,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7085,10 +7085,10 @@
     {
       "timestamp": "2026-08-18T10:27:00",
       "tag": "FT-101",
-      "value": 42.072,
+      "value": 39.436,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "alarm_state": "LO"
     },
     {
       "timestamp": "2026-08-18T10:27:00",
@@ -7101,7 +7101,7 @@
     {
       "timestamp": "2026-08-18T10:27:00",
       "tag": "FV-101_POS",
-      "value": 78.102,
+      "value": 80.236,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7109,7 +7109,7 @@
     {
       "timestamp": "2026-08-18T10:28:00",
       "tag": "LT-101",
-      "value": 61.772,
+      "value": 64.062,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7117,7 +7117,7 @@
     {
       "timestamp": "2026-08-18T10:28:00",
       "tag": "LT-102",
-      "value": 43.651,
+      "value": 43.074,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7125,15 +7125,15 @@
     {
       "timestamp": "2026-08-18T10:28:00",
       "tag": "PT-101",
-      "value": 4.024,
+      "value": 4.225,
       "unit": "bar",
       "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T10:28:00",
       "tag": "FT-101",
-      "value": 41.381,
+      "value": 38.509,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "LO"
@@ -7149,7 +7149,7 @@
     {
       "timestamp": "2026-08-18T10:28:00",
       "tag": "FV-101_POS",
-      "value": 78.034,
+      "value": 80.345,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7157,7 +7157,7 @@
     {
       "timestamp": "2026-08-18T10:29:00",
       "tag": "LT-101",
-      "value": 62.326,
+      "value": 64.797,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7165,7 +7165,7 @@
     {
       "timestamp": "2026-08-18T10:29:00",
       "tag": "LT-102",
-      "value": 43.726,
+      "value": 43.104,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7173,18 +7173,18 @@
     {
       "timestamp": "2026-08-18T10:29:00",
       "tag": "PT-101",
-      "value": 4.102,
+      "value": 4.322,
       "unit": "bar",
       "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T10:29:00",
       "tag": "FT-101",
-      "value": 42.103,
+      "value": 39.106,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "alarm_state": "LO"
     },
     {
       "timestamp": "2026-08-18T10:29:00",
@@ -7197,7 +7197,7 @@
     {
       "timestamp": "2026-08-18T10:29:00",
       "tag": "FV-101_POS",
-      "value": 78.089,
+      "value": 80.577,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7205,13 +7205,397 @@
     {
       "timestamp": "2026-08-18T10:30:00",
       "tag": "LT-101",
-      "value": 62.946,
+      "value": 65.606,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
     },
     {
       "timestamp": "2026-08-18T10:30:00",
+      "tag": "LT-102",
+      "value": 42.92,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:30:00",
+      "tag": "PT-101",
+      "value": 4.389,
+      "unit": "bar",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T10:30:00",
+      "tag": "FT-101",
+      "value": 38.247,
+      "unit": "m3/h",
+      "quality": "GOOD",
+      "alarm_state": "LO"
+    },
+    {
+      "timestamp": "2026-08-18T10:30:00",
+      "tag": "P-101_STATUS",
+      "value": 1.0,
+      "unit": "state",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:30:00",
+      "tag": "FV-101_POS",
+      "value": 81.015,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:31:00",
+      "tag": "LT-101",
+      "value": 66.522,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:31:00",
+      "tag": "LT-102",
+      "value": 43.144,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:31:00",
+      "tag": "PT-101",
+      "value": 4.552,
+      "unit": "bar",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T10:31:00",
+      "tag": "FT-101",
+      "value": 37.499,
+      "unit": "m3/h",
+      "quality": "GOOD",
+      "alarm_state": "LO"
+    },
+    {
+      "timestamp": "2026-08-18T10:31:00",
+      "tag": "P-101_STATUS",
+      "value": 1.0,
+      "unit": "state",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:31:00",
+      "tag": "FV-101_POS",
+      "value": 80.569,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:32:00",
+      "tag": "LT-101",
+      "value": 66.952,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:32:00",
+      "tag": "LT-102",
+      "value": 43.059,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:32:00",
+      "tag": "PT-101",
+      "value": 4.425,
+      "unit": "bar",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T10:32:00",
+      "tag": "FT-101",
+      "value": 36.765,
+      "unit": "m3/h",
+      "quality": "GOOD",
+      "alarm_state": "LO"
+    },
+    {
+      "timestamp": "2026-08-18T10:32:00",
+      "tag": "P-101_STATUS",
+      "value": 1.0,
+      "unit": "state",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:32:00",
+      "tag": "FV-101_POS",
+      "value": 81.76,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:33:00",
+      "tag": "LT-101",
+      "value": 67.527,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:33:00",
+      "tag": "LT-102",
+      "value": 43.429,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:33:00",
+      "tag": "PT-101",
+      "value": 4.594,
+      "unit": "bar",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T10:33:00",
+      "tag": "FT-101",
+      "value": 37.526,
+      "unit": "m3/h",
+      "quality": "GOOD",
+      "alarm_state": "LO"
+    },
+    {
+      "timestamp": "2026-08-18T10:33:00",
+      "tag": "P-101_STATUS",
+      "value": 1.0,
+      "unit": "state",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:33:00",
+      "tag": "FV-101_POS",
+      "value": 82.03,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:34:00",
+      "tag": "LT-101",
+      "value": 68.546,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:34:00",
+      "tag": "LT-102",
+      "value": 43.425,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:34:00",
+      "tag": "PT-101",
+      "value": 4.731,
+      "unit": "bar",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T10:34:00",
+      "tag": "FT-101",
+      "value": 34.837,
+      "unit": "m3/h",
+      "quality": "GOOD",
+      "alarm_state": "LO"
+    },
+    {
+      "timestamp": "2026-08-18T10:34:00",
+      "tag": "P-101_STATUS",
+      "value": 1.0,
+      "unit": "state",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:34:00",
+      "tag": "FV-101_POS",
+      "value": 82.719,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:35:00",
+      "tag": "LT-101",
+      "value": 68.683,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:35:00",
+      "tag": "LT-102",
+      "value": 43.55,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:35:00",
+      "tag": "PT-101",
+      "value": 4.918,
+      "unit": "bar",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T10:35:00",
+      "tag": "FT-101",
+      "value": 35.902,
+      "unit": "m3/h",
+      "quality": "GOOD",
+      "alarm_state": "LO"
+    },
+    {
+      "timestamp": "2026-08-18T10:35:00",
+      "tag": "P-101_STATUS",
+      "value": 1.0,
+      "unit": "state",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:35:00",
+      "tag": "FV-101_POS",
+      "value": 82.54,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:36:00",
+      "tag": "LT-101",
+      "value": 69.997,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:36:00",
+      "tag": "LT-102",
+      "value": 43.724,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:36:00",
+      "tag": "PT-101",
+      "value": 4.792,
+      "unit": "bar",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T10:36:00",
+      "tag": "FT-101",
+      "value": 33.191,
+      "unit": "m3/h",
+      "quality": "GOOD",
+      "alarm_state": "LO"
+    },
+    {
+      "timestamp": "2026-08-18T10:36:00",
+      "tag": "P-101_STATUS",
+      "value": 1.0,
+      "unit": "state",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:36:00",
+      "tag": "FV-101_POS",
+      "value": 83.366,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:37:00",
+      "tag": "LT-101",
+      "value": 70.761,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:37:00",
+      "tag": "LT-102",
+      "value": 43.836,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:37:00",
+      "tag": "PT-101",
+      "value": 4.914,
+      "unit": "bar",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T10:37:00",
+      "tag": "FT-101",
+      "value": 32.619,
+      "unit": "m3/h",
+      "quality": "GOOD",
+      "alarm_state": "LO"
+    },
+    {
+      "timestamp": "2026-08-18T10:37:00",
+      "tag": "P-101_STATUS",
+      "value": 1.0,
+      "unit": "state",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:37:00",
+      "tag": "FV-101_POS",
+      "value": 83.448,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:38:00",
+      "tag": "LT-101",
+      "value": 71.683,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T10:38:00",
       "tag": "LT-102",
       "value": 43.586,
       "unit": "%",
@@ -7219,393 +7603,9 @@
       "alarm_state": "NORMAL"
     },
     {
-      "timestamp": "2026-08-18T10:30:00",
-      "tag": "PT-101",
-      "value": 4.155,
-      "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:30:00",
-      "tag": "FT-101",
-      "value": 41.475,
-      "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
-    },
-    {
-      "timestamp": "2026-08-18T10:30:00",
-      "tag": "P-101_STATUS",
-      "value": 1.0,
-      "unit": "state",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:30:00",
-      "tag": "FV-101_POS",
-      "value": 78.349,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:31:00",
-      "tag": "LT-101",
-      "value": 63.661,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:31:00",
-      "tag": "LT-102",
-      "value": 43.855,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:31:00",
-      "tag": "PT-101",
-      "value": 4.29,
-      "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
-      "timestamp": "2026-08-18T10:31:00",
-      "tag": "FT-101",
-      "value": 40.948,
-      "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
-    },
-    {
-      "timestamp": "2026-08-18T10:31:00",
-      "tag": "P-101_STATUS",
-      "value": 1.0,
-      "unit": "state",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:31:00",
-      "tag": "FV-101_POS",
-      "value": 77.725,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:32:00",
-      "tag": "LT-101",
-      "value": 63.945,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:32:00",
-      "tag": "LT-102",
-      "value": 43.815,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:32:00",
-      "tag": "PT-101",
-      "value": 4.176,
-      "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:32:00",
-      "tag": "FT-101",
-      "value": 40.436,
-      "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
-    },
-    {
-      "timestamp": "2026-08-18T10:32:00",
-      "tag": "P-101_STATUS",
-      "value": 1.0,
-      "unit": "state",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:32:00",
-      "tag": "FV-101_POS",
-      "value": 78.738,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:33:00",
-      "tag": "LT-101",
-      "value": 64.357,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:33:00",
-      "tag": "LT-102",
-      "value": 44.229,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:33:00",
-      "tag": "PT-101",
-      "value": 4.317,
-      "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
-      "timestamp": "2026-08-18T10:33:00",
-      "tag": "FT-101",
-      "value": 41.311,
-      "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
-    },
-    {
-      "timestamp": "2026-08-18T10:33:00",
-      "tag": "P-101_STATUS",
-      "value": 1.0,
-      "unit": "state",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:33:00",
-      "tag": "FV-101_POS",
-      "value": 78.83,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:34:00",
-      "tag": "LT-101",
-      "value": 65.165,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:34:00",
-      "tag": "LT-102",
-      "value": 44.269,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:34:00",
-      "tag": "PT-101",
-      "value": 4.429,
-      "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
-      "timestamp": "2026-08-18T10:34:00",
-      "tag": "FT-101",
-      "value": 38.983,
-      "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
-    },
-    {
-      "timestamp": "2026-08-18T10:34:00",
-      "tag": "P-101_STATUS",
-      "value": 1.0,
-      "unit": "state",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:34:00",
-      "tag": "FV-101_POS",
-      "value": 79.341,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:35:00",
-      "tag": "LT-101",
-      "value": 65.187,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:35:00",
-      "tag": "LT-102",
-      "value": 44.439,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:35:00",
-      "tag": "PT-101",
-      "value": 4.585,
-      "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
-      "timestamp": "2026-08-18T10:35:00",
-      "tag": "FT-101",
-      "value": 40.14,
-      "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
-    },
-    {
-      "timestamp": "2026-08-18T10:35:00",
-      "tag": "P-101_STATUS",
-      "value": 1.0,
-      "unit": "state",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:35:00",
-      "tag": "FV-101_POS",
-      "value": 78.984,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:36:00",
-      "tag": "LT-101",
-      "value": 66.257,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:36:00",
-      "tag": "LT-102",
-      "value": 44.657,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:36:00",
-      "tag": "PT-101",
-      "value": 4.472,
-      "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
-      "timestamp": "2026-08-18T10:36:00",
-      "tag": "FT-101",
-      "value": 37.792,
-      "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
-    },
-    {
-      "timestamp": "2026-08-18T10:36:00",
-      "tag": "P-101_STATUS",
-      "value": 1.0,
-      "unit": "state",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:36:00",
-      "tag": "FV-101_POS",
-      "value": 79.632,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:37:00",
-      "tag": "LT-101",
-      "value": 66.837,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:37:00",
-      "tag": "LT-102",
-      "value": 44.814,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:37:00",
-      "tag": "PT-101",
-      "value": 4.572,
-      "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
-      "timestamp": "2026-08-18T10:37:00",
-      "tag": "FT-101",
-      "value": 37.43,
-      "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
-    },
-    {
-      "timestamp": "2026-08-18T10:37:00",
-      "tag": "P-101_STATUS",
-      "value": 1.0,
-      "unit": "state",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:37:00",
-      "tag": "FV-101_POS",
-      "value": 79.537,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:38:00",
-      "tag": "LT-101",
-      "value": 67.558,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:38:00",
-      "tag": "LT-102",
-      "value": 44.609,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
       "timestamp": "2026-08-18T10:38:00",
       "tag": "PT-101",
-      "value": 4.596,
+      "value": 4.948,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HI"
@@ -7613,7 +7613,7 @@
     {
       "timestamp": "2026-08-18T10:38:00",
       "tag": "FT-101",
-      "value": 38.862,
+      "value": 33.98,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "LO"
@@ -7629,7 +7629,7 @@
     {
       "timestamp": "2026-08-18T10:38:00",
       "tag": "FV-101_POS",
-      "value": 79.021,
+      "value": 83.11,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7637,7 +7637,7 @@
     {
       "timestamp": "2026-08-18T10:39:00",
       "tag": "LT-101",
-      "value": 67.676,
+      "value": 71.927,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7645,7 +7645,7 @@
     {
       "timestamp": "2026-08-18T10:39:00",
       "tag": "LT-102",
-      "value": 44.942,
+      "value": 43.875,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7653,7 +7653,7 @@
     {
       "timestamp": "2026-08-18T10:39:00",
       "tag": "PT-101",
-      "value": 4.737,
+      "value": 5.118,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HI"
@@ -7661,7 +7661,7 @@
     {
       "timestamp": "2026-08-18T10:39:00",
       "tag": "FT-101",
-      "value": 37.345,
+      "value": 32.164,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "LO"
@@ -7677,7 +7677,7 @@
     {
       "timestamp": "2026-08-18T10:39:00",
       "tag": "FV-101_POS",
-      "value": 78.995,
+      "value": 83.262,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7685,7 +7685,7 @@
     {
       "timestamp": "2026-08-18T10:40:00",
       "tag": "LT-101",
-      "value": 68.312,
+      "value": 72.754,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7693,7 +7693,7 @@
     {
       "timestamp": "2026-08-18T10:40:00",
       "tag": "LT-102",
-      "value": 45.242,
+      "value": 44.131,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7701,7 +7701,7 @@
     {
       "timestamp": "2026-08-18T10:40:00",
       "tag": "PT-101",
-      "value": 4.711,
+      "value": 5.094,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HI"
@@ -7709,7 +7709,7 @@
     {
       "timestamp": "2026-08-18T10:40:00",
       "tag": "FT-101",
-      "value": 36.039,
+      "value": 30.576,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "LO"
@@ -7725,7 +7725,7 @@
     {
       "timestamp": "2026-08-18T10:40:00",
       "tag": "FV-101_POS",
-      "value": 79.097,
+      "value": 83.542,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7733,7 +7733,7 @@
     {
       "timestamp": "2026-08-18T10:41:00",
       "tag": "LT-101",
-      "value": 68.673,
+      "value": 73.271,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7741,7 +7741,7 @@
     {
       "timestamp": "2026-08-18T10:41:00",
       "tag": "LT-102",
-      "value": 45.362,
+      "value": 44.207,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7749,7 +7749,7 @@
     {
       "timestamp": "2026-08-18T10:41:00",
       "tag": "PT-101",
-      "value": 4.813,
+      "value": 5.218,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HI"
@@ -7757,7 +7757,7 @@
     {
       "timestamp": "2026-08-18T10:41:00",
       "tag": "FT-101",
-      "value": 36.476,
+      "value": 30.865,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "LO"
@@ -7773,7 +7773,7 @@
     {
       "timestamp": "2026-08-18T10:41:00",
       "tag": "FV-101_POS",
-      "value": 80.229,
+      "value": 84.851,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7781,7 +7781,7 @@
     {
       "timestamp": "2026-08-18T10:42:00",
       "tag": "LT-101",
-      "value": 69.287,
+      "value": 74.073,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7789,7 +7789,7 @@
     {
       "timestamp": "2026-08-18T10:42:00",
       "tag": "LT-102",
-      "value": 45.399,
+      "value": 44.199,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7797,7 +7797,7 @@
     {
       "timestamp": "2026-08-18T10:42:00",
       "tag": "PT-101",
-      "value": 5.034,
+      "value": 5.482,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HI"
@@ -7805,10 +7805,10 @@
     {
       "timestamp": "2026-08-18T10:42:00",
       "tag": "FT-101",
-      "value": 35.701,
+      "value": 29.849,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "LO"
+      "alarm_state": "LOLO"
     },
     {
       "timestamp": "2026-08-18T10:42:00",
@@ -7821,7 +7821,7 @@
     {
       "timestamp": "2026-08-18T10:42:00",
       "tag": "FV-101_POS",
-      "value": 79.947,
+      "value": 84.747,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7829,7 +7829,7 @@
     {
       "timestamp": "2026-08-18T10:43:00",
       "tag": "LT-101",
-      "value": 70.001,
+      "value": 74.987,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7837,7 +7837,7 @@
     {
       "timestamp": "2026-08-18T10:43:00",
       "tag": "LT-102",
-      "value": 45.668,
+      "value": 44.423,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7845,7 +7845,7 @@
     {
       "timestamp": "2026-08-18T10:43:00",
       "tag": "PT-101",
-      "value": 4.895,
+      "value": 5.325,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HI"
@@ -7853,10 +7853,10 @@
     {
       "timestamp": "2026-08-18T10:43:00",
       "tag": "FT-101",
-      "value": 35.224,
+      "value": 29.153,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "LO"
+      "alarm_state": "LOLO"
     },
     {
       "timestamp": "2026-08-18T10:43:00",
@@ -7869,7 +7869,7 @@
     {
       "timestamp": "2026-08-18T10:43:00",
       "tag": "FV-101_POS",
-      "value": 80.404,
+      "value": 85.382,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7877,34 +7877,34 @@
     {
       "timestamp": "2026-08-18T10:44:00",
       "tag": "LT-101",
-      "value": 70.42,
+      "value": 75.57,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T10:44:00",
+      "tag": "LT-102",
+      "value": 44.14,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
     },
     {
       "timestamp": "2026-08-18T10:44:00",
-      "tag": "LT-102",
-      "value": 45.429,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:44:00",
       "tag": "PT-101",
-      "value": 5.067,
+      "value": 5.53,
       "unit": "bar",
       "quality": "GOOD",
-      "alarm_state": "HI"
+      "alarm_state": "HIHI"
     },
     {
       "timestamp": "2026-08-18T10:44:00",
       "tag": "FT-101",
-      "value": 34.807,
+      "value": 28.523,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "LO"
+      "alarm_state": "LOLO"
     },
     {
       "timestamp": "2026-08-18T10:44:00",
@@ -7917,7 +7917,7 @@
     {
       "timestamp": "2026-08-18T10:44:00",
       "tag": "FV-101_POS",
-      "value": 80.893,
+      "value": 86.049,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7925,23 +7925,23 @@
     {
       "timestamp": "2026-08-18T10:45:00",
       "tag": "LT-101",
-      "value": 70.818,
+      "value": 76.128,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T10:45:00",
+      "tag": "LT-102",
+      "value": 44.332,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
     },
     {
       "timestamp": "2026-08-18T10:45:00",
-      "tag": "LT-102",
-      "value": 45.665,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:45:00",
       "tag": "PT-101",
-      "value": 4.926,
+      "value": 5.372,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HI"
@@ -7949,10 +7949,10 @@
     {
       "timestamp": "2026-08-18T10:45:00",
       "tag": "FT-101",
-      "value": 35.197,
+      "value": 28.761,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "LO"
+      "alarm_state": "LOLO"
     },
     {
       "timestamp": "2026-08-18T10:45:00",
@@ -7965,7 +7965,7 @@
     {
       "timestamp": "2026-08-18T10:45:00",
       "tag": "FV-101_POS",
-      "value": 80.317,
+      "value": 85.65,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -7973,34 +7973,34 @@
     {
       "timestamp": "2026-08-18T10:46:00",
       "tag": "LT-101",
-      "value": 71.454,
+      "value": 76.955,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T10:46:00",
+      "tag": "LT-102",
+      "value": 44.503,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
     },
     {
       "timestamp": "2026-08-18T10:46:00",
-      "tag": "LT-102",
-      "value": 45.881,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:46:00",
       "tag": "PT-101",
-      "value": 5.091,
+      "value": 5.57,
       "unit": "bar",
       "quality": "GOOD",
-      "alarm_state": "HI"
+      "alarm_state": "HIHI"
     },
     {
       "timestamp": "2026-08-18T10:46:00",
       "tag": "FT-101",
-      "value": 33.159,
+      "value": 26.384,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "LO"
+      "alarm_state": "LOLO"
     },
     {
       "timestamp": "2026-08-18T10:46:00",
@@ -8013,7 +8013,7 @@
     {
       "timestamp": "2026-08-18T10:46:00",
       "tag": "FV-101_POS",
-      "value": 81.029,
+      "value": 86.541,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -8021,34 +8021,34 @@
     {
       "timestamp": "2026-08-18T10:47:00",
       "tag": "LT-101",
-      "value": 72.013,
+      "value": 77.696,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T10:47:00",
+      "tag": "LT-102",
+      "value": 44.544,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
     },
     {
       "timestamp": "2026-08-18T10:47:00",
-      "tag": "LT-102",
-      "value": 45.966,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:47:00",
       "tag": "PT-101",
-      "value": 5.186,
+      "value": 5.686,
       "unit": "bar",
       "quality": "GOOD",
-      "alarm_state": "HI"
+      "alarm_state": "HIHI"
     },
     {
       "timestamp": "2026-08-18T10:47:00",
       "tag": "FT-101",
-      "value": 34.502,
+      "value": 27.649,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "LO"
+      "alarm_state": "LOLO"
     },
     {
       "timestamp": "2026-08-18T10:47:00",
@@ -8061,7 +8061,7 @@
     {
       "timestamp": "2026-08-18T10:47:00",
       "tag": "FV-101_POS",
-      "value": 81.254,
+      "value": 86.943,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -8069,34 +8069,34 @@
     {
       "timestamp": "2026-08-18T10:48:00",
       "tag": "LT-101",
-      "value": 72.529,
+      "value": 78.386,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T10:48:00",
+      "tag": "LT-102",
+      "value": 44.542,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
     },
     {
       "timestamp": "2026-08-18T10:48:00",
-      "tag": "LT-102",
-      "value": 46.008,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:48:00",
       "tag": "PT-101",
-      "value": 5.263,
+      "value": 5.781,
       "unit": "bar",
       "quality": "GOOD",
-      "alarm_state": "HI"
+      "alarm_state": "HIHI"
     },
     {
       "timestamp": "2026-08-18T10:48:00",
       "tag": "FT-101",
-      "value": 34.208,
+      "value": 27.15,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "LO"
+      "alarm_state": "LOLO"
     },
     {
       "timestamp": "2026-08-18T10:48:00",
@@ -8109,7 +8109,7 @@
     {
       "timestamp": "2026-08-18T10:48:00",
       "tag": "FV-101_POS",
-      "value": 81.486,
+      "value": 87.353,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -8117,34 +8117,34 @@
     {
       "timestamp": "2026-08-18T10:49:00",
       "tag": "LT-101",
-      "value": 73.274,
+      "value": 79.336,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T10:49:00",
+      "tag": "LT-102",
+      "value": 44.747,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
     },
     {
       "timestamp": "2026-08-18T10:49:00",
-      "tag": "LT-102",
-      "value": 46.258,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:49:00",
       "tag": "PT-101",
-      "value": 5.299,
+      "value": 5.83,
       "unit": "bar",
       "quality": "GOOD",
-      "alarm_state": "HI"
+      "alarm_state": "HIHI"
     },
     {
       "timestamp": "2026-08-18T10:49:00",
       "tag": "FT-101",
-      "value": 34.547,
+      "value": 27.334,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "LO"
+      "alarm_state": "LOLO"
     },
     {
       "timestamp": "2026-08-18T10:49:00",
@@ -8157,7 +8157,7 @@
     {
       "timestamp": "2026-08-18T10:49:00",
       "tag": "FV-101_POS",
-      "value": 80.882,
+      "value": 86.926,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -8165,34 +8165,34 @@
     {
       "timestamp": "2026-08-18T10:50:00",
       "tag": "LT-101",
-      "value": 73.791,
+      "value": 80.029,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T10:50:00",
+      "tag": "LT-102",
+      "value": 44.359,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
     },
     {
       "timestamp": "2026-08-18T10:50:00",
-      "tag": "LT-102",
-      "value": 45.915,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:50:00",
       "tag": "PT-101",
-      "value": 5.315,
+      "value": 5.853,
       "unit": "bar",
       "quality": "GOOD",
-      "alarm_state": "HI"
+      "alarm_state": "HIHI"
     },
     {
       "timestamp": "2026-08-18T10:50:00",
       "tag": "FT-101",
-      "value": 32.657,
+      "value": 25.117,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "LO"
+      "alarm_state": "LOLO"
     },
     {
       "timestamp": "2026-08-18T10:50:00",
@@ -8205,7 +8205,7 @@
     {
       "timestamp": "2026-08-18T10:50:00",
       "tag": "FV-101_POS",
-      "value": 81.769,
+      "value": 87.991,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -8213,34 +8213,34 @@
     {
       "timestamp": "2026-08-18T10:51:00",
       "tag": "LT-101",
-      "value": 74.288,
+      "value": 80.699,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T10:51:00",
+      "tag": "LT-102",
+      "value": 44.666,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
     },
     {
       "timestamp": "2026-08-18T10:51:00",
-      "tag": "LT-102",
-      "value": 46.266,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:51:00",
       "tag": "PT-101",
-      "value": 5.367,
+      "value": 5.92,
       "unit": "bar",
       "quality": "GOOD",
-      "alarm_state": "HI"
+      "alarm_state": "HIHI"
     },
     {
       "timestamp": "2026-08-18T10:51:00",
       "tag": "FT-101",
-      "value": 31.62,
+      "value": 23.818,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "LO"
+      "alarm_state": "LOLO"
     },
     {
       "timestamp": "2026-08-18T10:51:00",
@@ -8253,7 +8253,7 @@
     {
       "timestamp": "2026-08-18T10:51:00",
       "tag": "FV-101_POS",
-      "value": 81.462,
+      "value": 87.862,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -8261,34 +8261,34 @@
     {
       "timestamp": "2026-08-18T10:52:00",
       "tag": "LT-101",
-      "value": 74.662,
+      "value": 81.231,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T10:52:00",
+      "tag": "LT-102",
+      "value": 44.979,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
     },
     {
       "timestamp": "2026-08-18T10:52:00",
-      "tag": "LT-102",
-      "value": 46.623,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:52:00",
       "tag": "PT-101",
-      "value": 5.47,
+      "value": 6.045,
       "unit": "bar",
       "quality": "GOOD",
-      "alarm_state": "HI"
+      "alarm_state": "HIHI"
     },
     {
       "timestamp": "2026-08-18T10:52:00",
       "tag": "FT-101",
-      "value": 31.048,
+      "value": 23.021,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "LO"
+      "alarm_state": "LOLO"
     },
     {
       "timestamp": "2026-08-18T10:52:00",
@@ -8301,23 +8301,23 @@
     {
       "timestamp": "2026-08-18T10:52:00",
       "tag": "FV-101_POS",
-      "value": 81.62,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:53:00",
-      "tag": "LT-101",
-      "value": 75.48,
+      "value": 88.198,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T10:53:00",
+      "tag": "LT-101",
+      "value": 82.262,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HIHI"
+    },
+    {
+      "timestamp": "2026-08-18T10:53:00",
       "tag": "LT-102",
-      "value": 46.694,
+      "value": 45.005,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -8325,18 +8325,18 @@
     {
       "timestamp": "2026-08-18T10:53:00",
       "tag": "PT-101",
-      "value": 5.473,
+      "value": 6.055,
       "unit": "bar",
       "quality": "GOOD",
-      "alarm_state": "HI"
+      "alarm_state": "HIHI"
     },
     {
       "timestamp": "2026-08-18T10:53:00",
       "tag": "FT-101",
-      "value": 31.243,
+      "value": 23.049,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "LO"
+      "alarm_state": "LOLO"
     },
     {
       "timestamp": "2026-08-18T10:53:00",
@@ -8349,23 +8349,23 @@
     {
       "timestamp": "2026-08-18T10:53:00",
       "tag": "FV-101_POS",
-      "value": 82.459,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:54:00",
-      "tag": "LT-101",
-      "value": 75.531,
+      "value": 89.214,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T10:54:00",
+      "tag": "LT-101",
+      "value": 82.431,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HIHI"
+    },
+    {
+      "timestamp": "2026-08-18T10:54:00",
       "tag": "LT-102",
-      "value": 46.795,
+      "value": 45.062,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -8373,7 +8373,7 @@
     {
       "timestamp": "2026-08-18T10:54:00",
       "tag": "PT-101",
-      "value": 5.628,
+      "value": 6.241,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HIHI"
@@ -8381,10 +8381,10 @@
     {
       "timestamp": "2026-08-18T10:54:00",
       "tag": "FT-101",
-      "value": 31.234,
+      "value": 22.857,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "LO"
+      "alarm_state": "LOLO"
     },
     {
       "timestamp": "2026-08-18T10:54:00",
@@ -8397,23 +8397,23 @@
     {
       "timestamp": "2026-08-18T10:54:00",
       "tag": "FV-101_POS",
-      "value": 82.38,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:55:00",
-      "tag": "LT-101",
-      "value": 76.596,
+      "value": 89.313,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T10:55:00",
+      "tag": "LT-101",
+      "value": 83.74,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HIHI"
+    },
+    {
+      "timestamp": "2026-08-18T10:55:00",
       "tag": "LT-102",
-      "value": 46.864,
+      "value": 45.087,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -8421,7 +8421,7 @@
     {
       "timestamp": "2026-08-18T10:55:00",
       "tag": "PT-101",
-      "value": 5.635,
+      "value": 6.255,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HIHI"
@@ -8429,10 +8429,10 @@
     {
       "timestamp": "2026-08-18T10:55:00",
       "tag": "FT-101",
-      "value": 30.382,
+      "value": 21.758,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "LO"
+      "alarm_state": "LOLO"
     },
     {
       "timestamp": "2026-08-18T10:55:00",
@@ -8445,23 +8445,23 @@
     {
       "timestamp": "2026-08-18T10:55:00",
       "tag": "FV-101_POS",
-      "value": 82.053,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:56:00",
-      "tag": "LT-101",
-      "value": 76.622,
+      "value": 89.164,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T10:56:00",
+      "tag": "LT-101",
+      "value": 83.88,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HIHI"
+    },
+    {
+      "timestamp": "2026-08-18T10:56:00",
       "tag": "LT-102",
-      "value": 47.058,
+      "value": 45.236,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -8469,7 +8469,7 @@
     {
       "timestamp": "2026-08-18T10:56:00",
       "tag": "PT-101",
-      "value": 5.754,
+      "value": 6.399,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HIHI"
@@ -8477,7 +8477,7 @@
     {
       "timestamp": "2026-08-18T10:56:00",
       "tag": "FT-101",
-      "value": 28.688,
+      "value": 19.752,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "LOLO"
@@ -8493,23 +8493,23 @@
     {
       "timestamp": "2026-08-18T10:56:00",
       "tag": "FV-101_POS",
-      "value": 82.492,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:57:00",
-      "tag": "LT-101",
-      "value": 77.613,
+      "value": 89.781,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T10:57:00",
+      "tag": "LT-101",
+      "value": 85.106,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HIHI"
+    },
+    {
+      "timestamp": "2026-08-18T10:57:00",
       "tag": "LT-102",
-      "value": 47.304,
+      "value": 45.437,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -8517,7 +8517,7 @@
     {
       "timestamp": "2026-08-18T10:57:00",
       "tag": "PT-101",
-      "value": 5.815,
+      "value": 6.476,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HIHI"
@@ -8525,10 +8525,10 @@
     {
       "timestamp": "2026-08-18T10:57:00",
       "tag": "FT-101",
-      "value": 30.412,
+      "value": 21.427,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "LO"
+      "alarm_state": "LOLO"
     },
     {
       "timestamp": "2026-08-18T10:57:00",
@@ -8541,23 +8541,23 @@
     {
       "timestamp": "2026-08-18T10:57:00",
       "tag": "FV-101_POS",
-      "value": 82.472,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:58:00",
-      "tag": "LT-101",
-      "value": 78.058,
+      "value": 89.938,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T10:58:00",
+      "tag": "LT-101",
+      "value": 85.718,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HIHI"
+    },
+    {
+      "timestamp": "2026-08-18T10:58:00",
       "tag": "LT-102",
-      "value": 47.21,
+      "value": 45.299,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -8565,7 +8565,7 @@
     {
       "timestamp": "2026-08-18T10:58:00",
       "tag": "PT-101",
-      "value": 5.89,
+      "value": 6.569,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HIHI"
@@ -8573,7 +8573,7 @@
     {
       "timestamp": "2026-08-18T10:58:00",
       "tag": "FT-101",
-      "value": 29.632,
+      "value": 20.406,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "LOLO"
@@ -8589,23 +8589,23 @@
     {
       "timestamp": "2026-08-18T10:58:00",
       "tag": "FV-101_POS",
-      "value": 82.112,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T10:59:00",
-      "tag": "LT-101",
-      "value": 78.63,
+      "value": 89.756,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T10:59:00",
+      "tag": "LT-101",
+      "value": 86.473,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HIHI"
+    },
+    {
+      "timestamp": "2026-08-18T10:59:00",
       "tag": "LT-102",
-      "value": 47.176,
+      "value": 45.221,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -8613,7 +8613,7 @@
     {
       "timestamp": "2026-08-18T10:59:00",
       "tag": "PT-101",
-      "value": 5.93,
+      "value": 6.622,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HIHI"
@@ -8621,7 +8621,7 @@
     {
       "timestamp": "2026-08-18T10:59:00",
       "tag": "FT-101",
-      "value": 28.844,
+      "value": 19.375,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "LOLO"
@@ -8637,39 +8637,39 @@
     {
       "timestamp": "2026-08-18T10:59:00",
       "tag": "FV-101_POS",
-      "value": 82.202,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:00:00",
-      "tag": "LT-101",
-      "value": 78.704,
+      "value": 90.025,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T11:00:00",
-      "tag": "LT-102",
-      "value": 45.044,
+      "tag": "LT-101",
+      "value": 86.671,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:00:00",
-      "tag": "PT-101",
-      "value": 5.774,
-      "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HIHI"
     },
     {
       "timestamp": "2026-08-18T11:00:00",
+      "tag": "LT-102",
+      "value": 42.722,
+      "unit": "%",
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:00:00",
+      "tag": "PT-101",
+      "value": 6.57,
+      "unit": "bar",
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:00:00",
       "tag": "FT-101",
-      "value": 28.983,
+      "value": 18.982,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "LOLO"
@@ -8685,23 +8685,23 @@
     {
       "timestamp": "2026-08-18T11:00:00",
       "tag": "FV-101_POS",
-      "value": 81.922,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:01:00",
-      "tag": "LT-101",
-      "value": 78.824,
+      "value": 89.913,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T11:01:00",
+      "tag": "LT-101",
+      "value": 86.758,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HIHI"
+    },
+    {
+      "timestamp": "2026-08-18T11:01:00",
       "tag": "LT-102",
-      "value": 47.439,
+      "value": 45.447,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -8709,7 +8709,7 @@
     {
       "timestamp": "2026-08-18T11:01:00",
       "tag": "PT-101",
-      "value": 5.655,
+      "value": 6.428,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HIHI"
@@ -8717,7 +8717,7 @@
     {
       "timestamp": "2026-08-18T11:01:00",
       "tag": "FT-101",
-      "value": 27.374,
+      "value": 17.429,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "LOLO"
@@ -8733,39 +8733,39 @@
     {
       "timestamp": "2026-08-18T11:01:00",
       "tag": "FV-101_POS",
-      "value": 81.138,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:02:00",
-      "tag": "LT-101",
-      "value": 78.802,
+      "value": 88.896,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T11:02:00",
-      "tag": "LT-102",
-      "value": 48.41,
+      "tag": "LT-101",
+      "value": 86.686,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:02:00",
-      "tag": "PT-101",
-      "value": 5.816,
-      "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HIHI"
     },
     {
       "timestamp": "2026-08-18T11:02:00",
+      "tag": "LT-102",
+      "value": 46.571,
+      "unit": "%",
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:02:00",
+      "tag": "PT-101",
+      "value": 6.6,
+      "unit": "bar",
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:02:00",
       "tag": "FT-101",
-      "value": 28.739,
+      "value": 19.047,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "LOLO"
@@ -8781,23 +8781,23 @@
     {
       "timestamp": "2026-08-18T11:02:00",
       "tag": "FV-101_POS",
-      "value": 83.488,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:03:00",
-      "tag": "LT-101",
-      "value": 78.554,
+      "value": 91.407,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T11:03:00",
+      "tag": "LT-101",
+      "value": 86.364,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HIHI"
+    },
+    {
+      "timestamp": "2026-08-18T11:03:00",
       "tag": "LT-102",
-      "value": 48.445,
+      "value": 46.63,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -8805,7 +8805,7 @@
     {
       "timestamp": "2026-08-18T11:03:00",
       "tag": "PT-101",
-      "value": 5.742,
+      "value": 6.508,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HIHI"
@@ -8813,7 +8813,7 @@
     {
       "timestamp": "2026-08-18T11:03:00",
       "tag": "FT-101",
-      "value": 28.597,
+      "value": 19.059,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "LOLO"
@@ -8829,42 +8829,42 @@
     {
       "timestamp": "2026-08-18T11:03:00",
       "tag": "FV-101_POS",
-      "value": 81.495,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:04:00",
-      "tag": "LT-101",
-      "value": 78.305,
+      "value": 89.032,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T11:04:00",
-      "tag": "LT-102",
-      "value": 45.185,
+      "tag": "LT-101",
+      "value": 86.04,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:04:00",
-      "tag": "PT-101",
-      "value": 5.736,
-      "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HIHI"
     },
     {
       "timestamp": "2026-08-18T11:04:00",
+      "tag": "LT-102",
+      "value": 42.959,
+      "unit": "%",
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:04:00",
+      "tag": "PT-101",
+      "value": 6.493,
+      "unit": "bar",
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:04:00",
       "tag": "FT-101",
-      "value": 31.215,
+      "value": 22.015,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "LO"
+      "alarm_state": "LOLO"
     },
     {
       "timestamp": "2026-08-18T11:04:00",
@@ -8877,23 +8877,23 @@
     {
       "timestamp": "2026-08-18T11:04:00",
       "tag": "FV-101_POS",
-      "value": 82.562,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:05:00",
-      "tag": "LT-101",
-      "value": 77.927,
+      "value": 90.098,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T11:05:00",
+      "tag": "LT-101",
+      "value": 85.573,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HIHI"
+    },
+    {
+      "timestamp": "2026-08-18T11:05:00",
       "tag": "LT-102",
-      "value": 46.658,
+      "value": 44.647,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -8901,7 +8901,7 @@
     {
       "timestamp": "2026-08-18T11:05:00",
       "tag": "PT-101",
-      "value": 5.736,
+      "value": 6.484,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HIHI"
@@ -8909,10 +8909,10 @@
     {
       "timestamp": "2026-08-18T11:05:00",
       "tag": "FT-101",
-      "value": 30.018,
+      "value": 20.9,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "LO"
+      "alarm_state": "LOLO"
     },
     {
       "timestamp": "2026-08-18T11:05:00",
@@ -8925,42 +8925,42 @@
     {
       "timestamp": "2026-08-18T11:05:00",
       "tag": "FV-101_POS",
-      "value": 81.78,
+      "value": 89.085,
       "unit": "%",
       "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T11:06:00",
       "tag": "LT-101",
-      "value": 78.055,
+      "value": 85.668,
       "unit": "%",
       "quality": "GOOD",
-      "alarm_state": "HI"
+      "alarm_state": "HIHI"
     },
     {
       "timestamp": "2026-08-18T11:06:00",
       "tag": "LT-102",
-      "value": 48.615,
+      "value": 46.884,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T11:06:00",
       "tag": "PT-101",
-      "value": 5.417,
+      "value": 6.116,
       "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "HI"
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T11:06:00",
       "tag": "FT-101",
-      "value": 30.95,
+      "value": 22.058,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "LO"
+      "alarm_state": "LOLO"
     },
     {
       "timestamp": "2026-08-18T11:06:00",
@@ -8973,23 +8973,23 @@
     {
       "timestamp": "2026-08-18T11:06:00",
       "tag": "FV-101_POS",
-      "value": 81.087,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:07:00",
-      "tag": "LT-101",
-      "value": 77.756,
+      "value": 88.173,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T11:07:00",
+      "tag": "LT-101",
+      "value": 85.289,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HIHI"
+    },
+    {
+      "timestamp": "2026-08-18T11:07:00",
       "tag": "LT-102",
-      "value": 47.76,
+      "value": 45.931,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -8997,7 +8997,7 @@
     {
       "timestamp": "2026-08-18T11:07:00",
       "tag": "PT-101",
-      "value": 5.66,
+      "value": 6.38,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HIHI"
@@ -9005,10 +9005,10 @@
     {
       "timestamp": "2026-08-18T11:07:00",
       "tag": "FT-101",
-      "value": 30.01,
+      "value": 21.218,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "LO"
+      "alarm_state": "LOLO"
     },
     {
       "timestamp": "2026-08-18T11:07:00",
@@ -9021,42 +9021,42 @@
     {
       "timestamp": "2026-08-18T11:07:00",
       "tag": "FV-101_POS",
-      "value": 82.388,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:08:00",
-      "tag": "LT-101",
-      "value": 77.481,
+      "value": 89.503,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T11:08:00",
-      "tag": "LT-102",
-      "value": 47.908,
+      "tag": "LT-101",
+      "value": 84.937,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:08:00",
-      "tag": "PT-101",
-      "value": 5.527,
-      "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HIHI"
     },
     {
       "timestamp": "2026-08-18T11:08:00",
+      "tag": "LT-102",
+      "value": 46.116,
+      "unit": "%",
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:08:00",
+      "tag": "PT-101",
+      "value": 6.221,
+      "unit": "bar",
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:08:00",
       "tag": "FT-101",
-      "value": 30.158,
+      "value": 21.539,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "LO"
+      "alarm_state": "LOLO"
     },
     {
       "timestamp": "2026-08-18T11:08:00",
@@ -9069,23 +9069,23 @@
     {
       "timestamp": "2026-08-18T11:08:00",
       "tag": "FV-101_POS",
-      "value": 82.025,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:09:00",
-      "tag": "LT-101",
-      "value": 77.205,
+      "value": 88.962,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T11:09:00",
+      "tag": "LT-101",
+      "value": 84.583,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HIHI"
+    },
+    {
+      "timestamp": "2026-08-18T11:09:00",
       "tag": "LT-102",
-      "value": 52.119,
+      "value": 50.903,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -9093,7 +9093,7 @@
     {
       "timestamp": "2026-08-18T11:09:00",
       "tag": "PT-101",
-      "value": 5.589,
+      "value": 6.283,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HIHI"
@@ -9101,10 +9101,10 @@
     {
       "timestamp": "2026-08-18T11:09:00",
       "tag": "FT-101",
-      "value": 30.836,
+      "value": 22.425,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "LO"
+      "alarm_state": "LOLO"
     },
     {
       "timestamp": "2026-08-18T11:09:00",
@@ -9117,42 +9117,42 @@
     {
       "timestamp": "2026-08-18T11:09:00",
       "tag": "FV-101_POS",
-      "value": 82.347,
+      "value": 89.191,
       "unit": "%",
       "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T11:10:00",
       "tag": "LT-101",
-      "value": 77.425,
+      "value": 84.781,
       "unit": "%",
       "quality": "GOOD",
-      "alarm_state": "HI"
+      "alarm_state": "HIHI"
     },
     {
       "timestamp": "2026-08-18T11:10:00",
       "tag": "LT-102",
-      "value": 49.107,
+      "value": 47.516,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T11:10:00",
       "tag": "PT-101",
-      "value": 5.405,
+      "value": 6.066,
       "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "HI"
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T11:10:00",
       "tag": "FT-101",
-      "value": 33.005,
+      "value": 24.901,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "LO"
+      "alarm_state": "LOLO"
     },
     {
       "timestamp": "2026-08-18T11:10:00",
@@ -9165,23 +9165,23 @@
     {
       "timestamp": "2026-08-18T11:10:00",
       "tag": "FV-101_POS",
-      "value": 81.494,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:11:00",
-      "tag": "LT-101",
-      "value": 76.794,
+      "value": 88.098,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T11:11:00",
+      "tag": "LT-101",
+      "value": 84.033,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HIHI"
+    },
+    {
+      "timestamp": "2026-08-18T11:11:00",
       "tag": "LT-102",
-      "value": 47.542,
+      "value": 45.761,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -9189,18 +9189,18 @@
     {
       "timestamp": "2026-08-18T11:11:00",
       "tag": "PT-101",
-      "value": 5.3,
+      "value": 5.939,
       "unit": "bar",
       "quality": "GOOD",
-      "alarm_state": "HI"
+      "alarm_state": "HIHI"
     },
     {
       "timestamp": "2026-08-18T11:11:00",
       "tag": "FT-101",
-      "value": 31.918,
+      "value": 23.905,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "LO"
+      "alarm_state": "LOLO"
     },
     {
       "timestamp": "2026-08-18T11:11:00",
@@ -9213,42 +9213,42 @@
     {
       "timestamp": "2026-08-18T11:11:00",
       "tag": "FV-101_POS",
-      "value": 81.806,
+      "value": 88.315,
       "unit": "%",
       "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T11:12:00",
       "tag": "LT-101",
-      "value": 76.672,
+      "value": 83.85,
       "unit": "%",
       "quality": "GOOD",
-      "alarm_state": "HI"
+      "alarm_state": "HIHI"
     },
     {
       "timestamp": "2026-08-18T11:12:00",
       "tag": "LT-102",
-      "value": 45.863,
+      "value": 43.887,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T11:12:00",
       "tag": "PT-101",
-      "value": 5.461,
+      "value": 6.111,
       "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "HI"
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T11:12:00",
       "tag": "FT-101",
-      "value": 32.975,
+      "value": 25.195,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "LO"
+      "alarm_state": "LOLO"
     },
     {
       "timestamp": "2026-08-18T11:12:00",
@@ -9261,23 +9261,23 @@
     {
       "timestamp": "2026-08-18T11:12:00",
       "tag": "FV-101_POS",
-      "value": 82.047,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:13:00",
-      "tag": "LT-101",
-      "value": 76.819,
+      "value": 88.453,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T11:13:00",
+      "tag": "LT-101",
+      "value": 83.967,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HIHI"
+    },
+    {
+      "timestamp": "2026-08-18T11:13:00",
       "tag": "LT-102",
-      "value": 52.193,
+      "value": 51.067,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -9285,18 +9285,18 @@
     {
       "timestamp": "2026-08-18T11:13:00",
       "tag": "PT-101",
-      "value": 5.294,
+      "value": 5.915,
       "unit": "bar",
       "quality": "GOOD",
-      "alarm_state": "HI"
+      "alarm_state": "HIHI"
     },
     {
       "timestamp": "2026-08-18T11:13:00",
       "tag": "FT-101",
-      "value": 34.097,
+      "value": 26.555,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "LO"
+      "alarm_state": "LOLO"
     },
     {
       "timestamp": "2026-08-18T11:13:00",
@@ -9309,42 +9309,42 @@
     {
       "timestamp": "2026-08-18T11:13:00",
       "tag": "FV-101_POS",
-      "value": 82.308,
+      "value": 88.613,
       "unit": "%",
       "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T11:14:00",
       "tag": "LT-101",
-      "value": 76.703,
+      "value": 83.792,
       "unit": "%",
       "quality": "GOOD",
-      "alarm_state": "HI"
+      "alarm_state": "HIHI"
     },
     {
       "timestamp": "2026-08-18T11:14:00",
       "tag": "LT-102",
-      "value": 49.869,
+      "value": 48.453,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T11:14:00",
       "tag": "PT-101",
-      "value": 5.276,
+      "value": 5.886,
       "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "HI"
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T11:14:00",
       "tag": "FT-101",
-      "value": 33.3,
+      "value": 25.869,
       "unit": "m3/h",
       "quality": "GOOD",
-      "alarm_state": "LO"
+      "alarm_state": "LOLO"
     },
     {
       "timestamp": "2026-08-18T11:14:00",
@@ -9357,7 +9357,7 @@
     {
       "timestamp": "2026-08-18T11:14:00",
       "tag": "FV-101_POS",
-      "value": 81.598,
+      "value": 87.681,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -9365,21 +9365,693 @@
     {
       "timestamp": "2026-08-18T11:15:00",
       "tag": "LT-101",
-      "value": 76.504,
+      "value": 83.522,
       "unit": "%",
       "quality": "GOOD",
-      "alarm_state": "HI"
+      "alarm_state": "HIHI"
     },
     {
       "timestamp": "2026-08-18T11:15:00",
       "tag": "LT-102",
-      "value": 49.312,
+      "value": 47.842,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
     },
     {
       "timestamp": "2026-08-18T11:15:00",
+      "tag": "PT-101",
+      "value": 5.924,
+      "unit": "bar",
+      "quality": "GOOD",
+      "alarm_state": "HIHI"
+    },
+    {
+      "timestamp": "2026-08-18T11:15:00",
+      "tag": "FT-101",
+      "value": 26.678,
+      "unit": "m3/h",
+      "quality": "GOOD",
+      "alarm_state": "LOLO"
+    },
+    {
+      "timestamp": "2026-08-18T11:15:00",
+      "tag": "P-101_STATUS",
+      "value": 1.0,
+      "unit": "state",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:15:00",
+      "tag": "FV-101_POS",
+      "value": 87.857,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:16:00",
+      "tag": "LT-101",
+      "value": 83.312,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HIHI"
+    },
+    {
+      "timestamp": "2026-08-18T11:16:00",
+      "tag": "LT-102",
+      "value": 51.934,
+      "unit": "%",
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:16:00",
+      "tag": "PT-101",
+      "value": 5.862,
+      "unit": "bar",
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:16:00",
+      "tag": "FT-101",
+      "value": 28.147,
+      "unit": "m3/h",
+      "quality": "GOOD",
+      "alarm_state": "LOLO"
+    },
+    {
+      "timestamp": "2026-08-18T11:16:00",
+      "tag": "P-101_STATUS",
+      "value": 1.0,
+      "unit": "state",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:16:00",
+      "tag": "FV-101_POS",
+      "value": 87.872,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:17:00",
+      "tag": "LT-101",
+      "value": 83.167,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HIHI"
+    },
+    {
+      "timestamp": "2026-08-18T11:17:00",
+      "tag": "LT-102",
+      "value": 49.385,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:17:00",
+      "tag": "PT-101",
+      "value": 5.805,
+      "unit": "bar",
+      "quality": "GOOD",
+      "alarm_state": "HIHI"
+    },
+    {
+      "timestamp": "2026-08-18T11:17:00",
+      "tag": "FT-101",
+      "value": 24.995,
+      "unit": "m3/h",
+      "quality": "GOOD",
+      "alarm_state": "LOLO"
+    },
+    {
+      "timestamp": "2026-08-18T11:17:00",
+      "tag": "P-101_STATUS",
+      "value": 1.0,
+      "unit": "state",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:17:00",
+      "tag": "FV-101_POS",
+      "value": 87.239,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:18:00",
+      "tag": "LT-101",
+      "value": 83.005,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HIHI"
+    },
+    {
+      "timestamp": "2026-08-18T11:18:00",
+      "tag": "LT-102",
+      "value": 49.226,
+      "unit": "%",
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:18:00",
+      "tag": "PT-101",
+      "value": 5.731,
+      "unit": "bar",
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:18:00",
+      "tag": "FT-101",
+      "value": 25.059,
+      "unit": "m3/h",
+      "quality": "GOOD",
+      "alarm_state": "LOLO"
+    },
+    {
+      "timestamp": "2026-08-18T11:18:00",
+      "tag": "P-101_STATUS",
+      "value": 1.0,
+      "unit": "state",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:18:00",
+      "tag": "FV-101_POS",
+      "value": 87.47,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:19:00",
+      "tag": "LT-101",
+      "value": 82.524,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HIHI"
+    },
+    {
+      "timestamp": "2026-08-18T11:19:00",
+      "tag": "LT-102",
+      "value": 47.491,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:19:00",
+      "tag": "PT-101",
+      "value": 5.806,
+      "unit": "bar",
+      "quality": "GOOD",
+      "alarm_state": "HIHI"
+    },
+    {
+      "timestamp": "2026-08-18T11:19:00",
+      "tag": "FT-101",
+      "value": 25.752,
+      "unit": "m3/h",
+      "quality": "GOOD",
+      "alarm_state": "LOLO"
+    },
+    {
+      "timestamp": "2026-08-18T11:19:00",
+      "tag": "P-101_STATUS",
+      "value": 1.0,
+      "unit": "state",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:19:00",
+      "tag": "FV-101_POS",
+      "value": 86.725,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:20:00",
+      "tag": "LT-101",
+      "value": 82.165,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HIHI"
+    },
+    {
+      "timestamp": "2026-08-18T11:20:00",
+      "tag": "LT-102",
+      "value": 52.15,
+      "unit": "%",
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:20:00",
+      "tag": "PT-101",
+      "value": 5.691,
+      "unit": "bar",
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:20:00",
+      "tag": "FT-101",
+      "value": 26.427,
+      "unit": "m3/h",
+      "quality": "GOOD",
+      "alarm_state": "LOLO"
+    },
+    {
+      "timestamp": "2026-08-18T11:20:00",
+      "tag": "P-101_STATUS",
+      "value": 1.0,
+      "unit": "state",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:20:00",
+      "tag": "FV-101_POS",
+      "value": 87.295,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:21:00",
+      "tag": "LT-101",
+      "value": 81.975,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T11:21:00",
+      "tag": "LT-102",
+      "value": 50.703,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:21:00",
+      "tag": "PT-101",
+      "value": 5.604,
+      "unit": "bar",
+      "quality": "GOOD",
+      "alarm_state": "HIHI"
+    },
+    {
+      "timestamp": "2026-08-18T11:21:00",
+      "tag": "FT-101",
+      "value": 29.111,
+      "unit": "m3/h",
+      "quality": "GOOD",
+      "alarm_state": "LOLO"
+    },
+    {
+      "timestamp": "2026-08-18T11:21:00",
+      "tag": "P-101_STATUS",
+      "value": 1.0,
+      "unit": "state",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:21:00",
+      "tag": "FV-101_POS",
+      "value": 86.811,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:22:00",
+      "tag": "LT-101",
+      "value": 81.559,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T11:22:00",
+      "tag": "LT-102",
+      "value": 52.287,
+      "unit": "%",
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:22:00",
+      "tag": "PT-101",
+      "value": 5.42,
+      "unit": "bar",
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:22:00",
+      "tag": "FT-101",
+      "value": 25.978,
+      "unit": "m3/h",
+      "quality": "GOOD",
+      "alarm_state": "LOLO"
+    },
+    {
+      "timestamp": "2026-08-18T11:22:00",
+      "tag": "P-101_STATUS",
+      "value": 1.0,
+      "unit": "state",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:22:00",
+      "tag": "FV-101_POS",
+      "value": 86.924,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:23:00",
+      "tag": "LT-101",
+      "value": 81.341,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T11:23:00",
+      "tag": "LT-102",
+      "value": 51.587,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:23:00",
+      "tag": "PT-101",
+      "value": 5.472,
+      "unit": "bar",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T11:23:00",
+      "tag": "FT-101",
+      "value": 27.399,
+      "unit": "m3/h",
+      "quality": "GOOD",
+      "alarm_state": "LOLO"
+    },
+    {
+      "timestamp": "2026-08-18T11:23:00",
+      "tag": "P-101_STATUS",
+      "value": 1.0,
+      "unit": "state",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:23:00",
+      "tag": "FV-101_POS",
+      "value": 86.694,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:24:00",
+      "tag": "LT-101",
+      "value": 81.279,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T11:24:00",
+      "tag": "LT-102",
+      "value": 49.447,
+      "unit": "%",
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:24:00",
+      "tag": "PT-101",
+      "value": 5.262,
+      "unit": "bar",
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:24:00",
+      "tag": "FT-101",
+      "value": 28.643,
+      "unit": "m3/h",
+      "quality": "GOOD",
+      "alarm_state": "LOLO"
+    },
+    {
+      "timestamp": "2026-08-18T11:24:00",
+      "tag": "P-101_STATUS",
+      "value": 1.0,
+      "unit": "state",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:24:00",
+      "tag": "FV-101_POS",
+      "value": 87.0,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:25:00",
+      "tag": "LT-101",
+      "value": 80.567,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T11:25:00",
+      "tag": "LT-102",
+      "value": 49.394,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:25:00",
+      "tag": "PT-101",
+      "value": 5.35,
+      "unit": "bar",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T11:25:00",
+      "tag": "FT-101",
+      "value": 26.482,
+      "unit": "m3/h",
+      "quality": "GOOD",
+      "alarm_state": "LOLO"
+    },
+    {
+      "timestamp": "2026-08-18T11:25:00",
+      "tag": "P-101_STATUS",
+      "value": 1.0,
+      "unit": "state",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:25:00",
+      "tag": "FV-101_POS",
+      "value": 86.676,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:26:00",
+      "tag": "LT-101",
+      "value": 80.308,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T11:26:00",
+      "tag": "LT-102",
+      "value": 52.225,
+      "unit": "%",
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:26:00",
+      "tag": "PT-101",
+      "value": 5.374,
+      "unit": "bar",
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:26:00",
+      "tag": "FT-101",
+      "value": 30.396,
+      "unit": "m3/h",
+      "quality": "GOOD",
+      "alarm_state": "LO"
+    },
+    {
+      "timestamp": "2026-08-18T11:26:00",
+      "tag": "P-101_STATUS",
+      "value": 1.0,
+      "unit": "state",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:26:00",
+      "tag": "FV-101_POS",
+      "value": 86.314,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:27:00",
+      "tag": "LT-101",
+      "value": 80.241,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T11:27:00",
+      "tag": "LT-102",
+      "value": 51.705,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:27:00",
+      "tag": "PT-101",
+      "value": 5.167,
+      "unit": "bar",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T11:27:00",
+      "tag": "FT-101",
+      "value": 30.364,
+      "unit": "m3/h",
+      "quality": "GOOD",
+      "alarm_state": "LO"
+    },
+    {
+      "timestamp": "2026-08-18T11:27:00",
+      "tag": "P-101_STATUS",
+      "value": 1.0,
+      "unit": "state",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:27:00",
+      "tag": "FV-101_POS",
+      "value": 85.748,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:28:00",
+      "tag": "LT-101",
+      "value": 79.849,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T11:28:00",
+      "tag": "LT-102",
+      "value": 50.524,
+      "unit": "%",
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:28:00",
+      "tag": "PT-101",
+      "value": 5.357,
+      "unit": "bar",
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:28:00",
+      "tag": "FT-101",
+      "value": 30.46,
+      "unit": "m3/h",
+      "quality": "GOOD",
+      "alarm_state": "LO"
+    },
+    {
+      "timestamp": "2026-08-18T11:28:00",
+      "tag": "P-101_STATUS",
+      "value": 1.0,
+      "unit": "state",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:28:00",
+      "tag": "FV-101_POS",
+      "value": 86.165,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:29:00",
+      "tag": "LT-101",
+      "value": 80.1,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T11:29:00",
+      "tag": "LT-102",
+      "value": 51.7,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:29:00",
       "tag": "PT-101",
       "value": 5.318,
       "unit": "bar",
@@ -9387,681 +10059,9 @@
       "alarm_state": "HI"
     },
     {
-      "timestamp": "2026-08-18T11:15:00",
-      "tag": "FT-101",
-      "value": 33.907,
-      "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
-    },
-    {
-      "timestamp": "2026-08-18T11:15:00",
-      "tag": "P-101_STATUS",
-      "value": 1.0,
-      "unit": "state",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:15:00",
-      "tag": "FV-101_POS",
-      "value": 81.873,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:16:00",
-      "tag": "LT-101",
-      "value": 76.357,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
-      "timestamp": "2026-08-18T11:16:00",
-      "tag": "LT-102",
-      "value": 52.908,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:16:00",
-      "tag": "PT-101",
-      "value": 5.27,
-      "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
-      "timestamp": "2026-08-18T11:16:00",
-      "tag": "FT-101",
-      "value": 35.131,
-      "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
-    },
-    {
-      "timestamp": "2026-08-18T11:16:00",
-      "tag": "P-101_STATUS",
-      "value": 1.0,
-      "unit": "state",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:16:00",
-      "tag": "FV-101_POS",
-      "value": 82.005,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:17:00",
-      "tag": "LT-101",
-      "value": 76.268,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
-      "timestamp": "2026-08-18T11:17:00",
-      "tag": "LT-102",
-      "value": 50.637,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:17:00",
-      "tag": "PT-101",
-      "value": 5.228,
-      "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
-      "timestamp": "2026-08-18T11:17:00",
-      "tag": "FT-101",
-      "value": 32.023,
-      "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
-    },
-    {
-      "timestamp": "2026-08-18T11:17:00",
-      "tag": "P-101_STATUS",
-      "value": 1.0,
-      "unit": "state",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:17:00",
-      "tag": "FV-101_POS",
-      "value": 81.561,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:18:00",
-      "tag": "LT-101",
-      "value": 76.164,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
-      "timestamp": "2026-08-18T11:18:00",
-      "tag": "LT-102",
-      "value": 50.484,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:18:00",
-      "tag": "PT-101",
-      "value": 5.17,
-      "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
-      "timestamp": "2026-08-18T11:18:00",
-      "tag": "FT-101",
-      "value": 31.93,
-      "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
-    },
-    {
-      "timestamp": "2026-08-18T11:18:00",
-      "tag": "P-101_STATUS",
-      "value": 1.0,
-      "unit": "state",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:18:00",
-      "tag": "FV-101_POS",
-      "value": 81.885,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:19:00",
-      "tag": "LT-101",
-      "value": 75.774,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
-      "timestamp": "2026-08-18T11:19:00",
-      "tag": "LT-102",
-      "value": 48.928,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:19:00",
-      "tag": "PT-101",
-      "value": 5.244,
-      "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
-      "timestamp": "2026-08-18T11:19:00",
-      "tag": "FT-101",
-      "value": 32.427,
-      "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
-    },
-    {
-      "timestamp": "2026-08-18T11:19:00",
-      "tag": "P-101_STATUS",
-      "value": 1.0,
-      "unit": "state",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:19:00",
-      "tag": "FV-101_POS",
-      "value": 81.341,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:20:00",
-      "tag": "LT-101",
-      "value": 75.493,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
-      "timestamp": "2026-08-18T11:20:00",
-      "tag": "LT-102",
-      "value": 53.029,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:20:00",
-      "tag": "PT-101",
-      "value": 5.15,
-      "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
-      "timestamp": "2026-08-18T11:20:00",
-      "tag": "FT-101",
-      "value": 32.907,
-      "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
-    },
-    {
-      "timestamp": "2026-08-18T11:20:00",
-      "tag": "P-101_STATUS",
-      "value": 1.0,
-      "unit": "state",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:20:00",
-      "tag": "FV-101_POS",
-      "value": 81.966,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:21:00",
-      "tag": "LT-101",
-      "value": 75.364,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
-      "timestamp": "2026-08-18T11:21:00",
-      "tag": "LT-102",
-      "value": 51.736,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:21:00",
-      "tag": "PT-101",
-      "value": 5.081,
-      "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
-      "timestamp": "2026-08-18T11:21:00",
-      "tag": "FT-101",
-      "value": 35.271,
-      "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
-    },
-    {
-      "timestamp": "2026-08-18T11:21:00",
-      "tag": "P-101_STATUS",
-      "value": 1.0,
-      "unit": "state",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:21:00",
-      "tag": "FV-101_POS",
-      "value": 81.654,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:22:00",
-      "tag": "LT-101",
-      "value": 75.032,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
-      "timestamp": "2026-08-18T11:22:00",
-      "tag": "LT-102",
-      "value": 53.121,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:22:00",
-      "tag": "PT-101",
-      "value": 4.925,
-      "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
-      "timestamp": "2026-08-18T11:22:00",
-      "tag": "FT-101",
-      "value": 32.18,
-      "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
-    },
-    {
-      "timestamp": "2026-08-18T11:22:00",
-      "tag": "P-101_STATUS",
-      "value": 1.0,
-      "unit": "state",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:22:00",
-      "tag": "FV-101_POS",
-      "value": 81.873,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:23:00",
-      "tag": "LT-101",
-      "value": 74.878,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:23:00",
-      "tag": "LT-102",
-      "value": 52.478,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:23:00",
-      "tag": "PT-101",
-      "value": 4.979,
-      "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
-      "timestamp": "2026-08-18T11:23:00",
-      "tag": "FT-101",
-      "value": 33.36,
-      "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
-    },
-    {
-      "timestamp": "2026-08-18T11:23:00",
-      "tag": "P-101_STATUS",
-      "value": 1.0,
-      "unit": "state",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:23:00",
-      "tag": "FV-101_POS",
-      "value": 81.787,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:24:00",
-      "tag": "LT-101",
-      "value": 74.865,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:24:00",
-      "tag": "LT-102",
-      "value": 50.57,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:24:00",
-      "tag": "PT-101",
-      "value": 4.8,
-      "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
-      "timestamp": "2026-08-18T11:24:00",
-      "tag": "FT-101",
-      "value": 34.373,
-      "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
-    },
-    {
-      "timestamp": "2026-08-18T11:24:00",
-      "tag": "P-101_STATUS",
-      "value": 1.0,
-      "unit": "state",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:24:00",
-      "tag": "FV-101_POS",
-      "value": 82.178,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:25:00",
-      "tag": "LT-101",
-      "value": 74.266,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:25:00",
-      "tag": "LT-102",
-      "value": 50.511,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:25:00",
-      "tag": "PT-101",
-      "value": 4.887,
-      "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
-      "timestamp": "2026-08-18T11:25:00",
-      "tag": "FT-101",
-      "value": 32.195,
-      "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
-    },
-    {
-      "timestamp": "2026-08-18T11:25:00",
-      "tag": "P-101_STATUS",
-      "value": 1.0,
-      "unit": "state",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:25:00",
-      "tag": "FV-101_POS",
-      "value": 82.009,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:26:00",
-      "tag": "LT-101",
-      "value": 74.075,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:26:00",
-      "tag": "LT-102",
-      "value": 52.993,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:26:00",
-      "tag": "PT-101",
-      "value": 4.915,
-      "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
-      "timestamp": "2026-08-18T11:26:00",
-      "tag": "FT-101",
-      "value": 35.712,
-      "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
-    },
-    {
-      "timestamp": "2026-08-18T11:26:00",
-      "tag": "P-101_STATUS",
-      "value": 1.0,
-      "unit": "state",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:26:00",
-      "tag": "FV-101_POS",
-      "value": 81.805,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:27:00",
-      "tag": "LT-101",
-      "value": 74.057,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:27:00",
-      "tag": "LT-102",
-      "value": 52.512,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:27:00",
-      "tag": "PT-101",
-      "value": 4.739,
-      "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
-      "timestamp": "2026-08-18T11:27:00",
-      "tag": "FT-101",
-      "value": 35.528,
-      "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
-    },
-    {
-      "timestamp": "2026-08-18T11:27:00",
-      "tag": "P-101_STATUS",
-      "value": 1.0,
-      "unit": "state",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:27:00",
-      "tag": "FV-101_POS",
-      "value": 81.42,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:28:00",
-      "tag": "LT-101",
-      "value": 73.746,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:28:00",
-      "tag": "LT-102",
-      "value": 51.455,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:28:00",
-      "tag": "PT-101",
-      "value": 4.916,
-      "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
-      "timestamp": "2026-08-18T11:28:00",
-      "tag": "FT-101",
-      "value": 35.466,
-      "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
-    },
-    {
-      "timestamp": "2026-08-18T11:28:00",
-      "tag": "P-101_STATUS",
-      "value": 1.0,
-      "unit": "state",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:28:00",
-      "tag": "FV-101_POS",
-      "value": 81.91,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:29:00",
-      "tag": "LT-101",
-      "value": 74.014,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:29:00",
-      "tag": "LT-102",
-      "value": 52.48,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:29:00",
-      "tag": "PT-101",
-      "value": 4.889,
-      "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
       "timestamp": "2026-08-18T11:29:00",
       "tag": "FT-101",
-      "value": 38.107,
+      "value": 33.44,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "LO"
@@ -10077,7 +10077,7 @@
     {
       "timestamp": "2026-08-18T11:29:00",
       "tag": "FV-101_POS",
-      "value": 82.38,
+      "value": 86.561,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -10085,31 +10085,31 @@
     {
       "timestamp": "2026-08-18T11:30:00",
       "tag": "LT-101",
-      "value": 73.375,
+      "value": 79.342,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:30:00",
-      "tag": "LT-102",
-      "value": 52.883,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:30:00",
-      "tag": "PT-101",
-      "value": 4.689,
-      "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T11:30:00",
+      "tag": "LT-102",
+      "value": 52.183,
+      "unit": "%",
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:30:00",
+      "tag": "PT-101",
+      "value": 5.083,
+      "unit": "bar",
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:30:00",
       "tag": "FT-101",
-      "value": 36.145,
+      "value": 31.51,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "LO"
@@ -10125,7 +10125,7 @@
     {
       "timestamp": "2026-08-18T11:30:00",
       "tag": "FV-101_POS",
-      "value": 82.784,
+      "value": 86.882,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -10133,23 +10133,23 @@
     {
       "timestamp": "2026-08-18T11:31:00",
       "tag": "LT-101",
-      "value": 73.478,
+      "value": 79.41,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T11:31:00",
+      "tag": "LT-102",
+      "value": 53.924,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
     },
     {
       "timestamp": "2026-08-18T11:31:00",
-      "tag": "LT-102",
-      "value": 54.408,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:31:00",
       "tag": "PT-101",
-      "value": 4.679,
+      "value": 5.063,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HI"
@@ -10157,7 +10157,7 @@
     {
       "timestamp": "2026-08-18T11:31:00",
       "tag": "FT-101",
-      "value": 36.424,
+      "value": 31.971,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "LO"
@@ -10173,7 +10173,7 @@
     {
       "timestamp": "2026-08-18T11:31:00",
       "tag": "FV-101_POS",
-      "value": 81.717,
+      "value": 85.549,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -10181,31 +10181,31 @@
     {
       "timestamp": "2026-08-18T11:32:00",
       "tag": "LT-101",
-      "value": 73.124,
+      "value": 78.97,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:32:00",
-      "tag": "LT-102",
-      "value": 51.642,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:32:00",
-      "tag": "PT-101",
-      "value": 4.591,
-      "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T11:32:00",
+      "tag": "LT-102",
+      "value": 50.811,
+      "unit": "%",
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:32:00",
+      "tag": "PT-101",
+      "value": 4.956,
+      "unit": "bar",
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:32:00",
       "tag": "FT-101",
-      "value": 36.212,
+      "value": 31.908,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "LO"
@@ -10221,7 +10221,7 @@
     {
       "timestamp": "2026-08-18T11:32:00",
       "tag": "FV-101_POS",
-      "value": 81.847,
+      "value": 85.561,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -10229,23 +10229,23 @@
     {
       "timestamp": "2026-08-18T11:33:00",
       "tag": "LT-101",
-      "value": 72.928,
+      "value": 78.705,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T11:33:00",
+      "tag": "LT-102",
+      "value": 53.948,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
     },
     {
       "timestamp": "2026-08-18T11:33:00",
-      "tag": "LT-102",
-      "value": 54.394,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:33:00",
       "tag": "PT-101",
-      "value": 4.636,
+      "value": 4.997,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HI"
@@ -10253,7 +10253,7 @@
     {
       "timestamp": "2026-08-18T11:33:00",
       "tag": "FT-101",
-      "value": 36.723,
+      "value": 32.615,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "LO"
@@ -10269,7 +10269,7 @@
     {
       "timestamp": "2026-08-18T11:33:00",
       "tag": "FV-101_POS",
-      "value": 81.263,
+      "value": 84.771,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -10277,31 +10277,31 @@
     {
       "timestamp": "2026-08-18T11:34:00",
       "tag": "LT-101",
-      "value": 72.87,
+      "value": 78.593,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:34:00",
-      "tag": "LT-102",
-      "value": 53.604,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:34:00",
-      "tag": "PT-101",
-      "value": 4.682,
-      "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T11:34:00",
+      "tag": "LT-102",
+      "value": 53.077,
+      "unit": "%",
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:34:00",
+      "tag": "PT-101",
+      "value": 5.04,
+      "unit": "bar",
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:34:00",
       "tag": "FT-101",
-      "value": 35.239,
+      "value": 31.195,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "LO"
@@ -10317,7 +10317,7 @@
     {
       "timestamp": "2026-08-18T11:34:00",
       "tag": "FV-101_POS",
-      "value": 81.913,
+      "value": 85.369,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -10325,15 +10325,15 @@
     {
       "timestamp": "2026-08-18T11:35:00",
       "tag": "LT-101",
-      "value": 72.866,
+      "value": 78.542,
       "unit": "%",
       "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T11:35:00",
       "tag": "LT-102",
-      "value": 52.819,
+      "value": 52.203,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -10341,7 +10341,7 @@
     {
       "timestamp": "2026-08-18T11:35:00",
       "tag": "PT-101",
-      "value": 4.486,
+      "value": 4.811,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HI"
@@ -10349,7 +10349,7 @@
     {
       "timestamp": "2026-08-18T11:35:00",
       "tag": "FT-101",
-      "value": 38.86,
+      "value": 35.222,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "LO"
@@ -10365,7 +10365,7 @@
     {
       "timestamp": "2026-08-18T11:35:00",
       "tag": "FV-101_POS",
-      "value": 82.043,
+      "value": 85.382,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -10373,31 +10373,31 @@
     {
       "timestamp": "2026-08-18T11:36:00",
       "tag": "LT-101",
-      "value": 72.429,
+      "value": 78.01,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:36:00",
-      "tag": "LT-102",
-      "value": 53.799,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:36:00",
-      "tag": "PT-101",
-      "value": 4.416,
-      "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T11:36:00",
+      "tag": "LT-102",
+      "value": 53.331,
+      "unit": "%",
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:36:00",
+      "tag": "PT-101",
+      "value": 4.723,
+      "unit": "bar",
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:36:00",
       "tag": "FT-101",
-      "value": 37.206,
+      "value": 33.62,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "LO"
@@ -10413,7 +10413,7 @@
     {
       "timestamp": "2026-08-18T11:36:00",
       "tag": "FV-101_POS",
-      "value": 82.068,
+      "value": 85.276,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -10421,15 +10421,15 @@
     {
       "timestamp": "2026-08-18T11:37:00",
       "tag": "LT-101",
-      "value": 72.786,
+      "value": 78.36,
       "unit": "%",
       "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T11:37:00",
       "tag": "LT-102",
-      "value": 55.51,
+      "value": 55.291,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -10437,7 +10437,7 @@
     {
       "timestamp": "2026-08-18T11:37:00",
       "tag": "PT-101",
-      "value": 4.588,
+      "value": 4.907,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HI"
@@ -10445,7 +10445,7 @@
     {
       "timestamp": "2026-08-18T11:37:00",
       "tag": "FT-101",
-      "value": 37.743,
+      "value": 34.355,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "LO"
@@ -10461,7 +10461,7 @@
     {
       "timestamp": "2026-08-18T11:37:00",
       "tag": "FV-101_POS",
-      "value": 82.512,
+      "value": 85.642,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -10469,31 +10469,31 @@
     {
       "timestamp": "2026-08-18T11:38:00",
       "tag": "LT-101",
-      "value": 72.467,
+      "value": 77.958,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:38:00",
-      "tag": "LT-102",
-      "value": 54.45,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:38:00",
-      "tag": "PT-101",
-      "value": 4.453,
-      "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T11:38:00",
+      "tag": "LT-102",
+      "value": 54.111,
+      "unit": "%",
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:38:00",
+      "tag": "PT-101",
+      "value": 4.747,
+      "unit": "bar",
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:38:00",
       "tag": "FT-101",
-      "value": 37.97,
+      "value": 34.76,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "LO"
@@ -10509,7 +10509,7 @@
     {
       "timestamp": "2026-08-18T11:38:00",
       "tag": "FV-101_POS",
-      "value": 81.976,
+      "value": 84.906,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -10517,15 +10517,15 @@
     {
       "timestamp": "2026-08-18T11:39:00",
       "tag": "LT-101",
-      "value": 71.955,
+      "value": 77.342,
       "unit": "%",
       "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T11:39:00",
       "tag": "LT-102",
-      "value": 54.304,
+      "value": 53.96,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -10533,7 +10533,7 @@
     {
       "timestamp": "2026-08-18T11:39:00",
       "tag": "PT-101",
-      "value": 4.396,
+      "value": 4.674,
       "unit": "bar",
       "quality": "GOOD",
       "alarm_state": "HI"
@@ -10541,7 +10541,7 @@
     {
       "timestamp": "2026-08-18T11:39:00",
       "tag": "FT-101",
-      "value": 34.376,
+      "value": 31.09,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "LO"
@@ -10557,7 +10557,7 @@
     {
       "timestamp": "2026-08-18T11:39:00",
       "tag": "FV-101_POS",
-      "value": 82.367,
+      "value": 85.213,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -10565,223 +10565,223 @@
     {
       "timestamp": "2026-08-18T11:40:00",
       "tag": "LT-101",
-      "value": 72.071,
+      "value": 77.424,
       "unit": "%",
       "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "alarm_state": "HI"
     },
     {
       "timestamp": "2026-08-18T11:40:00",
       "tag": "LT-102",
-      "value": 53.24,
+      "value": 52.782,
       "unit": "%",
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:40:00",
+      "tag": "PT-101",
+      "value": 4.703,
+      "unit": "bar",
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:40:00",
+      "tag": "FT-101",
+      "value": 36.83,
+      "unit": "m3/h",
+      "quality": "GOOD",
+      "alarm_state": "LO"
+    },
+    {
+      "timestamp": "2026-08-18T11:40:00",
+      "tag": "P-101_STATUS",
+      "value": 1.0,
+      "unit": "state",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
     },
     {
       "timestamp": "2026-08-18T11:40:00",
+      "tag": "FV-101_POS",
+      "value": 84.418,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:41:00",
+      "tag": "LT-101",
+      "value": 76.86,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T11:41:00",
+      "tag": "LT-102",
+      "value": 57.906,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:41:00",
+      "tag": "PT-101",
+      "value": 4.534,
+      "unit": "bar",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T11:41:00",
+      "tag": "FT-101",
+      "value": 31.968,
+      "unit": "m3/h",
+      "quality": "GOOD",
+      "alarm_state": "LO"
+    },
+    {
+      "timestamp": "2026-08-18T11:41:00",
+      "tag": "P-101_STATUS",
+      "value": 1.0,
+      "unit": "state",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:41:00",
+      "tag": "FV-101_POS",
+      "value": 84.45,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:42:00",
+      "tag": "LT-101",
+      "value": 76.427,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T11:42:00",
+      "tag": "LT-102",
+      "value": 54.729,
+      "unit": "%",
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:42:00",
+      "tag": "PT-101",
+      "value": 4.524,
+      "unit": "bar",
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:42:00",
+      "tag": "FT-101",
+      "value": 35.897,
+      "unit": "m3/h",
+      "quality": "GOOD",
+      "alarm_state": "LO"
+    },
+    {
+      "timestamp": "2026-08-18T11:42:00",
+      "tag": "P-101_STATUS",
+      "value": 1.0,
+      "unit": "state",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:42:00",
+      "tag": "FV-101_POS",
+      "value": 84.38,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:43:00",
+      "tag": "LT-101",
+      "value": 76.578,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T11:43:00",
+      "tag": "LT-102",
+      "value": 53.973,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:43:00",
+      "tag": "PT-101",
+      "value": 4.378,
+      "unit": "bar",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T11:43:00",
+      "tag": "FT-101",
+      "value": 37.939,
+      "unit": "m3/h",
+      "quality": "GOOD",
+      "alarm_state": "LO"
+    },
+    {
+      "timestamp": "2026-08-18T11:43:00",
+      "tag": "P-101_STATUS",
+      "value": 1.0,
+      "unit": "state",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:43:00",
+      "tag": "FV-101_POS",
+      "value": 84.234,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
+    },
+    {
+      "timestamp": "2026-08-18T11:44:00",
+      "tag": "LT-101",
+      "value": 76.163,
+      "unit": "%",
+      "quality": "GOOD",
+      "alarm_state": "HI"
+    },
+    {
+      "timestamp": "2026-08-18T11:44:00",
+      "tag": "LT-102",
+      "value": 60.567,
+      "unit": "%",
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
+    },
+    {
+      "timestamp": "2026-08-18T11:44:00",
       "tag": "PT-101",
       "value": 4.43,
       "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
-      "timestamp": "2026-08-18T11:40:00",
-      "tag": "FT-101",
-      "value": 39.604,
-      "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
-    },
-    {
-      "timestamp": "2026-08-18T11:40:00",
-      "tag": "P-101_STATUS",
-      "value": 1.0,
-      "unit": "state",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:40:00",
-      "tag": "FV-101_POS",
-      "value": 81.779,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:41:00",
-      "tag": "LT-101",
-      "value": 71.606,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:41:00",
-      "tag": "LT-102",
-      "value": 57.752,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:41:00",
-      "tag": "PT-101",
-      "value": 4.288,
-      "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
-      "timestamp": "2026-08-18T11:41:00",
-      "tag": "FT-101",
-      "value": 34.893,
-      "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
-    },
-    {
-      "timestamp": "2026-08-18T11:41:00",
-      "tag": "P-101_STATUS",
-      "value": 1.0,
-      "unit": "state",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:41:00",
-      "tag": "FV-101_POS",
-      "value": 81.926,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:42:00",
-      "tag": "LT-101",
-      "value": 71.258,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:42:00",
-      "tag": "LT-102",
-      "value": 54.93,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:42:00",
-      "tag": "PT-101",
-      "value": 4.286,
-      "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "HI"
-    },
-    {
-      "timestamp": "2026-08-18T11:42:00",
-      "tag": "FT-101",
-      "value": 38.424,
-      "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
-    },
-    {
-      "timestamp": "2026-08-18T11:42:00",
-      "tag": "P-101_STATUS",
-      "value": 1.0,
-      "unit": "state",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:42:00",
-      "tag": "FV-101_POS",
-      "value": 81.982,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:43:00",
-      "tag": "LT-101",
-      "value": 71.436,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:43:00",
-      "tag": "LT-102",
-      "value": 54.245,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:43:00",
-      "tag": "PT-101",
-      "value": 4.165,
-      "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:43:00",
-      "tag": "FT-101",
-      "value": 40.186,
-      "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
-    },
-    {
-      "timestamp": "2026-08-18T11:43:00",
-      "tag": "P-101_STATUS",
-      "value": 1.0,
-      "unit": "state",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:43:00",
-      "tag": "FV-101_POS",
-      "value": 81.971,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:44:00",
-      "tag": "LT-101",
-      "value": 71.104,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:44:00",
-      "tag": "LT-102",
-      "value": 60.054,
-      "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
-    },
-    {
-      "timestamp": "2026-08-18T11:44:00",
-      "tag": "PT-101",
-      "value": 4.219,
-      "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "HI"
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T11:44:00",
       "tag": "FT-101",
-      "value": 41.216,
+      "value": 39.201,
       "unit": "m3/h",
       "quality": "GOOD",
       "alarm_state": "LO"
@@ -10797,7 +10797,7 @@
     {
       "timestamp": "2026-08-18T11:44:00",
       "tag": "FV-101_POS",
-      "value": 81.95,
+      "value": 84.077,
       "unit": "%",
       "quality": "GOOD",
       "alarm_state": "NORMAL"
@@ -10829,10 +10829,10 @@
     {
       "timestamp": "2026-08-18T11:45:00",
       "tag": "FT-101",
-      "value": null,
+      "value": 38.883,
       "unit": "m3/h",
-      "quality": "MISSING",
-      "alarm_state": "UNAVAILABLE"
+      "quality": "GOOD",
+      "alarm_state": "LO"
     },
     {
       "timestamp": "2026-08-18T11:45:00",
@@ -10863,8 +10863,8 @@
       "tag": "LT-102",
       "value": 55.019,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T11:46:00",
@@ -10877,10 +10877,10 @@
     {
       "timestamp": "2026-08-18T11:46:00",
       "tag": "FT-101",
-      "value": 40.771,
+      "value": null,
       "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
+      "quality": "MISSING",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T11:46:00",
@@ -10911,8 +10911,8 @@
       "tag": "LT-102",
       "value": 54.863,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T11:47:00",
@@ -10967,16 +10967,16 @@
       "tag": "PT-101",
       "value": 4.147,
       "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T11:48:00",
       "tag": "FT-101",
-      "value": 40.266,
+      "value": null,
       "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
+      "quality": "MISSING",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T11:48:00",
@@ -11007,8 +11007,8 @@
       "tag": "LT-102",
       "value": 54.986,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T11:49:00",
@@ -11055,16 +11055,16 @@
       "tag": "LT-102",
       "value": 55.196,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T11:50:00",
       "tag": "PT-101",
       "value": 4.154,
       "unit": "bar",
-      "quality": "BAD",
-      "alarm_state": "UNAVAILABLE"
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
     },
     {
       "timestamp": "2026-08-18T11:50:00",
@@ -11111,8 +11111,8 @@
       "tag": "PT-101",
       "value": 4.15,
       "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T11:51:00",
@@ -11151,8 +11151,8 @@
       "tag": "LT-102",
       "value": 55.288,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T11:52:00",
@@ -11165,10 +11165,10 @@
     {
       "timestamp": "2026-08-18T11:52:00",
       "tag": "FT-101",
-      "value": 39.727,
+      "value": null,
       "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
+      "quality": "MISSING",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T11:52:00",
@@ -11199,8 +11199,8 @@
       "tag": "LT-102",
       "value": 54.753,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T11:53:00",
@@ -11255,16 +11255,16 @@
       "tag": "PT-101",
       "value": 3.882,
       "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T11:54:00",
       "tag": "FT-101",
-      "value": 39.923,
+      "value": null,
       "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
+      "quality": "MISSING",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T11:54:00",
@@ -11295,24 +11295,24 @@
       "tag": "LT-102",
       "value": 55.093,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T11:55:00",
       "tag": "PT-101",
       "value": 4.187,
       "unit": "bar",
-      "quality": "BAD",
-      "alarm_state": "UNAVAILABLE"
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
     },
     {
       "timestamp": "2026-08-18T11:55:00",
       "tag": "FT-101",
-      "value": null,
+      "value": 41.361,
       "unit": "m3/h",
-      "quality": "MISSING",
-      "alarm_state": "UNAVAILABLE"
+      "quality": "GOOD",
+      "alarm_state": "LO"
     },
     {
       "timestamp": "2026-08-18T11:55:00",
@@ -11343,8 +11343,8 @@
       "tag": "LT-102",
       "value": 55.16,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T11:56:00",
@@ -11357,10 +11357,10 @@
     {
       "timestamp": "2026-08-18T11:56:00",
       "tag": "FT-101",
-      "value": 39.281,
+      "value": null,
       "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
+      "quality": "MISSING",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T11:56:00",
@@ -11399,8 +11399,8 @@
       "tag": "PT-101",
       "value": 4.001,
       "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T11:57:00",
@@ -11439,8 +11439,8 @@
       "tag": "LT-102",
       "value": 55.4,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T11:58:00",
@@ -11453,10 +11453,10 @@
     {
       "timestamp": "2026-08-18T11:58:00",
       "tag": "FT-101",
-      "value": 40.954,
+      "value": null,
       "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "LO"
+      "quality": "MISSING",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T11:58:00",
@@ -11487,8 +11487,8 @@
       "tag": "LT-102",
       "value": 55.179,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T11:59:00",
@@ -11583,8 +11583,8 @@
       "tag": "LT-102",
       "value": 55.428,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T12:01:00",
@@ -11631,8 +11631,8 @@
       "tag": "LT-102",
       "value": 55.165,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T12:02:00",
@@ -11645,10 +11645,10 @@
     {
       "timestamp": "2026-08-18T12:02:00",
       "tag": "FT-101",
-      "value": 42.863,
+      "value": null,
       "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "MISSING",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T12:02:00",
@@ -11687,8 +11687,8 @@
       "tag": "PT-101",
       "value": 3.821,
       "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T12:03:00",
@@ -11727,8 +11727,8 @@
       "tag": "LT-102",
       "value": 55.167,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T12:04:00",
@@ -11741,10 +11741,10 @@
     {
       "timestamp": "2026-08-18T12:04:00",
       "tag": "FT-101",
-      "value": 42.44,
+      "value": null,
       "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "MISSING",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T12:04:00",
@@ -11775,24 +11775,24 @@
       "tag": "LT-102",
       "value": 55.353,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T12:05:00",
       "tag": "PT-101",
       "value": 3.875,
       "unit": "bar",
-      "quality": "BAD",
-      "alarm_state": "UNAVAILABLE"
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
     },
     {
       "timestamp": "2026-08-18T12:05:00",
       "tag": "FT-101",
-      "value": null,
+      "value": 41.732,
       "unit": "m3/h",
-      "quality": "MISSING",
-      "alarm_state": "UNAVAILABLE"
+      "quality": "GOOD",
+      "alarm_state": "LO"
     },
     {
       "timestamp": "2026-08-18T12:05:00",
@@ -11831,16 +11831,16 @@
       "tag": "PT-101",
       "value": 3.655,
       "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T12:06:00",
       "tag": "FT-101",
-      "value": 43.346,
+      "value": null,
       "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "MISSING",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T12:06:00",
@@ -11871,8 +11871,8 @@
       "tag": "LT-102",
       "value": 55.133,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T12:07:00",
@@ -11919,8 +11919,8 @@
       "tag": "LT-102",
       "value": 55.293,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T12:08:00",
@@ -11933,10 +11933,10 @@
     {
       "timestamp": "2026-08-18T12:08:00",
       "tag": "FT-101",
-      "value": 42.623,
+      "value": null,
       "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "MISSING",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T12:08:00",
@@ -11975,8 +11975,8 @@
       "tag": "PT-101",
       "value": 3.697,
       "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T12:09:00",
@@ -12015,16 +12015,16 @@
       "tag": "LT-102",
       "value": 55.256,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T12:10:00",
       "tag": "PT-101",
       "value": 3.705,
       "unit": "bar",
-      "quality": "BAD",
-      "alarm_state": "UNAVAILABLE"
+      "quality": "GOOD",
+      "alarm_state": "NORMAL"
     },
     {
       "timestamp": "2026-08-18T12:10:00",
@@ -12063,8 +12063,8 @@
       "tag": "LT-102",
       "value": 55.085,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T12:11:00",
@@ -12119,16 +12119,16 @@
       "tag": "PT-101",
       "value": 3.773,
       "unit": "bar",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "BAD",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T12:12:00",
       "tag": "FT-101",
-      "value": 43.172,
+      "value": null,
       "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "MISSING",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T12:12:00",
@@ -12159,8 +12159,8 @@
       "tag": "LT-102",
       "value": 54.87,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T12:13:00",
@@ -12207,8 +12207,8 @@
       "tag": "LT-102",
       "value": 55.166,
       "unit": "%",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "SUSPECT",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T12:14:00",
@@ -12221,10 +12221,10 @@
     {
       "timestamp": "2026-08-18T12:14:00",
       "tag": "FT-101",
-      "value": 43.994,
+      "value": null,
       "unit": "m3/h",
-      "quality": "GOOD",
-      "alarm_state": "NORMAL"
+      "quality": "MISSING",
+      "alarm_state": "UNAVAILABLE"
     },
     {
       "timestamp": "2026-08-18T12:14:00",

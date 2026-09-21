@@ -186,9 +186,13 @@ class ProcessAnalyzer:
             issues.append(
                 {
                     "id": "restriction-pattern",
-                    "severity": "high",
+                    "severity": "critical" if restriction["severity"] == "alarm" else "high",
                     "category": "Process behavior",
-                    "title": "Transfer flow fell while pump discharge pressure rose",
+                    "title": (
+                        "Transfer conditions crossed multiple alarm limits"
+                        if restriction["severity"] == "alarm"
+                        else "Transfer flow fell while pump discharge pressure rose"
+                    ),
                     "summary": (
                         f"FT-101 fell to {flow['min']:.1f} m3/h while PT-101 reached "
                         f"{pressure['max']:.2f} bar and LT-101 rose {level['rate_per_hour']:.1f}%/h. "
@@ -233,23 +237,24 @@ class ProcessAnalyzer:
         if quality:
             problems = quality["evidence"]["problems"]
             affected = sum(problem["count"] for problem in problems)
+            local_quality = self.window_quality(
+                [problem["tag"] for problem in problems],
+                quality["start"],
+                quality["end"],
+            )
             issues.append(
                 {
                     "id": "historian-quality",
-                    "severity": "medium",
+                    "severity": "high" if local_quality < 75 else "medium",
                     "category": "Historian coverage",
-                    "title": "PT-101 and FT-101 have a short unreliable-data window",
+                    "title": "Several historian signals are unreliable during recovery",
                     "summary": (
                         f"{affected} samples are marked BAD or MISSING. Calculations exclude those values, "
                         "so conclusions in this window carry less evidence."
                     ),
                     "tags": [problem["tag"] for problem in problems],
                     "confidence": quality["confidence"],
-                    "dataQuality": self.window_quality(
-                        [problem["tag"] for problem in problems],
-                        quality["start"],
-                        quality["end"],
-                    ),
+                    "dataQuality": local_quality,
                     "firstSeen": quality["start"],
                     "lastSeen": quality["end"],
                     "question": "Which sensor readings are unreliable?",
@@ -269,8 +274,10 @@ class ProcessAnalyzer:
             "score": score,
             "label": label,
             "summary": (
-                f"The evidence is suitable for advisory analysis with {len(issues)} ranked "
-                f"{'finding' if len(issues) == 1 else 'findings'} to review."
+                "All evidence checks passed and no abnormal process patterns were detected."
+                if not issues
+                else f"The evidence supports advisory analysis with {len(issues)} ranked "
+                f"{'finding' if len(issues) == 1 else 'findings'} requiring review."
             ),
             "metrics": [
                 {"label": "Complete values", "value": completeness, "detail": f"{complete:,} of {total:,} readings"},
@@ -324,14 +331,19 @@ class ProcessAnalyzer:
         if startup_flow["rate_per_hour"] is not None and startup_flow["rate_per_hour"] > 40:
             anomalies.append({"id": "startup-pattern", "type": "startup", "start": "2026-08-18T08:30:00", "end": "2026-08-18T09:00:00", "severity": "info", "confidence": 0.98, "tags": ["P-101_STATUS", "FT-101", "PT-101", "FV-101_POS"], "evidence": {"flow": startup_flow}})
         if restriction_evidence:
+            alarm_level = (
+                flow["min"] is not None and flow["min"] < self.nodes["FT-101"]["alarm"]["low"]
+                or pressure["max"] is not None and pressure["max"] > self.nodes["PT-101"]["alarm"]["high"]
+                or feed["max"] is not None and feed["max"] > self.nodes["LT-101"]["alarm"]["high"]
+            )
             anomalies.append(
                 {
                     "id": "restriction-pattern",
                     "type": "downstream_restriction",
                     "start": start,
                     "end": end,
-                    "severity": "warning",
-                    "confidence": 0.84,
+                    "severity": "alarm" if alarm_level else "warning",
+                    "confidence": 0.95 if alarm_level else 0.84,
                     "tags": ["T-101", "P-101", "PT-101", "FT-101", "FV-101"],
                     "evidence": {"flow": flow, "pressure": pressure, "feed_level": feed},
                 }

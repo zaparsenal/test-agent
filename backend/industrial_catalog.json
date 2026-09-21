@@ -33,7 +33,7 @@
       "type": "object",
       "allOf": [
         {"$ref": "https://a2ui.org/specification/v0_9/common_types.json#/$defs/ComponentCommon"},
-        {"type": "object", "properties": {"component": {"const": "TrendChart"}, "title": {"type": "string"}, "subtitle": {"type": "string"}, "series": {"type": "array", "items": {"type": "object"}}, "incidentStart": {"type": "string"}, "incidentEnd": {"type": "string"}}, "required": ["component", "title", "subtitle", "series", "incidentStart", "incidentEnd"]}
+        {"type": "object", "properties": {"component": {"const": "TrendChart"}, "title": {"type": "string"}, "subtitle": {"type": "string"}, "series": {"type": "array", "items": {"type": "object"}}, "incidentStart": {"type": "string"}, "incidentEnd": {"type": "string"}, "incidentLabel": {"type": "string"}}, "required": ["component", "title", "subtitle", "series", "incidentStart", "incidentEnd", "incidentLabel"]}
       ],
       "unevaluatedProperties": false
     },

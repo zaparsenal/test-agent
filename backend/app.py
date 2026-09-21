@@ -59,7 +59,7 @@ def inputs() -> dict[str, object]:
 
 
 @app.post("/api/inputs/demo")
-def demo_inputs(scenario: Literal["standard", "clean"] = "standard") -> dict[str, object]:
+def demo_inputs(scenario: Literal["critical", "healthy"] = "critical") -> dict[str, object]:
     return input_session.load_demo(scenario)
 
 
@@ -77,11 +77,11 @@ def clear_inputs() -> dict[str, object]:
 
 
 @app.get("/api/samples/{kind}")
-def sample_file(kind: Literal["diagram", "dcs"], scenario: Literal["standard", "clean"] = "standard"):
+def sample_file(kind: Literal["diagram", "dcs"], scenario: Literal["critical", "healthy"] = "critical"):
     if kind == "diagram":
         path = ROOT / "data" / "sample-inputs" / "process-diagram" / "tank_transfer_pid.svg"
         return FileResponse(path, filename="tank_transfer_pid.svg", media_type="image/svg+xml")
-    filename = "dcs_readings_clean.csv" if scenario == "clean" else "dcs_readings.csv"
+    filename = "dcs_readings_clean.csv" if scenario == "healthy" else "dcs_readings.csv"
     path = ROOT / "data" / "sample-inputs" / "dcs" / filename
     return FileResponse(path, filename=filename, media_type="text/csv")
 

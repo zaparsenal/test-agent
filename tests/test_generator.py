@@ -13,6 +13,9 @@ def test_generator_covers_six_hours_and_all_signals():
     assert {record["tag"] for record in records} == {"LT-101", "LT-102", "PT-101", "FT-101", "P-101_STATUS", "FV-101_POS"}
 
 
-def test_clean_comparison_scenario_keeps_all_source_quality_flags_good():
-    records = generate(seed=202, quality_mode="clean")
+def test_healthy_comparison_scenario_is_stable_and_keeps_all_source_quality_flags_good():
+    records = generate(seed=202, scenario="healthy")
     assert all(record["quality"] == "GOOD" and record["value"] is not None for record in records)
+    by_tag = {tag: [float(record["value"]) for record in records if record["tag"] == tag] for tag in {record["tag"] for record in records}}
+    assert min(by_tag["FT-101"]) > 42
+    assert max(by_tag["PT-101"]) < 4.2

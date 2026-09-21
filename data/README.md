@@ -19,20 +19,20 @@ Both describe the synthetic transfer route:
 
 Upload one of these files in the **DCS historian export** input card:
 
-- `sample-inputs/dcs/dcs_readings.csv` - recommended because it resembles a typical historian export.
+- `sample-inputs/dcs/dcs_readings.csv` - critical-incident scenario with severe process excursions and extensive signal-quality problems.
 - `sample-inputs/dcs/dcs_readings.json` - the same readings in JSON format.
-- `sample-inputs/dcs/dcs_readings_clean.csv` - alternate scenario with the same process event but no BAD or MISSING source flags.
-- `sample-inputs/dcs/dcs_readings_clean.json` - the alternate scenario in JSON format.
+- `sample-inputs/dcs/dcs_readings_clean.csv` - healthy baseline with stable operation and every source-quality flag marked GOOD.
+- `sample-inputs/dcs/dcs_readings_clean.json` - the healthy baseline in JSON format.
 
 The historian dataset contains:
 
 - 2,166 readings across six tags.
 - One-minute data from 2026-08-18 08:00 through 14:00.
 - `LT-101`, `LT-102`, `FT-101`, `PT-101`, `P-101_STATUS`, and `FV-101_POS`.
-- 2,140 GOOD, 20 BAD, and 6 MISSING samples.
-- A designed restriction-like event from 10:15 through 11:00, followed by recovery.
+- 2,061 GOOD, 47 BAD, 43 SUSPECT, and 15 MISSING samples in the critical scenario.
+- An alarm-level restriction from 10:15 through 11:00, followed by recovery.
 
-The primary files include 20 BAD and 6 MISSING samples. The alternate clean files keep all 2,166 readings marked GOOD. This lets a presenter show how the intermediate data-quality score and ranked findings change while the underlying process event remains comparable.
+The healthy files keep all 2,166 readings marked GOOD and all process values inside their normal ranges. This gives the presenter two deliberate extremes: a 100% healthy review with no findings and an 85% critical review with critical, high, and medium findings.
 
 ## Fast demonstration sequence
 
@@ -41,9 +41,9 @@ The primary files include 20 BAD and 6 MISSING samples. The alternate clean file
 3. Upload `dcs_readings.csv` into the historian card.
 4. Choose **Inspect** on each file to show the parsed tags, time coverage, quality counts, and sample rows.
 5. Choose **Review data quality**.
-6. Review the 94% score and ranked findings, then choose **Investigate** on the first finding.
-7. Expand **Supporting evidence** to show the A2UI-generated KPIs, trends, event timeline, process path, and inspection suggestions.
-8. Return to Inputs and load **Sample B · clean data** to demonstrate the alternate 97% score.
+6. Start with **Healthy baseline** to show the 100% score and no-findings state.
+7. Return to Inputs, choose **Critical incident**, and show the 85% score and severity-ranked findings.
+8. Choose **Investigate** on the critical finding, then expand **Supporting evidence** to show the A2UI-generated KPIs, trends, event timeline, process path, and inspection suggestions.
 
 ## Open-source references
 

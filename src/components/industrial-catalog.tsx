@@ -127,7 +127,7 @@ const seriesItem = z.object({
 });
 const trendApi = {
   name: 'TrendChart',
-  schema: z.object({ title: z.string(), subtitle: z.string(), series: z.array(seriesItem), incidentStart: z.string(), incidentEnd: z.string() }),
+  schema: z.object({ title: z.string(), subtitle: z.string(), series: z.array(seriesItem), incidentStart: z.string(), incidentEnd: z.string(), incidentLabel: z.string() }),
 };
 
 const TrendChart = createComponentImplementation(trendApi, ({ props }) => (
@@ -142,7 +142,7 @@ const TrendChart = createComponentImplementation(trendApi, ({ props }) => (
           <YAxis yAxisId="pressure" orientation="right" domain={[0, 7]} tick={{ fill: '#788891', fontSize: 10 }} axisLine={false} tickLine={false} />
           <Tooltip contentStyle={{ borderRadius: 8, border: '1px solid #d7e0e4', boxShadow: '0 10px 30px rgba(23,36,46,.12)', fontSize: 11 }} labelStyle={{ color: '#667883', marginBottom: 6 }} />
           <Legend iconType="plainline" iconSize={16} wrapperStyle={{ fontSize: 10, paddingTop: 8 }} />
-          <ReferenceArea x1={props.incidentStart} x2={props.incidentEnd} fill="#edb03c" fillOpacity={0.1} strokeOpacity={0} />
+          {props.incidentStart && props.incidentEnd && <ReferenceArea x1={props.incidentStart} x2={props.incidentEnd} fill="#edb03c" fillOpacity={0.1} strokeOpacity={0} />}
           <Line yAxisId="process" type="monotone" dataKey="FT-101" name="FT-101 · m³/h" stroke="#1876a5" strokeWidth={2.3} dot={false} connectNulls={false} />
           <Line yAxisId="pressure" type="monotone" dataKey="PT-101" name="PT-101 · bar" stroke="#be443f" strokeWidth={2.2} dot={false} connectNulls={false} />
           <Line yAxisId="process" type="monotone" dataKey="LT-101" name="LT-101 · %" stroke="#da941c" strokeWidth={2} dot={false} connectNulls={false} />
@@ -150,7 +150,7 @@ const TrendChart = createComponentImplementation(trendApi, ({ props }) => (
         </LineChart>
       </ResponsiveContainer>
     </figure>
-    <div className="chart-foot"><span><i className="incident-swatch" /> Restriction window 10:15–11:00</span><span>Hover for exact readings</span></div>
+    <div className="chart-foot"><span>{props.incidentStart ? <i className="incident-swatch" /> : <CheckCircle2 size={13} />}{props.incidentLabel}</span><span>Hover for exact readings</span></div>
   </article>
 ));
 

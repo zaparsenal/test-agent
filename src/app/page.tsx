@@ -257,6 +257,8 @@ function DataReview({
   onStart: () => void;
 }) {
   const severityLabels: Array<keyof QualityReview['issueCounts']> = ['critical', 'high', 'medium', 'low'];
+  const qualityTone = review.score >= 97 ? 'healthy' : review.score >= 92 ? 'caution' : 'poor';
+  const gaugeColor = qualityTone === 'healthy' ? '#2b8b72' : qualityTone === 'caution' ? '#cb7c15' : '#b44740';
 
   return (
     <div className="review-page">
@@ -273,7 +275,7 @@ function DataReview({
         <div className="quality-score-block">
           <div
             className="quality-gauge"
-            style={{ background: `conic-gradient(#2b8b72 0 ${review.score}%, #d8e2e6 ${review.score}% 100%)` }}
+            style={{ background: `conic-gradient(${gaugeColor} 0 ${review.score}%, #d8e2e6 ${review.score}% 100%)` }}
             aria-label={`${review.score} percent data quality`}
           >
             <div><strong>{review.score}%</strong><span>data quality</span></div>
@@ -281,7 +283,7 @@ function DataReview({
         </div>
 
         <div className="quality-overview-copy">
-          <div className="quality-status-line"><span>{review.label}</span><small>{review.issues.length} ranked findings</small></div>
+          <div className="quality-status-line"><span className={qualityTone}>{review.label}</span><small>{review.issues.length} ranked findings</small></div>
           <h2>{review.summary}</h2>
           <p>The score combines completeness, source quality flags, signal stability, time coverage, and P&amp;ID tag mapping.</p>
           <div className="quality-inputs">
@@ -291,7 +293,7 @@ function DataReview({
         </div>
 
         <div className="quality-overview-action">
-          <span>READY FOR DIAGNOSIS</span>
+          <span>{review.issues.length ? 'READY FOR DIAGNOSIS' : 'HEALTHY BASELINE'}</span>
           <strong>{review.recordCount.toLocaleString()} readings</strong>
           <small>{review.tagCount} operating tags · full input set</small>
           <button onClick={onStart}>Start general analysis <ArrowRight /></button>
@@ -300,8 +302,8 @@ function DataReview({
 
       <section className="quality-metrics" aria-label="Data quality checks">
         {review.metrics.map((metric) => (
-          <article key={metric.label}>
-            <div><Check /></div>
+          <article className={metric.value >= 97 ? 'pass' : 'warning'} key={metric.label}>
+            <div>{metric.value >= 97 ? <Check /> : <CircleAlert />}</div>
             <span>{metric.label}</span>
             <strong>{metric.value.toFixed(metric.value % 1 === 0 ? 0 : 1)}%</strong>
             <small>{metric.detail}</small>
@@ -310,7 +312,7 @@ function DataReview({
       </section>
 
       <section className="findings-heading">
-        <div><span className="section-label">RANKED FINDINGS</span><h2>What deserves attention first</h2></div>
+        <div><span className="section-label">RANKED FINDINGS</span><h2>{review.issues.length ? 'What deserves attention first' : 'No issues detected'}</h2></div>
         <div className="severity-counts" aria-label="Finding counts by severity">
           <span className="all">All {review.issues.length}</span>
           {severityLabels.map((severity) => <span className={severity} key={severity}>{severity} {review.issueCounts[severity]}</span>)}
@@ -318,7 +320,13 @@ function DataReview({
       </section>
 
       <section className="ranked-findings" aria-label="Ranked findings">
-        {review.issues.map((issue) => (
+        {review.issues.length === 0 ? (
+          <article className="healthy-review-empty">
+            <div><Check /></div>
+            <div><span>NO FINDINGS</span><h3>Nothing requires investigation in this dataset</h3><p>Process values, signal behavior, time coverage, and source quality all passed the review checks.</p></div>
+            <button onClick={onStart}>Open healthy analysis <ArrowRight /></button>
+          </article>
+        ) : review.issues.map((issue) => (
           <article className={`ranked-finding ${issue.severity}`} key={issue.id}>
             <div className="finding-rank"><span>{String(issue.rank).padStart(2, '0')}</span></div>
             <div className="finding-main">
@@ -389,7 +397,7 @@ export default function Home() {
     }
   };
 
-  const loadSampleInputs = async (scenario: 'standard' | 'clean') => {
+  const loadSampleInputs = async (scenario: 'critical' | 'healthy') => {
     setUploading('diagram');
     setInputError('');
     try {
@@ -479,8 +487,8 @@ export default function Home() {
             <div><span className="section-label">STEP 1 · INPUTS</span><h1>Choose what the agent should investigate</h1><p>Load the process diagram and historian export, inspect what was parsed, then review the evidence quality.</p></div>
             <div className="sample-actions">
               <button className="secondary-button" onClick={() => void clearInputs()} disabled={!inputs.diagram && !inputs.dcs}><RotateCcw /> Clear</button>
-              <button className="sample-button" onClick={() => void loadSampleInputs('standard')} disabled={Boolean(uploading)}><Sparkles /> Sample A · quality gaps</button>
-              <button className="sample-button alternate" onClick={() => void loadSampleInputs('clean')} disabled={Boolean(uploading)}><ShieldCheck /> Sample B · clean data</button>
+              <button className="sample-button alternate" onClick={() => void loadSampleInputs('healthy')} disabled={Boolean(uploading)}><ShieldCheck /> Healthy baseline</button>
+              <button className="sample-button critical" onClick={() => void loadSampleInputs('critical')} disabled={Boolean(uploading)}><CircleAlert /> Critical incident</button>
             </div>
           </section>
 

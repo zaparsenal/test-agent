@@ -31,36 +31,36 @@
       "category": "historian",
       "format": "CSV",
       "uploadReady": true,
-      "origin": "deterministic synthetic data, seed 101",
+      "origin": "deterministic synthetic critical-incident data, seed 101",
       "recordCount": 2166,
-      "sha256": "452bbdab9ddfe60cb31e58b37b3b96cce7777c0b34b47a3b829274af1a815c16"
+      "sha256": "54ec5e8b404af0849b9f5e14f69708c8b864ebbee9212ee17eea29e97a277b5a"
     },
     {
       "path": "sample-inputs/dcs/dcs_readings.json",
       "category": "historian",
       "format": "JSON",
       "uploadReady": true,
-      "origin": "deterministic synthetic data, seed 101",
+      "origin": "deterministic synthetic critical-incident data, seed 101",
       "recordCount": 2166,
-      "sha256": "a8473ba8e380fbefebec809fcca9c0a606368099bee7e2fea732b70ea4597d1b"
+      "sha256": "1dbf5c352be5a64ff64b68f9f4c7263fe83bd9c633bb03193e0ae342e13588ba"
     },
     {
       "path": "sample-inputs/dcs/dcs_readings_clean.csv",
       "category": "historian",
       "format": "CSV",
       "uploadReady": true,
-      "origin": "deterministic clean-quality comparison data, seed 202",
+      "origin": "deterministic synthetic healthy-baseline data, seed 202",
       "recordCount": 2166,
-      "sha256": "1433271a47870b3e0a0f8d5eceb369099129a6df5b691c4a64ae7fc9a0a0c643"
+      "sha256": "0642d5e1b37b2c77df5efef6190e65d740959d92e24a1d30defeb9818f01cc71"
     },
     {
       "path": "sample-inputs/dcs/dcs_readings_clean.json",
       "category": "historian",
       "format": "JSON",
       "uploadReady": true,
-      "origin": "deterministic clean-quality comparison data, seed 202",
+      "origin": "deterministic synthetic healthy-baseline data, seed 202",
       "recordCount": 2166,
-      "sha256": "d53b2e4e86e1f5725e565b57ca9948fab230ac381d6f2688b4dd3787affb0878"
+      "sha256": "c59741f2cf1d01227e6299c5611f7a42e12a0a4d2e2a957a2203d7033e3bc886"
     },
     {
       "path": "reference-files/dexpi-pid/C01V04-VER.EX01.xml",
